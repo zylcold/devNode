@@ -7,96 +7,77 @@
         "id": "8039bd96e850102e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Runtime/iOS 底层解析weak的实现原理.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ac7ae693805c81d4",
-    "type": "split",
+    "id": "5a26efed9a815b62",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "6c8a5c45bd686e1e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5a0cf530eeee4eba",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "be333e4229155718",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "89e4b249a97326f4",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
+      },
+      {
+        "id": "646000c6fdd46061",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "e93fe6c57b22928f",
-    "type": "split",
+    "id": "beefd3fba2e9e230",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "783600128c30a92b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d1b47f3dde1c9e89",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Runtime/iOS 底层解析weak的实现原理.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
+        "id": "2ef5606b61c6dff1",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "8039bd96e850102e",
   "lastOpenFiles": [
-    "Runtime/iOS 底层解析weak的实现原理.md",
-    "Runtime/iOS 底层拾遗：autorelease 优化.md",
-    "Runtime/iOS中isEqual和Hash的笔记.md",
-    "Runtime/alloc流程分析.md",
-    "Runtime/内存管理、自动释放池与循环引用.md",
-    "简介.md",
-    "性能优化/性能优化.md",
-    "性能优化/iOS 保持界面流畅的技巧.md",
-    "性能优化/iOS 图形性能优化.md",
-    "Untitled.md"
+    "WebView/Resource/370.gif",
+    "WebView/iOS app秒开H5优化总结.md",
+    "WebView/深入浅出 JavaScriptCore.md",
+    "WebView/深入理解JSCore.md",
+    "iOS 要点.md",
+    "Untitled.md",
+    "模块化/iOS 组件化  路由设计思路分析.md",
+    "模块化/Resource/640 3.jpg",
+    "模块化/Resource/640.jpg",
+    "模块化/Resource/1488337205781428.png"
   ]
 }
