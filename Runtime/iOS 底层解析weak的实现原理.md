@@ -15,6 +15,7 @@ weak 的实现原理可以概括一下三步：
 1、初始化时
 	runtime会调用`objc_initWeak`函数，初始化一个新的weak指针指向对象的地址。
 
+
 2、添加引用时
 	objc_initWeak函数会调用`objc_storeWeak()` 函数， objc_storeWeak() 的作用是更新指针指向，创建对应的弱引用表。
 
