@@ -1,0 +1,11 @@
+{
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "tabSize": 3,
+  "vimMode": false,
+  "promptDelete": false,
+  "mobileToolbarCommands": [],
+  "defaultViewMode": "preview",
+  "attachmentFolderPath": "Attachments",
+  "communityPluginSortOrder": "download"
+}
