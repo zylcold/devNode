@@ -7,77 +7,96 @@
         "id": "8039bd96e850102e",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "编译优化/编译器相关.md",
+            "mode": "source"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "5a26efed9a815b62",
-    "type": "mobile-drawer",
+    "id": "ac7ae693805c81d4",
+    "type": "split",
     "children": [
       {
-        "id": "89e4b249a97326f4",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "6c8a5c45bd686e1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a0cf530eeee4eba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "be333e4229155718",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "646000c6fdd46061",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "beefd3fba2e9e230",
-    "type": "mobile-drawer",
+    "id": "e93fe6c57b22928f",
+    "type": "split",
     "children": [
       {
-        "id": "2ef5606b61c6dff1",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "783600128c30a92b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1b47f3dde1c9e89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "编译优化/编译器相关.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "8039bd96e850102e",
   "lastOpenFiles": [
-    "WebView/Resource/370.gif",
-    "WebView/iOS app秒开H5优化总结.md",
-    "WebView/深入浅出 JavaScriptCore.md",
-    "WebView/深入理解JSCore.md",
-    "iOS 要点.md",
+    "编译优化/编译器相关.md",
+    "编译优化/编译优化.md",
     "Untitled.md",
-    "模块化/iOS 组件化  路由设计思路分析.md",
-    "模块化/Resource/640 3.jpg",
-    "模块化/Resource/640.jpg",
-    "模块化/Resource/1488337205781428.png"
+    "编译优化/C构建流程.md",
+    "编译优化/深入浅出iOS编译.md",
+    "编译优化/构建流程.md",
+    "构建流程.md",
+    "编译优化/编译器基本知识.md",
+    "编译器基本知识^编译器.md",
+    "编译优化/编译器.md"
   ]
 }

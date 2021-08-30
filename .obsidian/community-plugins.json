@@ -8,5 +8,7 @@
   "obsidian-minimal-settings",
   "obsidian-kanban",
   "obsidian-activity-history",
-  "obsidian-git"
+  "obsidian-git",
+  "oz-image-plugin",
+  "oz-clear-unused-images"
 ]
