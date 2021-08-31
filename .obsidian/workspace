@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "8039bd96e850102e",
+        "id": "1b1874fded627880",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "编译优化/编译器相关.md",
-            "mode": "source"
+            "file": "UIKit框架/UIView中frame属性的内部实现.md",
+            "mode": "preview"
           }
         }
       }
@@ -18,84 +18,70 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ac7ae693805c81d4",
-    "type": "split",
+    "id": "a05bc31643271ffc",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "6c8a5c45bd686e1e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5a0cf530eeee4eba",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "be333e4229155718",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "e74c51ee9ad783fc",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "3ceadef9f443f2d0",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "e93fe6c57b22928f",
-    "type": "split",
+    "id": "d8091250b69e4c94",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "783600128c30a92b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d1b47f3dde1c9e89",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "编译优化/编译器相关.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
+        "id": "e11c9b362ede9b2a",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "UIKit框架/UIView中frame属性的内部实现.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
-  "active": "8039bd96e850102e",
+  "active": "1b1874fded627880",
   "lastOpenFiles": [
-    "编译优化/编译器相关.md",
-    "编译优化/编译优化.md",
-    "Untitled.md",
-    "编译优化/C构建流程.md",
-    "编译优化/深入浅出iOS编译.md",
-    "编译优化/构建流程.md",
-    "构建流程.md",
-    "编译优化/编译器基本知识.md",
-    "编译器基本知识^编译器.md",
-    "编译优化/编译器.md"
+    "UIKit框架/UIView中frame属性的内部实现.md",
+    "UIKit框架/UIStackView及自动布局.md",
+    "性能优化/性能优化.md",
+    "性能优化/一文读懂iOS图像显示原理与优化.md",
+    "性能优化/抖音品质建设 - iOS启动优化.md",
+    "性能优化/UITableView性能优化-中级篇.md",
+    "性能优化/iOS性能优化(下).md",
+    "性能优化/IOS面试考察(九)：性能优化相关问题.md",
+    "性能优化/iOS性能优化(上).md",
+    "iOS 要点.md"
   ]
 }
