@@ -26,7 +26,7 @@
 * 可以追踪 `commit` 生成更新日志
 * 可以关联 **issues**
 
-[[Git 提交说明规范结构]]
+[[Git提交说明规范结构]]
 
 ## Commitizen
 [commitizen/cz-cli](https://github.com/commitizen/cz-cli) 是一个可以实现规范的 **提交说明** 的工具： 

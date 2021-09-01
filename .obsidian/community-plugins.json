@@ -6,11 +6,8 @@
   "obsidian-admonition",
   "obsidian-reading-time",
   "obsidian-minimal-settings",
-  "obsidian-kanban",
   "obsidian-activity-history",
   "obsidian-git",
   "oz-image-plugin",
-  "oz-clear-unused-images",
-  "sliding-panes-obsidian",
-  "obsidian-excalidraw-plugin"
+  "oz-clear-unused-images"
 ]

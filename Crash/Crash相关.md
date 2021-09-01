@@ -1,4 +1,4 @@
-[[iOS内功篇：浅谈Crash]]
+[[浅谈Crash]]
 [[iOS崩溃crash大解析 - 作业部落 Cmd Markdown 编辑阅读器]]
 [[大白健康系统—iOS APP运行时Crash自动修复系统]]
 [[崩溃和卡顿]]

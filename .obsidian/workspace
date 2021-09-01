@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "1b1874fded627880",
+        "id": "6bc6189f11e7c809",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "UIKit框架/UIView中frame属性的内部实现.md",
-            "mode": "preview"
+            "file": "Crash/watchdog (看门狗机制).md",
+            "mode": "source"
           }
         }
       }
@@ -18,70 +18,85 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a05bc31643271ffc",
-    "type": "mobile-drawer",
+    "id": "c1c68bcabd8455a9",
+    "type": "split",
     "children": [
       {
-        "id": "e74c51ee9ad783fc",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "3ceadef9f443f2d0",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "be294dc099ab12d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64e37028a17fdd4c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8552886ec33bcabb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "d8091250b69e4c94",
-    "type": "mobile-drawer",
+    "id": "bf553cfce5796e84",
+    "type": "split",
     "children": [
       {
-        "id": "e11c9b362ede9b2a",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "UIKit框架/UIView中frame属性的内部实现.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "2eeb51b9f19a1e80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "317100aa6f4ec625",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Crash/watchdog (看门狗机制).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "1b1874fded627880",
+  "active": "6bc6189f11e7c809",
   "lastOpenFiles": [
-    "UIKit框架/UIView中frame属性的内部实现.md",
-    "UIKit框架/UIStackView及自动布局.md",
-    "性能优化/性能优化.md",
-    "性能优化/一文读懂iOS图像显示原理与优化.md",
-    "性能优化/抖音品质建设 - iOS启动优化.md",
-    "性能优化/UITableView性能优化-中级篇.md",
-    "性能优化/iOS性能优化(下).md",
-    "性能优化/IOS面试考察(九)：性能优化相关问题.md",
-    "性能优化/iOS性能优化(上).md",
-    "iOS 要点.md"
+    "Untitled.md",
+    "Crash/Mach异常.md",
+    "Crash/Crash相关.md",
+    "Crash/Objective-C异常.md",
+    "Crash/浅谈Crash.md",
+    "Crash/苹果Crash收集服务.md",
+    "苹果Crash收集服务.md",
+    "SIGFPE.md",
+    "SIGPIPE.md",
+    "SIGSEGV.md"
   ]
 }
