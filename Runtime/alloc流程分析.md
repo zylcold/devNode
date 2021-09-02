@@ -13,21 +13,20 @@ OC作为一门面向对象的语言，那么对于对象的创建方法的探索
 
 ### 1. alloc方法
 
-```
+```objc
 + (id)alloc {
     return _objc_rootAlloc(self);
 }
-复制代码
 ```
 
 ##### 2. _objc_rootAlloc方法
 
-```
+```objc
 _objc_rootAlloc(Class cls)
 {
     return callAlloc(cls, false/*checkNil*/, true/*allocWithZone*/);
 }
-复制代码
+
 ```
 
 > fastpath表示条件更可能成立 slowpath表示条件更不可能成立
@@ -36,7 +35,7 @@ _objc_rootAlloc(Class cls)
 
 ### 3. callAlloc方法
 
-```
+```objc
 static ALWAYS_INLINE id
 callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
 {
@@ -53,24 +52,24 @@ callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
     }
     return ((id(*)(id, SEL))objc_msgSend)(cls, @selector(alloc));
 }
-复制代码
+
 ```
 
 ### 4. _objc_rootAllocWithZone方法
 
-```
+```objc
 _objc_rootAllocWithZone(Class cls, malloc_zone_t *zone __unused)
 {
     // allocWithZone under __OBJC2__ ignores the zone parameter
     return _class_createInstanceFromZone(cls, 0, nil,
                                          OBJECT_CONSTRUCT_CALL_BADALLOC);
 }
-复制代码
+
 ```
 
 ### 5. _class_createInstanceFromZone方法
 
-```
+```objc
 static ALWAYS_INLINE id
 _class_createInstanceFromZone(Class cls, size_t extraBytes, void *zone,
                               int construct_flags = OBJECT_CONSTRUCT_NONE,
@@ -117,7 +116,6 @@ _class_createInstanceFromZone(Class cls, size_t extraBytes, void *zone,
     construct_flags |= OBJECT_CONSTRUCT_FREE_ONFAILURE;
     return object_cxxConstructFromClass(obj, cls, construct_flags);
 }
-复制代码
 ```
 
 ### 6. cls->instanceSize & calloc & obj->initInstanceIsa
@@ -126,9 +124,9 @@ _class_createInstanceFromZone(Class cls, size_t extraBytes, void *zone,
 
 1. 首先判断是否有缓存，有的话采用内存对齐方法计算所需内存大小
 2. 如果没有缓存，则计算内存大小，如果size 小于 16，最小取16
-> 
 
-```
+
+```objc
 size_t instanceSize(size_t extraBytes) const {
     if (fastpath(cache.hasFastInstanceSize(extraBytes))) { // // 判断是否有缓存
         return cache.fastInstanceSize(extraBytes); // 内存对齐
@@ -139,12 +137,11 @@ size_t instanceSize(size_t extraBytes) const {
     if (size < 16) size = 16;
     return size;
 }
-复制代码
 ```
 
 **fastInstanceSize方法** ：快速计算内存大小方法
 
-```
+```objc
 size_t fastInstanceSize(size_t extra) const
 {
     ASSERT(hasFastInstanceSize(extra));
@@ -158,16 +155,15 @@ size_t fastInstanceSize(size_t extra) const
         return align16(size + extra - FAST_CACHE_ALLOC_DELTA16);
     }
 }
-复制代码
 ```
 
 **align16方法** ：内存对齐方法
 
-```
+```objc
 static inline size_t align16(size_t x) {
     return (x + size_t(15)) & ~size_t(15);
 }
-复制代码
+
 ```
 
 **内存对齐算法：**
@@ -178,14 +174,13 @@ x + size_t(15) = 8 + 15 = 23 x + size_t(15) 二进制： `0000 0000 0001 0111` =
 
 **② calloc：向系统申请开辟内存,返回地址指针** 通过 `instanceSize` 计算的内存大小，向内存中申请大小为 `size` 的内存，并赋值给 `obj` ，因此 `obj` 是指向内存地址的指针
 
-```
+```objc
 // alloc 开辟内存的地方
 obj = (id)calloc(1, size);
-复制代码
 ```
 
 这里我们可以通过断点来印证上述的说法，在未执行 `calloc` 时， `po obj` 为 `nil` ，执行后，再 `po obj` 发现，返回了一个16进制的地址 
-[image:64154A48-DA9C-4989-8EFB-2DA9332FD5F2-436-0000F488B8BC8B0A/4248d25e1f9c4854924a62d5513dc41b~tplv-k3u1fbpfcp-zoom-1.image.png]
+
 ![[4248d25e1f9c4854924a62d5513dc41b~tplv-k3u1fbpfcp-zoom-1.image.png]]
 
 在平常的开发中，一般一个对象的打印的格式都是类似于这样的<LGPerson: 0x01111111f>（是一个指针）。为什么这里不是呢？
@@ -194,14 +189,14 @@ obj = (id)calloc(1, size);
 * 同时印证了 `alloc` 的根本作用就是 **开辟内存**
 
 **③ obj->initInstanceIsa：关联到相应的类**
-[image:DD40DBA5-8948-4DBE-BC3D-31EB325DC7BF-436-0000F48B53CEAD6B/4b11fe79bc174888bfc172b3dfd7f618~tplv-k3u1fbpfcp-zoom-1.image.png]
+
 ![[4b11fe79bc174888bfc172b3dfd7f618~tplv-k3u1fbpfcp-zoom-1.image.png]]
 
 
 ### 7. 总结
 
 根据源码调试方法，我们会得到alloc方法的执行流程如下：
-[image:04F49F95-E039-4137-8100-44F1C65DA359-436-0000F48DC6007129/deaf81e51b3443dbbbd4f837d79d73e7~tplv-k3u1fbpfcp-zoom-1.image.png]
+
 ![[deaf81e51b3443dbbbd4f837d79d73e7~tplv-k3u1fbpfcp-zoom-1.image.png]]
 
 # 关于new 和 init
@@ -223,7 +218,7 @@ _objc_rootInit(id obj)
     return obj;
 }
 ```
-复制代码
+
 * new其实最终调用了objc_opt_new，本质上就相当于[[cls alloc] init]
 ```objc
 id objc_opt_new(Class cls)

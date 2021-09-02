@@ -7,11 +7,8 @@
         "id": "6bc6189f11e7c809",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "iOS 要点.md",
-            "mode": "preview"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -47,6 +44,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "554dca4da09fc05b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
@@ -68,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS 要点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -77,6 +81,25 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "c28b1b0e5f8384ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "06482fcae58bfef9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
             }
           }
         ]
@@ -88,15 +111,15 @@
   },
   "active": "6bc6189f11e7c809",
   "lastOpenFiles": [
+    "模块化/iOS 组件化方案总结.md",
+    "模块化/模块化方案.md",
     "iOS 要点.md",
-    "简介.md",
-    "应用瘦身.md",
-    "WebView/深入浅出 JavaScriptCore.md",
-    "性能优化/耗电优化.md",
-    "性能优化/卡顿优化.md",
-    "性能优化/iOS离屏渲染.md",
-    "性能优化/iOS性能优化(下).md",
-    "性能优化/iOS性能优化(上).md",
-    "Untitled.md"
+    "2021-09-02.md",
+    "Runtime/alloc流程分析.md",
+    "基本概念/编译器基本介绍.md",
+    "编译优化/浅谈iOS编译.md",
+    "应用优化/一文读懂iOS图像显示原理与优化.md",
+    "xcode启动时间测量.md",
+    "应用优化/启动相关/启动监控手段.md"
   ]
 }

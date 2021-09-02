@@ -6,7 +6,6 @@
 
 `GPU` 渲染过程如下图所示：
 
-[image:CD893751-9898-432A-BBF1-6CDC32581874-21361-00056B3F3F913D95/17343b2854f2c174.jpeg]
 ![[17343b2854f2c174.jpeg]]
 
 主要包括：顶点着色器(包含了3D坐标系的转换，每个顶点属性值设定)、形状(图元)装配(形成基本的图形)、几何着色器(构造新的顶点来形成其他形状，如上图的另一个三角形)、光栅化(将形状映射到屏幕的相应的像素生成 *片段* ，片段包含了像素结构所有的数据)、片段着色器(丢弃超过视图以外的像素并着色)、测试与混合(判断像素位置如是否在其他像素的后面及透明度等决定是否丢弃及混合)。
@@ -17,7 +16,7 @@
 
 `GPU` 内部包含了若干处理核来实现并发执行，其内部使用了二级缓存( `L1`、`L2` `cache` )，其与 `CPU` 的架构模型包含如下两种形式：分离式及耦合式，如下图所示：
 
-[image:D56534B0-8F4F-41B0-9B78-33F479128098-21361-00056B3F3537D747/17343b2f4c973a2b.jpeg]
+
 ![[17343b2f4c973a2b.jpeg]]
 
 * 分离式的结构
@@ -30,17 +29,16 @@
 
 屏幕图形显示结构如下：
 
-[image:16103F18-0796-4E48-B621-0CB9C8A6BDA5-21361-00056B3F320A2B01/17343b34a17bc945.jpeg]
+
 ![[17343b34a17bc945.jpeg]]
 
 `CPU` 将图形数据通过总线 `BUS` 提交至 `GPU` ， `GPU` 经过渲染处理转化为一帧帧的数据并提交至帧缓冲区，视频控制器会通过垂直同步信号 `VSync` 逐帧读取帧缓冲区的数据并提交至屏幕控制器最终显示在屏幕上。为解决一个帧缓冲区效率问题(读取和写入都是一个无法有效的并发处理)，采用 **双缓冲机制** ，在这种情况下，GPU 会预先渲染一帧放入一个缓冲区中，用于视频控制器的读取。当下一帧渲染完毕后，GPU 会直接把视频控制器的指针指向第二个缓冲器，如下图所示：
 
-[image:F42D832E-083B-4EE7-8033-6CEC9945F138-21361-00056B3F31AF5ECF/17343b38634567f7.jpeg]
+
 ![[17343b38634567f7.jpeg]]
 
 *双缓冲机制* 虽然提升了效率但也引入了 *画面撕裂* 问题，即当视频控制器还未读取完成时，即屏幕内容刚显示一半时，GPU 将新的一帧内容提交到帧缓冲区并把两个缓冲区进行交换后，视频控制器就会把新的一帧数据的下半段显示到屏幕上，造成画面撕裂现象，如下图：
 
-[image:C94FE3BB-69A9-4210-BD55-35164C5F61C8-21361-00056B3F3157A0C8/17343b3bb0d12451.jpeg]
 ![[17343b3bb0d12451.jpeg]]
 
 为了解决这个问题，GPU 通常有一个机制叫做 **垂直同步** （简写也是 V-Sync），当开启垂直同步后，GPU 会等待显示器的 VSync 信号发出后，才进行新的一帧渲染和缓冲区更新。这样能解决画面撕裂现象，也增加了画面流畅度，但需要消费更多的计算资源，也会带来部分延迟。
@@ -49,7 +47,6 @@
 
 #### 卡顿
 
-[image:2E8E8DCF-B4FF-45EA-A143-667CE02E7A31-21361-00056B3F31113B11/17343b413b245368.jpeg]
 ![[17343b413b245368.jpeg]]
 
 在 `VSync` 信号到来后，系统图形服务会通过 `CADisplayLink` 等机制通知 App，App 主线程开始在 CPU 中计算显示内容，比如视图的创建、布局计算、图片解码、文本绘制等。随后 CPU 会将计算好的内容提交到 GPU 去，由 GPU 进行变换、合成、渲染。随后 GPU 会把渲染结果提交到帧缓冲区去，等待下一次 `VSync` 信号到来时显示到屏幕上。由于垂直同步的机制，如果在一个 `VSync` 时间内，CPU 或者 GPU 没有完成内容提交，则那一帧就会被丢弃，等待下一次机会再显示，而这时显示屏会保留之前的内容不变。这就是界面卡顿的原因。
@@ -60,7 +57,6 @@
 
 整个图形渲染技术栈：App 使用 `Core Graphics`、`Core Animation`、`Core Image` 等框架来绘制可视化内容，这些软件框架相互之间也有着依赖关系。这些框架都需要通过 `OpenGL` 来调用 GPU 进行绘制，最终将内容显示到屏幕之上，结构如下图所示：
 
-[image:C3DC52E5-C6D9-4FA6-868D-7FEEEC971101-21361-00056B3F30AF6BDA/17343b442ad11c23.jpeg]
 ![[17343b442ad11c23.jpeg]]
 
 框架介绍：
@@ -103,7 +99,6 @@
 
 > **位图** （英语：Bitmap，台湾称为 **点阵图** ），又称 **栅格图** （Raster graphics），是使用 [像素](https://zh.wikipedia.org/wiki/%E5%83%8F%E7%B4%A0) [阵列](https://zh.wikipedia.org/wiki/%E9%99%A3%E5%88%97) (Pixel-array/Dot-matrix [点阵](https://zh.wikipedia.org/wiki/%E7%82%B9%E9%98%B5) )来表示的 [图像](https://zh.wikipedia.org/wiki/%E5%9B%BE%E5%83%8F) 。位图也可指：一种数据结构，代表了有限域中的稠集（dense set），每一个元素至少出现一次，没有其他的数据和元素相关联。在索引，数据压缩等方面有广泛应用，位图的像素都分配有特定的位置和 [颜色](https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2) 值。
 
-[image:EEFDCC79-F4F2-4100-801A-880725AC7F35-21361-00056B3F3065F7BE/17343b4a347d364f.jpeg]
 ![[17343b4a347d364f.jpeg]]
 
 图形渲染流水线支持从顶点开始进行绘制（在流水线中，顶点会被处理生成纹理），也支持直接使用纹理（图片）进行渲染。相应地，在实际开发中，绘制界面也有两种方式：一种是 **手动绘制(custom drawing)** ；另一种是 **使用图片(contents image)** 。
@@ -112,7 +107,6 @@
 
 虽然 `-drawRect:` 是一个 `UIView` 方法，但事实上都是底层的 `CALayer` 完成了重绘工作并保存了产生的图片。下图所示为 `-drawRect:` 绘制定义寄宿图的基本原理。
 
-[image:DC90058A-649F-4CB8-AFF9-F4F73D384964-21361-00056B3F2F6E4498/17343b4dd800eb37.jpeg]
 ![[17343b4dd800eb37.jpeg]]
 
 * `UIView` 都有一个 `CALayer` 属性
@@ -142,7 +136,6 @@
 
 * 具体的函数调用栈如下：
 
-[image:644F9733-4F23-42DF-90B7-0F03824B6FAF-21361-00056B3F2E32D877/17343b52303b6707.jpeg]
 ![[17343b52303b6707.jpeg]]
 
 * 最后，由 `Core Graphics` 绘制生成的寄宿图会存入 `backing store` 。
@@ -151,7 +144,6 @@
 
 了解完 `CALayer` 本质及流程后，详细介绍下 `Core Animation Pipeline` 工作原理，如下图：
 
-[image:2AD7A880-81C5-4AA0-9A11-70460CCE4603-21361-00056B3F2DF2FBF4/17343b5513fa0cbe.jpeg]
 ![[17343b5513fa0cbe.jpeg]]
 
 其中iOS中应用并不负责渲染而是由专门的渲染进程负责，即 `Render Server` ；
@@ -160,7 +152,6 @@
 
 > 越狱查看系统进程，确实存在此进程，如下图：
 
-[image:1D6E0D91-2010-4737-B42B-0E274233B376-21361-00056B3F2D9EB454/17343b58941c11ac.jpeg]
 ![[17343b58941c11ac.jpeg]]
 
 主要处理流程如下：
@@ -184,7 +175,6 @@
 
 #### 渲染与RunLoop
 
-[image:CEF5AED2-2BD1-4766-98C7-BE104E03609D-21361-00056B3F2B54D45B/17343b5c71858258.jpeg]
 ![[17343b5c71858258.jpeg]]
 
 iOS 的显示系统是由 `VSync` 信号驱动的， `VSync` 信号由硬件时钟生成，每秒钟发出 60 次（这个值取决设备硬件，比如 iPhone 真机上通常是 59.97）。iOS 图形服务接收到 `VSync` 信号后，会通过 IPC 通知到 App 内。App 的 `Runloop` 在启动后会注册对应的 `CFRunLoopSource` 通过 `mach_port` 接收传过来的时钟信号通知，随后 `Source` 的回调会驱动整个 App 的动画与显示。
@@ -290,14 +280,12 @@ dispatch_async(queue, ^{
 
 `AsyncDisplayKit` (简写 `ASDK` )是Facebook开源的一个用于保持iOS界面流畅的开源库，其基本原理如下：
 
-[image:0FC17321-B0B6-45E8-8CB4-92CEC64D8CA0-21361-00056B3F2B0BDAF6/17343b64cea66951.jpeg]
 ![[17343b64cea66951.jpeg]]
 
 将不需要主线程执行的消耗性能的通过异步执行方式执行，如文本宽高和视图布局计算，文本渲染、图片界面和图形绘制，对象创建、属性调制和销毁；但 `UIKit` 和 `Core Animation` 相关操作必须在主线程执行，对于不能后台执行的就优化性能。
 
 ##### UIView CALayer封装
 
-[image:DDCA2DE2-943C-43F7-B494-50717DD8315A-21361-00056B3F2AC2447F/17343b66fee182d9.jpeg]
 ![[17343b66fee182d9.jpeg]]
 
 在原有 `UIView` 和 `CALayer` 基础上，封装了 `ASDisplayNode` 类(简写 `ASNode` )，包装了常见的视图属性(如 `frame/bounds/aplphs/transform/backgroudColor/superNode/subNodes` 等)，建立 `ASNode` 与 `CALayer` 的对应关系，当 `CALayer` 属性改变或者动画产生时，会通过 `delegate` 通知的 `UIVIew` 进而通知 `ASNode` 。由于 `UIview` 和 `CALayer` 不是线程安全的，并且只能在主线程创建、访问和销毁，但 `ASNode` 是线程安全的，可以在后台线程创建和修改。 `ASNode` 还提供了 `layer backed` 属性，当不需要触摸事件时，就省去了 `UIView` 的中间层功能。同时还提供了大量优化后的子类封装，如 `Button/Control/Cell/Image/ImageView/Text/TableView/CollectView` 等。
@@ -320,7 +308,6 @@ ASDK 在此处模拟了 Core Animation 的这个机制：所有针对 ASNode 的
 
 主要工具使用如下：
 
-[image:B680A50D-DE25-45F7-B1F4-13B422D8326A-21361-00056B3F2A7C2115/17343b6e6af5f4bf.jpeg]
 ![[17343b6e6af5f4bf.jpeg]]
 
 > **Time Profiler** ，用来检测CPU的使用情况。它可以告诉我们程序中的哪个方法正在消耗大量的CPU时间。使用大量的CPU并 *不一定* 是个问题 - 你可能期望动画路径对CPU非常依赖，因为动画往往是iOS设备中最苛刻的任务。 但是如果你有性能问题，查看CPU时间对于判断性能是不是和CPU相关，以及定位到函数都很有帮助。
@@ -329,7 +316,6 @@ ASDK 在此处模拟了 Core Animation 的这个机制：所有针对 ASNode 的
 
 如下图使用 `Core Animation` 工具查看 `FPS(Frames Per Second)` 每秒帧渲染数；
 
-[image:65827813-F735-4D11-A03B-B13DFDBC1661-21361-00056B3F27E2D3A7/17343b720b5d62e2.jpeg]
 ![[17343b720b5d62e2.jpeg]]
 
 #### 基于RunLoop检测
@@ -340,7 +326,7 @@ ASDK 在此处模拟了 Core Animation 的这个机制：所有针对 ASNode 的
 
 * 原理就是添加 `CADisplayLink` 对象至 `runloop` 中统计每秒回调次数，通过次数/时间来获取屏幕刷新率 `FPS` ，具体实现如下：
 
-```
+```objc
 // 创建CADisplayLink，并添加到当前run loop的NSRunLoopCommonModes
 _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
 [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
@@ -361,7 +347,7 @@ _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
     _count = 0;    
     NSLog(@"current FPS: %d", (int)round(fps));
 }
-复制代码
+
 ```
 
 > `CADisplayLink` 是一个和屏幕刷新率一致的定时器（但实际实现原理更复杂，和 `NSTimer` 并不一样，其内部实际是操作了一个 `Source` ）。如果在两次屏幕刷新之间执行了一个长任务，那其中就会有一帧被跳过去（和 `NSTimer` 相似），造成界面卡顿的感觉。在快速滑动 `TableView` 时，即使一帧的卡顿也会让用户有所察觉。通过对比 `CADisplayLink` 添加至 `runloop` 前后 `modes` 变化，发现其实现是向 `runloop` 中添加 `Source1` 回调为 `IODispatchCalloutFromCFMessage` ；
@@ -374,7 +360,7 @@ UI绘制并不一定 `FPS` 为满60帧，如动画片FPS为24，因此，通过 
 
 * 通过子线程监测主线程的 `runloop` ，判断 `kCFRunLoopBeforeSources` 和 `kCFRunLoopAfterWaiting` 两个状态之间的耗时是否达到一定阈值，若监测到卡顿则记录此时的函数调用信息，具体代码如下：
 
-```
+```objc
 static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
 {
     MyClass *object = (__bridge MyClass*)info;
@@ -432,14 +418,14 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
         }
     });
 }
-复制代码
+
 ```
 
 * 为啥需要监测 `kCFRunLoopBeforeSources` 和 `kCFRunLoopAfterWaiting` 间的耗时，主要因为两者之间处理了APP内部事件处理的 `Source0` 时间，如触摸事件、`CFSocketRef` ，还有中间监听 `kCFRunLoopBeforeWaiting` 状态 `Core Animation` 提交所有的图层中间状态至GPU，大部分导致卡顿的场景都在这两者之间；
 
 * 而主线程 `RunLoop` 闲置时处在 `kCFRunLoopBeforeSources` 和 `kCFRunLoopAfterWaiting` 之间的 `kCFRunLoopBeforeWaiting` 状态，因此导致错误的判断为卡顿，因此优化解决此问题出现了 *子线程ping* 方案。具体的原理如下：创建一个子线程通过信号量去ping主线程，因为ping的时候主线程肯定是在 `kCFRunLoopBeforeSources` 和 `kCFRunLoopAfterWaiting` 之间。每次检测时设置标记位为YES，然后派发任务到主线程中将标记位设置为NO。接着子线程沉睡超时阙值时长，判断标志位是否成功设置成NO，如果没有说明主线程发生了卡顿， [ANREye](https://github.com/zixun/ANREye) 中就是使用子线程Ping的方式监测卡顿的，具体代码如下：
 
-```
+```objc
 @interface PingThread : NSThread
 ......
 @end
@@ -468,7 +454,7 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
     }
 }
 @end
-复制代码
+
 ```
 
 ### Reference

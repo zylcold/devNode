@@ -200,7 +200,7 @@ loadURL("firstClick://shareClick?title=分享的标题&content=分享的内容&u
 
 ## 效果图
 
-![[370.gif]]
+![[7c46c154-67a8-40af-b5a4-f22a9cb459f2.gif]]
 
 更详细的使用步骤还是去工程中查看吧。地址： [JS_OC_MessageHandler](https://link.jianshu.com/?t=https://github.com/Haley-Wong/JS_OC/tree/master/JS_OC_MessageHandler)
 

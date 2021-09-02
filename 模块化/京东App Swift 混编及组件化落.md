@@ -33,12 +33,12 @@ Swift 5.1， 支持 Library Evolution，解决了二进制库向下兼容的问�
 举例来具体说明一下这个问题。组件 B 和组件 C 都依赖了组件 A，他们的组件版本都是 v1.0。主工程的 v1.0 发布时，这三个组件需要各种构建，并集成到主工程中。如下图所示：
 
 [image:95576CD8-23C6-47CC-8EDC-37421521D583-500-00000005C01C31DF/_640.jpeg]
-![[_640.jpeg]]
+![[81bceb7d-f593-4b0b-af6a-b2ce27290e21.jpeg]]
 
 当主工程 v2.0 发布时，组件 A 对组件 B 在 v1.0 版本所使用的 API 进行了一些 resilient 的修改，但这些修改并没有影响到组件 C。所以，组件 B 在构建二进制库时，就需要更新依赖的组件 A 到 v2.0 版本。而组件 C 没有功能修改，则不需要更新依赖和发布新版本。然后，他们都集成到 v2.0 版本的主工程中。
 
 [image:0E972F98-0579-4005-B5DE-5E136F40C307-500-00000005C0174E3C/__640.jpeg]
-![[__640.jpeg]]
+![[a27bd5cf-7d25-4711-ae5f-2600fc4dccaa.jpeg]]
 
 如果组件 A 的 Library Evolution 在没有启用的情况下，在组件 C 中与组件 A 相关的代码就有可能在运行时产生问题、甚至崩溃。而开启 Library Evolution 后，就能够做到对旧版本的兼容。
 
@@ -68,7 +68,7 @@ Swift 5.1， 支持 Library Evolution，解决了二进制库向下兼容的问�
 
 [image:A48A5B9F-5F99-455D-9CFE-F0348CF1DD80-500-00000005C012EF2F/___640.jpeg]
 
-![[___640.jpeg]]
+![[8b5a00b6-1cfd-4b7d-92b9-1fa41f9bf2b4.jpeg]]
 
 经过官方文档中的近一步查证，发现在同一个 framework 中的 Swift 想要引入 ObjC，需要将该 ObjC 文件导入到其 umbrella-header 文件中。这样 Swift 模块就可以对 umbrella-header 中向外暴露的类进行调用了。另外，官方文档中还提到 DEFINES_MODULE 要配置为 YES，这样整个组件就可以作为一个模块被外部导入使用了。
 
@@ -103,7 +103,7 @@ o Swift 模块想要调用 ObjC 就需要将 ObjC 的头文件暴露在 umbrella
 按照上述方案实施后，组件内的通信归为 ObjC 调用 Swift 和 Swift 调用 ObjC 两个方面。具体通信方式如下图所示：
 
 [image:FA595168-02D8-4A9C-AE66-1575B8E13A74-500-00000005C00DE854/
-![[____640.jpeg]]
+![[d939c15a-4ccc-4c94-929b-90a5e508ce71.jpeg]]
 
 
 ## 组件间混编
@@ -226,7 +226,7 @@ xxx-Swift.h也需要支持多架构，我们需要把不同架构下生成的xxx
 按照上述方案实施后，组件间的通信归为 ObjC 调用 Swift 和 Swift 调用 ObjC，以及 Swift 调用 Swift 三个方面。具体通信方式如下图所示：
 
 [image:00C9DED1-E722-4FC6-9829-84BBD978335D-500-00000005C009EE42/_____640.jpeg]
-![[_____640.jpeg]]
+![[7a62f0f0-cc64-4709-8252-05a270b7f0b1.jpeg]]
 
 京东主工程混编支持方案
 
@@ -235,12 +235,12 @@ xxx-Swift.h也需要支持多架构，我们需要把不同架构下生成的xxx
 由于我们之前是纯 ObjC 的开发环境，所以即使实现了组件内混编，京东组件化的主工程（或者组件的Example工程）也并不能成功编译。原因在于它们还不支持 Swift 混编环境，在编译时可能会报类似错误：
 
 [image:E7054EF5-75C6-4E8A-9185-E7767063C57D-500-00000005C0060723/______640.jpeg]
-![[______640.jpeg]]
+![[3d8e0b91-7b7c-47e8-8b9e-b3b478b57ef6.jpeg]]
 
 或者
 
 [image:7CC71A5A-C4E9-42E3-A132-ED8CA29C4A4D-500-00000005C0012067/_______640.jpeg]
-![[_______640.jpeg]]
+![[21535d0e-c2ba-4b90-8a4e-ab3baf8a2d8a.jpeg]]
 
 上述的错误信息说明，编译器不能自动链接到 Swift 相关的一些静态库和动态库。而这些资源是存在于 Xcode Toolchains 下的，在本地的路径为：
 
@@ -257,19 +257,19 @@ xxx-Swift.h也需要支持多架构，我们需要把不同架构下生成的xxx
 当配置好可链接资源的路径之后，就可以成功编译了。但在启动时，动态库加载的问题将会引起程序的崩溃。诸如以下错误：
 
 [image:9F50A8F8-9233-4593-9EE4-7152E4F603D8-500-00000005BFFD023F/________640.jpeg]
-![[________640.jpeg]]
+![[f2fd9191-2dc9-473c-9b19-8d52e1330ff8.jpeg]]
 
 如果你的设备是 iOS 12.2 及以上，可能报错如下：
 
 [image:E4A82767-3778-4BB9-B868-E447FA63105C-500-00000005BFF8F7C0/_________640.jpeg]
-![[_________640.jpeg]]
+![[1a2d9ece-e57f-479d-8bf5-060f83444675.jpeg]]
 
 在 Build Settings -> Runpath Search Paths 中首行添加配置 /usr/lib/swift 配置，特别要注意的是只能在首行配置才能解决问题。
 
 如果你的设备是 iOS 12.2 以下，可能报错如下：
 
 [image:BC1C9202-58F2-47D1-BD0B-4A22DF62FC2A-500-00000005BFF4CCD6/__________640.jpeg]
-![[__________640.jpeg]]
+![[b78378bc-dbdb-4b1d-8cbb-ccb76a20af4f.jpeg]]
 
 iOS 12.2 以下，将 Build Settings -> Always Embed Swift Standard Libraries 设置为 YES。
 
@@ -288,7 +288,7 @@ iOS 12.2 以下，将 Build Settings -> Always Embed Swift Standard Libraries �
 最后，对京东 App 中涵盖的混编通信方式做个汇总。以组件内、组件间，以及主工程的混编形式为基础，将整体的混编通信方式汇总如下：
 
 [image:22A9FAAA-5C5E-4C4B-983B-03138A404CA6-500-00000005BFF05362/___________640.jpeg]
-![[___________640.jpeg]]
+![[e0f9cec4-20e6-464c-8af7-c38191afc06a.jpeg]]
 
 作者:王彦昌、姚琦、林晓峰
 

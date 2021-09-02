@@ -2,5 +2,6 @@
   "baseFontSize": 30,
   "cssTheme": "Minimal",
   "translucency": false,
-  "theme": "moonstone"
+  "theme": "obsidian",
+  "baseFontSizeAction": false
 }

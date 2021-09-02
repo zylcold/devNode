@@ -4,11 +4,16 @@
   "switcher",
   "graph",
   "backlink",
+  "tag-pane",
   "page-preview",
+  "daily-notes",
+  "templates",
   "note-composer",
   "command-palette",
+  "starred",
   "markdown-importer",
   "random-note",
+  "outline",
   "slides",
   "file-recovery"
 ]

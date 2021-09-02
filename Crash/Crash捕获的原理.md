@@ -17,12 +17,12 @@
 ![[640 2.jpeg]]
 **软件产生的信号** 的处理流程如下图， 就是用户态的 “UNIX信号” 处理流程
 
-![[_640 2.jpeg]]
+![[d94b3027-f0c6-4d4c-879f-2de3746ceeb4.jpeg]]
 
 
 **硬件产生的信号** 的处理流程如下图：硬件错误被 Mach 层捕获，然后转换为对应的 “UNIX信号”。为了维护一个统一的机制，操作系统和用户产生的信号首先被转换为 "Mach异常"，然后再转换为信号。如下图所示:
 
-![[__640 2.jpeg]]
+![[9cf22264-fb9f-4912-b94b-6d5b6179796d.jpeg]]
 上面两图来自 **“深入解析 Mac OS X & iOS 操作系统”** 一书。
 
 由上图可以看到，无论是硬件产生的信号，还是软件产生的信号，都会走到 act_set_astbsd() 进而唤醒收到信号的进程的某一个线程。这个机制就给我们在“自身进程内捕获 Crash” 提供了可能性。就是可以通过拦截 “UNIX信号” 或 “Mach异常” 来捕获崩溃。
@@ -88,4 +88,4 @@ case EXC_BREAKPOINT:
 
 看到这里，有同学可能会说，还有 NSException 呢？我们都用 NSUncaughtExceptionHandler 来捕获异常 Crash 的。在前面就将 c++/ObjC 异常归类到了“软件异常” 类型，那是不是“捕获信号”就行了呢？为什么还要注册 NSUncaughtExceptionHandler 呢？是因为 CrashReporter 需要通过这个 handler 来获取异常相关信息和堆栈。
 
-![[___640 2.jpeg]]
+![[f2044cfc-493e-4bce-8b2f-7ed64adc48f6.jpeg]]

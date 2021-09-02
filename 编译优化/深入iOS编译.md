@@ -4,13 +4,13 @@
 为了搞清楚这些问题，我们来挖掘下XCode编译iOS应用的细节。
 
 ## iOS平台下的编译工具
-[[编译器基本知识#编译器]]
+[[编译器基本介绍#编译器]]
 Objective C/C/C++
-	编译器前端是clang[[编译器基本知识#clang]]
+	编译器前端是clang[[编译器基本介绍#clang]]
 swift
 	编译器前端是 [swift](https://swift.org/compiler-stdlib/#compiler-architecture) 
 
-后端都是LLVM [[编译器基本知识#LLVM]] 。
+后端都是LLVM [[编译器基本介绍#LLVM]] 。
 
 ![[image_15.png]]
 

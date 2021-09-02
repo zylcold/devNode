@@ -135,7 +135,7 @@ public:
 PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其文件里的内容能被项目中的其他所有源文件访问。通常放一些通用的宏和头文件，方便编写代码，提高效率。另外 PCH 文件预编译完成后，后面用到 PCH 文件的源文件编译速度也会加快。缺点是 PCH 文件和 PCH 引用到的头文件内容一旦发生变化，引用到 PCH 的所有源文件都要重新编译。所以使用时要谨慎。在 Xcode 里设置  `Prefix Header`  和  `Precompile Prefix Header`  即可使用 PCH 文件并对它进行预编译：
 
 [image:D45CA244-5D04-46E6-A9E0-8DBB11294B61-21361-00056A2C9B6E915F/_640.jpeg]
-![[_640 1.jpeg]]
+![[d4ef596e-27b0-4cd9-a059-0927abfae1c4.jpeg]]
 
 微信使用 PCH 预编译后，编译速度提升非常可观，快了接近 280s。
 ## 终极优化
@@ -147,7 +147,7 @@ PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其
 编译器，是把一种语言（通常是高级语言）转换为另一种语言（通常是低级语言）的程序。大多数编译器由三部分组成：
 
 [image:071EAA86-F8E4-4913-8281-58B728F81D82-21361-00056A2C9B525347/__640.jpeg]
-![[__640 1.jpeg]]
+![[4f589366-248a-4cb2-a178-5f42209e5b5d.jpeg]]
 
 * 前端（Frontend）：负责解析源码，检查错误，生成抽象语法树（AST），并把 AST 转化成类汇编中间代码
 
@@ -158,7 +158,7 @@ PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其
 LLVM 实现了更通用的编译框架，它提供了一系列模块化的编译器组件和工具链。首先它定义了一种 LLVM IR（Intermediate Representation，中间表达码）。Frontend 把原始语言转换成 LLVM IR；LLVM Optimizer 优化 LLVM IR；Backend 把 LLVM IR 转换为目标平台的机器语言。这样一来，不管是新的语言，还是新的平台，只要实现对应的 Frontend 和 Backend，新的编译器就出来了。
 
 [image:3FD6B693-1898-433B-AE89-689F91CB50E3-21361-00056A2C9B2344D5/___640.jpeg]
-![[___640 1.jpeg]]
+![[aef54f7f-ef9a-4562-9fe2-95f1e519a743.jpeg]]
 
 在 Xcode，C/C++/ObjC 的编译器是 Clang（前端）+LLVM（后端），简称 Clang。Clang 的编译过程有这几个阶段：
 
@@ -201,7 +201,7 @@ LLVM 将 LLVM IR 生成当前平台的汇编代码，期间 LLVM 根据编译设
 Clang/LLVM 编译器是开源的，我们可以从官网下载其源码，根据上述编译过程，在每个编译阶段埋点输出耗时，生成定制化的编译器。在自己准备动手的前一周，国外大神  **Aras Pranckevičius**  已经在 LLVM 项目提交了 rL357340 修改：clang 增加  `-ftime-trace`  选项，编译时生成 Chrome（chrome://tracing） JSON 格式的耗时报告，列出所有阶段的耗时。效果如下：
 
 [image:4D706A4A-ED6F-424D-99A1-62B5E68F4D90-21361-00056A2C9AEDD159/____640.jpeg]
-![[____640 1.jpeg]]
+![[8d74560d-5d1f-4a77-a8b2-962fe8cdbfd3.jpeg]]
 
 * 整体编译（ExecuteCompiler）耗时 8,423.8ms
 
@@ -216,14 +216,14 @@ Clang/LLVM 编译器是开源的，我们可以从官网下载其源码，根据
 这就是我想要的耗时报告！接下来修改工程  `CC={YOUR PATH}/clang` ，让 Xcode 编译时使用自己的编译器；同时编译选项  `OTHER_CFLAGS`  后面增加  `-ftime-trace` ，每个源文件编译后输出耗时报告。最终把所有报告汇聚起来，形成整体的编译耗时：
 
 [image:1437ED7C-935A-4647-B673-61E3BD1E6A26-21361-00056A2C9ACFAA01/_____640.jpeg]
-![[_____640 1.jpeg]]
+![[2847fa7f-8e8e-4a8f-a8b9-a161569b734b.jpeg]]
 
 由整体耗时可以看出，编译器前端处理（Frontend）耗时 7,659.2s，占整体 87%；而前端处理下头文件处理（Source）耗时 7,146.2s，占整体 71.9%！猜测头文件嵌套严重，每个源文件都要引入几十个甚至几百个头文件，每个头文件源码要做预处理、词法分析、语法分析等等。实际上源文件不需要使用某些头文件里的定义（如 class、function），所以编译时间才那么长。
 
 于是又写了个工具，统计所有头文件被引用次数、总处理时间、头文件分组（指一个耗时顶部的头文件所引用到的所有子头文件的集合），列出一份表格（截取 Top10）：
 
 [image:345EA908-293A-4BE4-A56A-A6BC59705953-21361-00056A2C9AAEFA78/______640.jpeg]
-![[______640 1.jpeg]]
+![[efd4ff76-da06-419c-abb4-55c0908c2e07.jpeg]]
 
 Header1 处理时间 1187.7s，被引用 2,304 次；Header2 处理时间 1,124.9s，被引用 3,831 次；后面 Header3～10 都是被 Header1 引用。所以可以尝试优化 TopN 头文件里的头文件引用，尽量不包含其他头文件。
 
@@ -279,7 +279,7 @@ TranslationUnitDecl 0x7f8f36834208 <<invalid sloc>> <invalid sloc>
 从上可以看出，每一行包括 AST Node 的类型、所在位置（文件名，行号，列号）和结点描述信息。头文件定义的类也包含进 AST 中。AST Node 常见类型有 Decl（如 RecordDecl 结构体定义，FunctionDecl 函数定义）、Stmt（如 CompoundStmt 函数体括号内实现）。
 
 [image:B3276285-93CC-4663-8D6F-D75913716AB1-21361-00056A2C9A8372D2/_______640.jpeg]
-![[_______640 1.jpeg]]
+![[760a3f16-8e5d-4847-823e-187aa671882e.jpeg]]
 
 Clang AST 有三个重要的基类：ASTFrontendAction、ASTConsumer 以及 RecursiveASTVisitor。ClangTool 类读入命令行配置项后初始化 CompilerInstance；CompilerInstance 成员函数  `ExcutionAction`  会调用 ASTFrontendAction 3 个成员函数  `BeginSourceFile` （准备遍历 AST）、`Execute` （解析 AST）、`EndSourceFileAction` （结束遍历）。ASTFrontendAction 有个重要的纯虚函数  `CreateASTConsumer` （会被自己  `BeginSourceFile`  调用），用于返回读取 AST 的 ASTConsumer 对象：
 
@@ -365,7 +365,7 @@ struct StructB;
 微信源码通过工具优化头文件引入后，整体编译时间降到了  **710s** 。另外头文件依赖的减少，也能降低因修改头文件引起大规模源码重编的可能性。我们再用编译耗时分析工具分析当前瓶颈：
 
 [image:B9165325-F558-4DD5-A110-93B4A301BA7D-21361-00056A2C9A51B126/________640.jpeg]
-![[________640 1.jpeg]]
+![[3b5d7a2c-30dd-439d-a68a-9c6b3e0a019b.jpeg]]
 
 WCDB 头文件处理时间太长了，业务代码（如 Model 类）没有很好的隔离 WCDB 代码，把 WINQ 暴露出去，外面被动 include WCDB 头文件。解决方法有很多，例如 WCDB 相关放 category 头文件（XXModel+WCDB.h）里引入，或者跟其他库一样，把  `<WCDB/WCDB.h>`  放 PCH。
 最终编译时间优化到 540s 以下，是原来的三分之一，编译效率得到巨大的提升。
@@ -375,7 +375,7 @@ WCDB 头文件处理时间太长了，业务代码（如 Model 类）没有很�
 总结微信的编译优化方案：
 
 [image:08BAA38E-0596-44A4-A127-1C1D8DD6A19B-21361-00056A2C99FA2BDB/_________640.jpeg]
-![[_________640 1.jpeg]]
+![[a66d4438-f9cf-49fe-b0eb-489b0d05c1e5.jpeg]]
 
 * A、优化头文件搜索路径
 
