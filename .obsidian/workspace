@@ -7,8 +7,11 @@
         "id": "6bc6189f11e7c809",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "iOS 要点.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -73,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "iOS 要点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "iOS 要点.md"
+              }
             }
           }
         ]
@@ -111,9 +117,9 @@
   },
   "active": "6bc6189f11e7c809",
   "lastOpenFiles": [
+    "iOS 要点.md",
     "模块化/iOS 组件化方案总结.md",
     "模块化/模块化方案.md",
-    "iOS 要点.md",
     "2021-09-02.md",
     "Runtime/alloc流程分析.md",
     "基本概念/编译器基本介绍.md",
