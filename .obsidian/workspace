@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7f2504658b2807c8",
+        "id": "ea53a650228dcb2c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Runtime相关面试题.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -76,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Runtime相关面试题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,9 +99,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Runtime相关面试题.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -115,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7f2504658b2807c8",
+  "active": "ea53a650228dcb2c",
   "lastOpenFiles": [
-    "Runtime相关面试题.md",
     "isa指针.md",
+    "type encoding.md",
+    "Runtime相关面试题.md",
+    "class_rw_t.md",
+    "代理对象.md",
     "runtime和OC本质和栈知识结合的面试题.md",
+    "metaClass.md",
     "OC 对象的本质.md",
     "OC 面向对象相关问题.md",
-    "metaClass.md",
-    "内存对齐.md",
-    "将Objective-C代码转换为C或C++代码.md",
-    "Untitled.md",
-    "Runtime/Runtime.md"
+    "内存对齐.md"
   ]
 }
