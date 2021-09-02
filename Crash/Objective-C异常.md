@@ -51,6 +51,7 @@ Terminating app due to uncaught exception ‘NSRangeException’, reason: ‘thi
 
 
 非debug环境下，可以通过注册 NSUncaughtExceptionHandler 捕获异常信息。虽然无法阻止APP崩溃，但是可以获取异常信息并进行收集，下次启动APP时进行上报，方便开发者进行错误跟踪及修复，这就是常用Crash收集工具所做的事情。
+
 ```objc
 
 void InstallUncaughtExceptionHandler(void) {

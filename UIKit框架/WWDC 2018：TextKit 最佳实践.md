@@ -19,12 +19,10 @@
 
 和平时使用的框架有些不同，我们不需要使用 `import` 关键字来导入 `TextKit` 。包含 `UILabel`、`UITextField` 等控件的 `UIKit` 框架（用于 iOS），以及包含 `NSTextView` 等控件的 `AppKit` 框架（用于 Mac OS），都是基于 `TextKit` 构建。在使用上面的文本控件时，其实就是在使用 `TextKit` ，它协同 `Core Text`、`Core Graphics` 以及 `Foundation` ，一起为我们的 app 提供强大的文本展示能力。
 
-[image:F6D1F574-1F4E-4D2C-8A9D-9537B30E9E32-6393-0000046BACA449DF/1641167925b12ad2.jpeg]
 ![[1641167925b12ad2.jpeg]]
 
 利用 `TextKit` 的能力，你可以非常容易地展示下面风格各异的文本。
 
-[image:7CAAAD2D-7A3D-4DF0-AE4A-8AF4F134F6C6-6393-0000046BACA2F5C1/164116812b2ac3a4.jpeg]
 ![[164116812b2ac3a4.jpeg]]
 
 ### 1.2 选择正确的控件
@@ -33,12 +31,10 @@
 
 * `UIKit` 的选择路径：
 
-[image:8A18E968-B788-48DF-A348-5018FC1A2B36-6393-0000046BACA188A0/1641168f9e39cdbd.jpeg]
 ![[1641168f9e39cdbd.jpeg]]
 
 * `AppKit` 的选择路径：
 
-[image:3BF7DBE7-D295-4DDB-A9D4-5E64E5D06012-6393-0000046BACA0196C/1641169724e97e73.jpeg]
 ![[1641169724e97e73.jpeg]]
 
 图中的描述非常清晰易读。需要注意的是， `UILabel` 用来展示较少的文本内容或者较少的行数，然而，在 `AppKit` 框架下是没有 `Label` 控件的，这时可以选择 `NSTextField` 控件，通过禁用文本编辑属性，来获得和 `UILabel` 一样的特性。
@@ -68,7 +64,6 @@ context: NSStringDrawingContext?)
 
 **最后，苹果还是不忘强调，如果使用了 string drawing，就会失去下图所示的文本控件提供的所有特性。因此，请尽可能地使用文本控件。**
 
-[image:82E1BF9A-34F8-48CB-BFB8-2B311C785766-6393-0000046BAC9E6FFA/164116b2d959a392.jpeg]
 ![[164116b2d959a392.jpeg]]
 
 ### 1.3 选择正确的定制要点
@@ -77,13 +72,12 @@ context: NSStringDrawingContext?)
 
 像 `Cocoa` 下的许多组件一样， `TextKit` 也是基于 “model - view - controller” 设计结构的。并且这三层又各自包含 storage、layout、和 display 模块：
 
-[image:616461D5-EB19-4E3F-8F97-61758FF02C87-6393-0000046BAC9CE751/164116c0c3fe8403.jpeg]
 ![[164116c0c3fe8403 1.jpeg]]
 
 * **`Storage`**
 深入了解一下各个部分的组成，首先是与 `Model` 层通信的 `Storage` 模块，它包含的 `NSTextStorage` 持有字符串的数据和属性信息。值得注意的是，它是 `MutableAttributedString` 的子类，因此使用方式和我们熟知的 `AttributedString` 一致。而 `NSTextContainer` 则负责模型化文本布局的地理位置、区域信息。
 
-[image:7B049057-4DF4-401F-9ED9-C8AB52BFFC7A-6393-0000046BAC9B5FC3/164116cff04c40bc.jpeg]
+
 ![[164116cff04c40bc 1.jpeg]]
 
 * **`Display`**
@@ -92,14 +86,12 @@ context: NSStringDrawingContext?)
 * **`Layout`**
 最后是 `Layout` 模块，它和 `Controller` 层进行通信。 `NSLayoutManager` 是这个模块唯一的组成部分。它的强大让苹果用“野兽”来形容。 **它是整个展示过程的“大脑”，控制自己的布局过程。**
 
-[image:2EBB8779-F925-4700-AD7D-80B1D65ABD93-6393-0000046BAC99ECB9/164116dfb4175b49.jpeg]
 ![[164116dfb4175b49 1.jpeg]]
 
 #### 1.3.2 布局过程
 
 这是文本布局过程的概览图：
 
-[image:0763E92F-04DD-42AC-AD0C-7318860CE612-6393-0000046BAC9857CE/164116e59a1e57b9.jpeg]
 ![[164116e59a1e57b9.jpeg]]
 
 * **属性修正**
@@ -110,15 +102,13 @@ context: NSStringDrawingContext?)
 
 `character` 中文译为“字符”，字符是可以转换为二进制存储的通用数据，而 `glyph` 可以译为字符的视觉表示符号。同一个 `character` 呈现在屏幕上，可以表现为不同的字体、视觉风格。而这些各异的视觉风格，就是由 `glyph` 来负责呈现， `glyph` 的生成，就是为指定了视觉效果（如字体）的字符确定展示所需的 `glyph` 的过程。下图是一个示例：
 
-[image:9DCA13D7-EA18-4A2C-BEB5-B934C04F6C5E-6393-0000046BAC9711C1/164117131de029a3.jpeg]
 ![[164117131de029a3.jpeg]]
 
 可以看到， `character` 和 `glyph` 的对应关系不总是一对一的。图中的字符串 “ffi” 由三个字符组成，但整个字符串可以由一个 `glyph` 表示。再看下图的例子，一个单独的字符 “n”，也可以由两个 `glyph` 来表示。
 
-[image:54E7DF87-5424-461E-AD1B-C01112AB9955-6393-0000046BAC95B2FF/1641171e785f7a4c.jpeg]
 ![[1641171e785f7a4c.jpeg]]
 
-> 关于这部分概念，提供一篇参考资料： [iOS 排版概念](https://link.juejin.im?target=https%3A%2F%2Fwww.jianshu.com%2Fp%2F8853174f574b)
+> 关于这部分概念，提供一篇参考资料： [iOS 排版概念](https://www.jianshu.com/p/8853174f574b)
 
 再回到布局过程的图示中来， `glyph` 布局，就是 `NSLayoutManager` 在视图上摆放 `glyph` 的过程。
 
@@ -126,19 +116,16 @@ context: NSStringDrawingContext?)
 
 如下图是 一个完整 `TextKit` 组件的标准配置结构： `Text Container` 持有 `Text View` 的弱引用，而 `Text View` 通过根 `Text Storage` 持有整个布局树结构。
 
-[image:1256BB03-F635-4CB1-A353-BA93A68F5BC2-6393-0000046BAC946F0C/1641172648ebeb98.jpeg]
 ![[1641172648ebeb98 1.jpeg]]
 
 如果有多个文本页面或者文本行需要布局，可以使用成对的 `Text Container` 和 `Text View` 组合，每一对组合对应一个页面或者一行。在这种情况下，我们可以 hook 同样的 container 和 text view 来共享布局信息。
 
-[image:66F76179-E0D4-4124-8D0B-9BC2B998EA8D-6393-0000046BAC932A91/1641172b8181af0a.jpeg]
 ![[1641172b8181af0a 1.jpeg]]
 
 文本内容被添加之后，它铺满由第一个 text container 定义的区域。文本在 text view 上和 text container 成对展示。 当没有剩余空间时，新的 container 连同 text view 一起被添加，并且文本在第二个页面或者文本行进行展示。
 
 多个 layout manager 允许你对同样的文本有多种不同的显示效果。这个文本在不同的视图上可以有彼此不同且独立的布局和分组，下图是这种模式下的结构示意和效果示意。方框内的文本内容相同，但展示效果是不同的。
 
-[image:E104C269-A2FD-46AF-9B71-B5571B07FE1B-6393-0000046BAC91DB1C/1641173bb442bccc.jpeg]
 ![[1641173bb442bccc 1.jpeg]]
 
 ### 1.5 选择正确的定制实现方式
@@ -164,19 +151,16 @@ context: NSStringDrawingContext?)
 
 这部分主要用来示意 `Choosing the right configuration` 这条理论。
 
-[image:9228D35A-6DCE-4559-924F-7A61354C5D9C-6393-0000046BAC9074BB/1641175fe77846b0.jpeg]
 ![[1641175fe77846b0.jpeg]]
 
 `TextEdit` 这个 app 支持富文本的展示、编辑，文本编辑部分的特性很像一个 textview，自然，它符合前面讲述的标准配置结构。值得注意的是，文本编辑部分支持分页展示，可以看到页面下滑时，textcontainer 被重新设置了尺寸，文本从第一页跳到了第二页。很自然，这是使用了多个 textcontainer 的 textview，但是依然由同一个 textstorge、layoutmanager 管理，他们允许文本自由地从一个 textcontainer 跳到另一个。下图即是它的配置结构图：
 
-[image:E8DAB80F-E65F-48BE-B5C1-6710C34F87B6-6393-0000046BAC8F087C/1641177235355318.jpeg]
 ![[1641177235355318.jpeg]]
 
 ### 2.3 Our Journal App on macOS
 
 这部分主要用来示意 `Choosing the right customization approach` 这条理论。
 
-[image:1BDB2383-A22C-432C-880A-91289873B307-6393-0000046BAC8DA672/1641177e18be8231.jpeg]
 ![[1641177e18be8231.jpeg]]
 
 #### 2.3.1 文本计数功能
@@ -187,7 +171,6 @@ context: NSStringDrawingContext?)
 
 当我们想强调一部分文字时，可以使用键盘快捷键或者菜单设置这部分字体为粗体。但是如果想支持例如 `markdown` 的标记语言，通过特定字符来指定特殊的格式，比如在文本前后加入一对双星号来使文本变化为粗体，该如何实现呢？在这个情景中，需要获取文本改变的时机和位置，通知机制并不便于提供足够的信息。所以这次使用“一记重锤” - 代理。遵守 `NSTextStorageDelegate` 协议，实现 `textStorage(_:didProcessEditing:range:changeInLength:)` 方法。在方法的实现中定义一个粗体字的 attribute ，添加给应该被粗体化的文本。这样一来，只要输入了一对双星号，就可以立马使文本变为粗体。
 
-[image:7409674B-50CA-40E6-9BA8-FE1A4375E4C8-6393-0000046BAC8C45D3/1641178da14ffb25.jpeg]
 ![[1641178da14ffb25.jpeg]]
 
 #### 2.3.3 代码片段文本
@@ -197,34 +180,28 @@ context: NSStringDrawingContext?)
 * 子类化 `NSTextStorage`
 子类继承 `NSTextStorage` ，实现四个强制实现的方法，特别是 `replaceCharacters(in:with:)` 方法。内部实现是将 `NSTextBlock` 赋值给 `ParagraphStyle` 然后把这个 `ParagraphStyle` 作为一个 `attribute` 添加到一个 `NSTextStorage` 中，注意对应的范围是代码块文本。
 
-[image:548FACE1-0A16-412C-989E-A75C0C335443-6393-0000046BAC8AEFA2/16411795bdcc60f6.jpeg]
 ![[16411795bdcc60f6.jpeg]]
 
 对于上面所述的 `NSTextBlock` ，需要了解的是 `NSTextBlock` 不会去定制化绘制它自己，所以我们需要一个它的子类去完成这件事： `CodeBlock` 类继承自 `NSTextBlock` ，在它的初始化方法中设置背景的衬垫，或者通过覆写 `drawBackground` 方法，使用 StringDrawing 去绘制 “Swift Code” 这个标题。
 
-[image:07427A7C-0BEC-4722-8EB8-69A1FC49D3ED-6393-0000046BAC89A69E/1641179bc9812b3c.jpeg]
 ![[1641179bc9812b3c.jpeg]]
 
 这样一来这个文本块看起来就像一个代码块了。再回到继承自 `TextStorage` 的 `CustomTextStorage` ，我们可以把 `TextBlocks` 属性赋值为刚刚添加的 `CodeBlock` 。
 
-[image:FC0C05F3-B086-4443-A08F-B262978F5A5E-6393-0000046BAC885537/164117a027949530.jpeg]
 ![[164117a027949530.jpeg]]
 
 最后，我们需要让 textview 使用全新的 `CustomTextStorage` ，所以我们为 `LayoutManager` 替换 storage。
 
-[image:E394D477-C08A-4D67-9949-44A97BE7625B-6393-0000046BAC870D27/164117a39ace04cf.jpeg]
 ![[164117a39ace04cf.jpeg]]
 
 #### 2.3.4 markdown效果预览视图
 
 这样一来，基本完成了一个支持 markdown 格式的编辑器。除此之外，一般 markdown 编辑器还有一个很实用的功能 - 两个并排布局的视图，一个用来输入文本，一个预览效果，如图所示：
 
-[image:5EF2A04D-96BE-4C6D-9ED8-93E60D2C331E-6393-0000046BAC859DE3/164117aaeb3b2167.jpeg]
 ![[164117aaeb3b2167.jpeg]]
 
 我们可以使用两个并排的 textview 来实现，只需要禁用用于预览的 textview 的文本编辑功能。它们展示一样的内容，但是右边的样式会特别一些。使用的配置如图：
 
-[image:5C2A49B0-8862-4234-AF01-82B8021F69CF-6393-0000046BAC8426E7/164117ae88ed22fd.jpeg]
 ![[164117ae88ed22fd.jpeg]]
 
 storage 是同一个，因为展示一样的内容。但是其他的部分都是两套，并且用左边 view 的 textstorage 为右边 view 的 layoutmanager 的 `replaceTextStorage` 赋值。这样的效果是什么呢？一旦在一边编辑了文本，效果会在两边同时展示。但是一般在预览视图内我们是不希望显示 markdown 格式控制相关字符的，比如双星号 `**` 和 引用符号 `>` 等。由于是共享的同一个 textstorge，这就意味着我们必须在后面的过程中（布局过程）隐藏这些字符。为了完成这个操作，就有了一个自然而然的选项--代理：遵守 `NSLayoutManagerDelegate` 代理协议，实现 `layoutManager(_:shouldGenerateGlyphs:properties: characterIndexes:font:forGlyphRange:)` 代理方法，我们可以获取到将要被布局的 glyphs，如果它是用来表示 markdown 字符的 glyph，把它赋值为空。最后，把处理过的 glyphs 回传。这样一来，左边展示可编辑的包含 markdown 控制字符的文本，右边展示去除了 markdown 控制字符的效果文本。虽然事实上一个 markdown 编辑器并不是这样处理，但这是一个定制 `TextKit` 的很好的例子。
@@ -235,22 +212,19 @@ storage 是同一个，因为展示一样的内容。但是其他的部分都是
 
 ### 3.1 熟知默认 attribute
 
-[image:2A8801A9-0EF3-4E59-AFAE-563FD42E531A-6393-0000046BAC82D38F/164117baaf3![[164117baaf3d4c9a.jpeg]]d4c9a.jpeg]
+![[164117baaf3d4c9a.jpeg]]
 
 
 在这个例子中，我们需要完成一个如上图的文本展示。它当前的字体是 24 号的 `Comic Sans MS` 。给 `don't` 这部分文本设置粗体的 attribute 之后，我们发现剩余的文本（即 `hate` ）丢失了原本的字体设置。这是因为初始化 `AttributedString` 时，没有提供 attribute 设置参数，那么系统便会使用默认的设置。在这个案例中，使用默认设置初始化了文本，然后对 `don't` 部分进行了单独设置，自然 `hate` 部分就使用了默认的设置。
 
-[image:8CC8E12D-EC90-4745-9267-9EBC03C7D3A8-6393-0000046BAC815CC7/164117c1d2022bcc.jpeg]
 ![[164117c1d2022bcc.jpeg]]
 
 我们有两种方式来解决这件事。一种是避免将整个文本同时进行设置，而是对于 `don‘t` 设置粗体，对于 `hate` 设置 `Comic Sans MS` ，但这样比较繁琐。所以另一种是初始化 AttributedString 时，附带原有字体的参数，然后对 `don‘t` 部分再行设置。
 
-[image:13FAC3FC-EA74-4393-A183-BDC823F0287E-6393-0000046BAC7FFE1D/164117c552f4a6b0.jpeg]
 ![[164117c552f4a6b0.jpeg]]
 
 除了字体外，我们还需要了解其他属性的默认值。
 
-[image:5C59D728-47DE-4C22-8D3C-075B7E29AB8E-6393-0000046BAC7E8E14/164117c952ba392c.jpeg]
 ![[164117c952ba392c.jpeg]]
 
 ### 3.2 使用准确的属性描述
@@ -263,7 +237,6 @@ storage 是同一个，因为展示一样的内容。但是其他的部分都是
 
 为了理解它，回到我们的老朋友 - 布局过程。glyph 生成之后进行 glyph 布局。对于大段文本，如果使用整体的布局，那么 LayoutManager 必须完成所有的 glyph 生成、布局过程，这样一来，如果有大段文本的话你就需要长时间地等待。
 
-[image:0FF0ABF5-68BA-4700-B50B-6444BC5AC793-6393-0000046BAC7D2139/164117cd1d618e4d.jpeg]
 ![[164117cd1d618e4d.jpeg]]
 
 对于 `NSTextView` ，你可以通过设置 `allowsNonContiguousLayout` 属性来支持间断布局。
@@ -276,7 +249,6 @@ storage 是同一个，因为展示一样的内容。但是其他的部分都是
 
 这里苹果给出了一个形象的例子：开发者就像武装的士兵，而 iOS、Mac OS 就像坚固的堡垒，士兵和堡垒共同组成了坚固的安全性防御工事。这就意味着，iOS 应用的安全性需要开发者和苹果共同协作。
 
-[image:5F7DD7AE-1E63-492D-AF85-F5AFBF95DDB2-6393-0000046BAC7BA28D/164117d204a7b20b.jpeg]
 ![[164117d204a7b20b.jpeg]]
 
 为此，苹果为开发者提供了一条准则：
@@ -292,7 +264,6 @@ storage 是同一个，因为展示一样的内容。但是其他的部分都是
 
 最后，用一张图来总结这个 session 的内容：
 
-[image:F4634F99-CE86-4129-81FC-456DA4D78E94-6393-0000046BAC790C56/164117d593a9bfeb.jpeg]
 ![[164117d593a9bfeb.jpeg]]
 
 > *查看更多 WWDC 18 相关文章请前往* [老司机x知识小集xSwiftGG WWDC 18 专题目录](https://link.juejin.im?target=https%3A%2F%2Fwww.jianshu.com%2Fp%2F6f95f7631d36)

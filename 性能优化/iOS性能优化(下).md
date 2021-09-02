@@ -1,6 +1,7 @@
 该篇延续上篇关于iOS性能优化剩余的两点做讲解：
 4 优化建议（启动、界面、耗能等）
-5 应用瘦身
+[[应用瘦身]]
+
 # 4. 优化建议（启动、界面、耗能等）
 启动相关知识 启动分为2种： 冷启动和热启动 启动的时间分为两部分：main函数执行之前、main函数至应用启动完成
 ### 4.1 启动优化建议
@@ -55,40 +56,3 @@ _fpsLabel.right = KScreenWidth - 10;
 
 ```
 如果界面比较复杂的，建议使用AsyncDisplayKit做控件绘制，而不是苹果自带的autolayout。
-# 5. 应用瘦身
-### 5.1 资源瘦身
-[image:E51CA8C8-B88D-469C-A7F8-0920FEFB61EA-439-0000240F728344E0/fdff25e413a64e0b94b664b15dfb118b~tplv-k3u1fbpfcp-watermark.image.png]
-![[fdff25e413a64e0b94b664b15dfb118b~tplv-k3u1fbpfcp-watermark.image.png]]
-
-### 5.1.1 无损压缩: 格式工厂、图片压缩  tinypng.com/ 
-### 5.1.2 查看静态库支持的CPU架构
-
-[tinypng.com/](https://tinypng.com/)
-lipo -info libname.a (或libname.framework/libname)
-复制代码
-合并静态库
-```shell
-lipo  -create  libname-armv7.a   libname-armv7s.a   libname-i386.a  -output  libname.a
-```
-
-### 5.1.3 静态库拆分
-```shell
-lipo  libname.a  -thin  armv7  -output  libname-armv7.a
-```
-
-### 5.1.4 编译器优化
-
-1. Strip Linked Product、Make Strings Read-Only、Symbols Hidden by Default设置为YES
-
-2. 去掉异常支持，Enable C++ Exceptions、Enable Objective-C Exceptions设置为NO， Other C Flags添加-fno-exceptions
-
-### 5.2 linkmap解析工具
- [github.com/huanxsd/Lin…](https://github.com/huanxsd/LinkMap) 
-1.在XCode中开启编译选项Write Link Map File
-XCode -> Project -> Build Settings -> 把Write Link Map File选项设为yes，并指定好linkMap的存储位置
-
-2.工程编译完成后，在编译目录里找到Link Map文件（txt类型) 默认的文件地址：
-~/Library/Developer/Xcode/DerivedData/XXX-xxxxxx/Build/Intermediates/XXX.build/Debug-iphoneos/XXX.build/
-复制代码
-[image:4E75319B-E26B-4961-B5D8-F674EF5D922E-439-0000240F72358701/198b853a6aab4dd7b70ed562d4b40d62~tplv-k3u1fbpfcp-watermark.image.png]
-![[198b853a6aab4dd7b70ed562d4b40d62~tplv-k3u1fbpfcp-watermark.image.png]]

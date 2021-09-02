@@ -1,15 +1,15 @@
-前言
+## 前言
 为了防止一个应用占用过多的系统资源，苹果设计了一个“看门狗”( `watchdog` )的机制。在不同的场景下，“看门狗”会监测应用的性能。如果超出了该场景所规定的运行时间，“看门狗”就会强制终结这个应用的进程。开发者们在 `crashlog` 里面，会看到诸如 `0x8badf00d` 这样的错误代码。异常代码：“ `0x8badf00d` ”，即“ `ate bad food` ”。
 
-[苹果开发文档原文](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Farchive%2Ftechnotes%2Ftn2151%2F_index.html) ：
+[苹果开发文档原文](https://developer.apple.com/library/archive/technotes/tn2151/_index.html) ：
 
-> The exception code `0x8badf00d` indicates that an application has been terminated by iOS because a watchdog timeout occurred. The application took too long to launch, terminate, or respond to system events. One common cause of this is doing [synchronous networking on the main thread](https://links.jianshu.com/go?to=http%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fios%2Fqa%2Fqa1693%2F).
+> The exception code `0x8badf00d` indicates that an application has been terminated by iOS because a watchdog timeout occurred. The application took too long to launch, terminate, or respond to system events. One common cause of this is doing [synchronous networking on the main thread](http://developer.apple.com/library/ios/qa/qa1693/).
 > Whatever operation is on `Thread 0` needs to be moved to a background thread, or processed differently, so that it does not block the main thread.
 
 大致意思是说：如果我们的应用程序对一些特定的UI事件（比如启动、挂起、恢复、结束）响应不及时， `Watchdog` 会把我们的应用程序干掉，并生成一份响应的 `crash` 报告。
 
 ## 遇到的问题
-
+ 
 应用 100% `Loss` 时完全无法启动，一直崩溃。彻底切断网络连接正常启动，调试模式状态下等待时间非常久，但可以启动，并伴随 `UI` 微卡。强烈的预感这是线程阻塞。
 
 `注` ：用 `Xcode debug` 时 `watchdog` 并不运行，一定要把设备从 `Xcode` 断开来测试启动速度。
@@ -50,9 +50,9 @@
 
 ## 参考文章
 
-[主线程上的同步网络请求](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fios%2Fqa%2Fqa1693%2F_index.html)
-[调试模式不发生崩溃](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fios%2Fqa%2Fqa1592%2F_index.html)
+[主线程上的同步网络请求](https://developer.apple.com/library/ios/qa/qa1693/_index.html)
+[调试模式不发生崩溃](https://developer.apple.com/library/ios/qa/qa1592/_index.html)
 [iOS的看门狗(watchdog)机制](https://www.jianshu.com/p/7f2ebc63c790)
-[iOS的看门狗机制](https://links.jianshu.com/go?to=https%3A%2F%2Fckitakishi.com%2F2016%2F08%2F17%2FWatchDog-%25E6%259C%25BA%25E5%2588%25B6%2F)
+[iOS的看门狗机制](https://ckitakishi.com/2016/08/17/WatchDog-%E6%9C%BA%E5%88%B6/)
 
 [iOS watchdog (看门狗机制) - 简书](https://www.jianshu.com/p/6cf4aeced795)

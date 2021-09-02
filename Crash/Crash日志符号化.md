@@ -1,12 +1,48 @@
-# 获取crash日志文件
+#crash 
 
-* 线上App的Crash日志经由Crash日志收集服务获得(主要来源)。
+# 堆栈符号解析
 
-* 也可以从真机上获取Crash日志文件。点击Window -> Devices，选择你自己的机器，然后点击View Device Logs，右键可以导出Crash文件。
+分为两种情景讨论：
 
-* 获取的这些日志文件都需要符号化处理。
+1、Crash收集上报的堆栈信息解析
+这种信息一般还原度比较高，基本上都能给出崩溃的具体定位信息，一些需要解析堆栈符号的解决方法
 
-# symbolicatecrash
+异常信息有三种类型：
+1. 已标记错误位置的:
+```
+test 0x000000010bfddd8c -[ViewController viewDidLoad] + 8588
+```
+这种信息已经很明确了，不用解析
+
+2. 有模块地址的情况：
+```
+test 0x00000001018157dc 0x100064000 + 24844252
+```
+
+以上面为例子，从左到右依次是：
+
+二进制库名(test) 调用方法的地址(0x00000001018157dc) 模块地址(0x100064000) +偏移地址(24844252)
+
+3. 无模块地址的情况：
+```
+test 0x00000001018157dc test + 24844252
+```
+
+无模块地址的情况下计算模块地址
+
+1. 先将偏移地址转为16进制：
+
+		24844252 = 0x17B17DC
+
+2. 然后用方法的地址-偏移地址，得到的就是模块地址
+
+		0x00000001018157dc - 0x17B17DC = 0x100064000
+
+
+[[符号表dSYM#如何获取符号表dSYM|获取符号表dSYM]]
+
+# 解析工具
+## symbolicatecrash
 1. 将symbolicatecrash、.dSYM、.app、crash.crash拷贝到桌面下同一个文件夹下
 
 2. 检查 xx.app 和 xx.app.dSYM 文件以及crash 文件这三种的 UUID是否一致。
@@ -35,7 +71,11 @@ dwarfdump --uuid xx.app.dSYM
 
 **说明** ：如果执行symbolicatecrash命令出现 *Error: "DEVELOPER_DIR" is not defined at ./symbolicatecrash...* 这样的错误，可以在执行命令前，输入 **export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer"**
 
-# atos命令
+## atos命令
+
+```shell
+atos [-arch 架构名] [-o 符号表] [-l 模块地址] [方法地址]
+```
 
 在符号化时候，还可以使用atos命令。发现armv7处理器上的crash使用symbolicatecrash无法符号化。
 

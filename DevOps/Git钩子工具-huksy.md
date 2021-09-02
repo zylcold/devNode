@@ -1,3 +1,5 @@
+#git #devops 
+
 ### 安装huksy
 
 ```

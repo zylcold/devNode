@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Crash/watchdog (看门狗机制).md",
-            "mode": "source"
+            "file": "iOS 要点.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Crash/watchdog (看门狗机制).md",
+                "file": "iOS 要点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "6bc6189f11e7c809",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Crash/Mach异常.md",
-    "Crash/Crash相关.md",
-    "Crash/Objective-C异常.md",
-    "Crash/浅谈Crash.md",
-    "Crash/苹果Crash收集服务.md",
-    "苹果Crash收集服务.md",
-    "SIGFPE.md",
-    "SIGPIPE.md",
-    "SIGSEGV.md"
+    "iOS 要点.md",
+    "简介.md",
+    "应用瘦身.md",
+    "WebView/深入浅出 JavaScriptCore.md",
+    "性能优化/耗电优化.md",
+    "性能优化/卡顿优化.md",
+    "性能优化/iOS离屏渲染.md",
+    "性能优化/iOS性能优化(下).md",
+    "性能优化/iOS性能优化(上).md",
+    "Untitled.md"
   ]
 }

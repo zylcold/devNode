@@ -1,0 +1,857 @@
+[0;1;32mTranslationUnitDecl[0m[0;33m 0x7fcb8503ea08[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8503f2d8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __int128_t[0m [0;32m'__int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503efa0[0m [0;32m'__int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8503f348[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __uint128_t[0m [0;32m'unsigned __int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503efc0[0m [0;32m'unsigned __int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8503f668[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __NSConstantString[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m| `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8503f420[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m|   `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8503f3a0[0m[0;1;36m '__NSConstantString_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8503f710[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_ms_va_list[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x7fcb8503f6c0[0m [0;32m'char *'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eaa0[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843820[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit referenced[0;1;36m __builtin_va_list[0m [0;32m'struct __va_list_tag [1]'[0m
+[0;34m| `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fcb8503f9b0[0m [0;32m'struct __va_list_tag [1]'[0m 1 
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8503f7f0[0m [0;32m'struct __va_list_tag'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8503f768[0m[0;1;36m '__va_list_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843890[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/i386/_types.h:37:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __int8_t[0m [0;32m'signed char'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eac0[0m [0;32m'signed char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843900[0m <[0;33mline:41:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __uint8_t[0m [0;32m'unsigned char'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb60[0m [0;32m'unsigned char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843970[0m <[0;33mline:42:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __int16_t[0m [0;32m'short'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eae0[0m [0;32m'short'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858439e0[0m <[0;33mline:43:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __uint16_t[0m [0;32m'unsigned short'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb80[0m [0;32m'unsigned short'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843a50[0m <[0;33mline:44:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __int32_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843ac0[0m <[0;33mline:45:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __uint32_t[0m [0;32m'unsigned int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843b30[0m <[0;33mline:46:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __int64_t[0m [0;32m'long long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843ba0[0m <[0;33mline:47:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __uint64_t[0m [0;32m'unsigned long long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843c10[0m <[0;33mline:49:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_intptr_t[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843c80[0m <[0;33mline:50:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_natural_t[0m [0;32m'unsigned int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843cf0[0m <[0;33mline:70:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_ct_rune_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb85843d48[0m <[0;33mline:76:9[0m, [0;33mline:79:1[0m> [0;33mline:76:9[0m union definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb85843e90[0m <[0;33mline:77:2[0m, [0;33mcol:32[0m> [0;33mcol:18[0m[0;1;36m __mbstate8[0m [0;32m'char [128]'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb85843ef8[0m <[0;33mline:78:2[0m, [0;33mcol:18[0m> [0;33mcol:18[0m[0;1;36m _mbstateL[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85843fb0[0m <[0;33mline:76:1[0m, [0;33mline:79:3[0m> [0;33mcol:3[0m referenced[0;1;36m __mbstate_t[0m [0;32m'union __mbstate_t':'__mbstate_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb85843f50[0m [0;32m'union __mbstate_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb85843dd0[0m [0;32m'__mbstate_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb85843d48[0m[0;1;36m ''[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844058[0m <[0;33mline:81:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_mbstate_t[0m [0;32m'__mbstate_t':'__mbstate_t'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844020[0m [0;32m'__mbstate_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843fb0[0m[0;1;36m '__mbstate_t'[0m
+[0;34m|   `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb85843f50[0m [0;32m'union __mbstate_t'[0m sugar
+[0;34m|     `-[0m[0;32mRecordType[0m[0;33m 0x7fcb85843dd0[0m [0;32m'__mbstate_t'[0m
+[0;34m|       `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb85843d48[0m[0;1;36m ''[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858440c8[0m <[0;33mline:84:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_ptrdiff_t[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844138[0m <[0;33mline:92:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_size_t[0m [0;32m'unsigned long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebc0[0m [0;32m'unsigned long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858441c8[0m <[0;33mline:98:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_va_list[0m [0;32m'__builtin_va_list':'struct __va_list_tag [1]'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844190[0m [0;32m'__builtin_va_list'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843820[0m[0;1;36m '__builtin_va_list'[0m
+[0;34m|   `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fcb8503f9b0[0m [0;32m'struct __va_list_tag [1]'[0m 1 
+[0;34m|     `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8503f7f0[0m [0;32m'struct __va_list_tag'[0m
+[0;34m|       `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8503f768[0m[0;1;36m '__va_list_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844238[0m <[0;33mline:104:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_wchar_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858442c8[0m <[0;33mline:109:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_rune_t[0m [0;32m'__darwin_wchar_t':'int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844290[0m [0;32m'__darwin_wchar_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85844238[0m[0;1;36m '__darwin_wchar_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844338[0m <[0;33mline:112:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_wint_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858443a8[0m <[0;33mline:117:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_clock_t[0m [0;32m'unsigned long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebc0[0m [0;32m'unsigned long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844438[0m <[0;33mline:118:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_socklen_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858444a8[0m <[0;33mline:119:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m __darwin_ssize_t[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844518[0m <[0;33mline:120:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __darwin_time_t[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858445a8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types.h:55:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_blkcnt_t[0m [0;32m'__int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844570[0m [0;32m'__int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843b30[0m[0;1;36m '__int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844638[0m <[0;33mline:56:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_blksize_t[0m [0;32m'__int32_t':'int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844600[0m [0;32m'__int32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843a50[0m[0;1;36m '__int32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb858446a0[0m <[0;33mline:57:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_dev_t[0m [0;32m'__int32_t':'int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844600[0m [0;32m'__int32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843a50[0m[0;1;36m '__int32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844710[0m <[0;33mline:58:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_fsblkcnt_t[0m [0;32m'unsigned int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85844780[0m <[0;33mline:59:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_fsfilcnt_t[0m [0;32m'unsigned int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866a00[0m <[0;33mline:60:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_gid_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866a68[0m <[0;33mline:61:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_id_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866af8[0m <[0;33mline:62:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m referenced[0;1;36m __darwin_ino64_t[0m [0;32m'__uint64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866ac0[0m [0;32m'__uint64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ba0[0m[0;1;36m '__uint64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866b88[0m <[0;33mline:64:1[0m, [0;33mcol:26[0m> [0;33mcol:26[0m[0;1;36m __darwin_ino_t[0m [0;32m'__darwin_ino64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866b50[0m [0;32m'__darwin_ino64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb87866af8[0m[0;1;36m '__darwin_ino64_t'[0m
+[0;34m|   `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866ac0[0m [0;32m'__uint64_t'[0m sugar
+[0;34m|     |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ba0[0m[0;1;36m '__uint64_t'[0m
+[0;34m|     `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866c18[0m <[0;33mline:68:1[0m, [0;33mcol:28[0m> [0;33mcol:28[0m referenced[0;1;36m __darwin_mach_port_name_t[0m [0;32m'__darwin_natural_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866be0[0m [0;32m'__darwin_natural_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843c80[0m[0;1;36m '__darwin_natural_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866ca8[0m <[0;33mline:69:1[0m, [0;33mcol:35[0m> [0;33mcol:35[0m[0;1;36m __darwin_mach_port_t[0m [0;32m'__darwin_mach_port_name_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866c70[0m [0;32m'__darwin_mach_port_name_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb87866c18[0m[0;1;36m '__darwin_mach_port_name_t'[0m
+[0;34m|   `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866be0[0m [0;32m'__darwin_natural_t'[0m sugar
+[0;34m|     |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843c80[0m[0;1;36m '__darwin_natural_t'[0m
+[0;34m|     `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866d38[0m <[0;33mline:70:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_mode_t[0m [0;32m'__uint16_t':'unsigned short'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb87866d00[0m [0;32m'__uint16_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb858439e0[0m[0;1;36m '__uint16_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb80[0m [0;32m'unsigned short'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866da0[0m <[0;33mline:71:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m referenced[0;1;36m __darwin_off_t[0m [0;32m'__int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844570[0m [0;32m'__int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843b30[0m[0;1;36m '__int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866e08[0m <[0;33mline:72:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_pid_t[0m [0;32m'__int32_t':'int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844600[0m [0;32m'__int32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843a50[0m[0;1;36m '__int32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866e70[0m <[0;33mline:73:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_sigset_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866ed8[0m <[0;33mline:74:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_suseconds_t[0m [0;32m'__int32_t':'int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844600[0m [0;32m'__int32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843a50[0m[0;1;36m '__int32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866f40[0m <[0;33mline:75:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_uid_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87866fa8[0m <[0;33mline:76:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m[0;1;36m __darwin_useconds_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb878670a8[0m <[0;33mline:77:1[0m, [0;33mcol:43[0m> [0;33mcol:25[0m[0;1;36m __darwin_uuid_t[0m [0;32m'unsigned char [16]'[0m
+[0;34m| `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fcb87867040[0m [0;32m'unsigned char [16]'[0m 16 
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb60[0m [0;32m'unsigned char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb878671a0[0m <[0;33mline:78:1[0m, [0;33mcol:42[0m> [0;33mcol:17[0m[0;1;36m __darwin_uuid_string_t[0m [0;32m'char [37]'[0m
+[0;34m| `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fcb87867140[0m [0;32m'char [37]'[0m 37 
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eaa0[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb878671f8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h:57:1[0m, [0;33mline:61:1[0m> [0;33mline:57:8[0m struct[0;1;36m __darwin_pthread_handler_rec[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87867450[0m <[0;33mline:58:2[0m, [0;33mcol:26[0m> [0;33mcol:9[0m[0;1;36m __routine[0m [0;32m'void (*)(void *)'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb878674b8[0m <[0;33mline:59:2[0m, [0;33mcol:8[0m> [0;33mcol:8[0m[0;1;36m __arg[0m [0;32m'void *'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb878675f0[0m <[0;33mline:60:2[0m, [0;33mcol:39[0m> [0;33mcol:39[0m[0;1;36m __next[0m [0;32m'struct __darwin_pthread_handler_rec *'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb87867640[0m <[0;33mline:63:1[0m, [0;33mline:66:1[0m> [0;33mline:63:8[0m struct[0;1;36m _opaque_pthread_attr_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87867700[0m <[0;33mline:64:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb878677f0[0m <[0;33mline:65:2[0m, [0;33mcol:37[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [56]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb87867840[0m <[0;33mline:68:1[0m, [0;33mline:71:1[0m> [0;33mline:68:8[0m struct[0;1;36m _opaque_pthread_cond_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87867900[0m <[0;33mline:69:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b000[0m <[0;33mline:70:2[0m, [0;33mcol:37[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [40]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b050[0m <[0;33mline:73:1[0m, [0;33mline:76:1[0m> [0;33mline:73:8[0m struct[0;1;36m _opaque_pthread_condattr_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b110[0m <[0;33mline:74:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b200[0m <[0;33mline:75:2[0m, [0;33mcol:41[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [8]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b250[0m <[0;33mline:78:1[0m, [0;33mline:81:1[0m> [0;33mline:78:8[0m struct[0;1;36m _opaque_pthread_mutex_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b310[0m <[0;33mline:79:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b3b8[0m <[0;33mline:80:2[0m, [0;33mcol:38[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [56]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b408[0m <[0;33mline:83:1[0m, [0;33mline:86:1[0m> [0;33mline:83:8[0m struct[0;1;36m _opaque_pthread_mutexattr_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b4d0[0m <[0;33mline:84:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b578[0m <[0;33mline:85:2[0m, [0;33mcol:42[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [8]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b5c8[0m <[0;33mline:88:1[0m, [0;33mline:91:1[0m> [0;33mline:88:8[0m struct[0;1;36m _opaque_pthread_once_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b690[0m <[0;33mline:89:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b738[0m <[0;33mline:90:2[0m, [0;33mcol:37[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [8]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b788[0m <[0;33mline:93:1[0m, [0;33mline:96:1[0m> [0;33mline:93:8[0m struct[0;1;36m _opaque_pthread_rwlock_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b850[0m <[0;33mline:94:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786b940[0m <[0;33mline:95:2[0m, [0;33mcol:39[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [192]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786b990[0m <[0;33mline:98:1[0m, [0;33mline:101:1[0m> [0;33mline:98:8[0m struct[0;1;36m _opaque_pthread_rwlockattr_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786ba50[0m <[0;33mline:99:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786bb40[0m <[0;33mline:100:2[0m, [0;33mcol:43[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [16]'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8786bb90[0m <[0;33mline:103:1[0m, [0;33mline:107:1[0m> [0;33mline:103:8[0m struct[0;1;36m _opaque_pthread_t[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786bc50[0m <[0;33mline:104:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m __sig[0m [0;32m'long'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786bcc8[0m <[0;33mline:105:2[0m, [0;33mcol:40[0m> [0;33mcol:40[0m[0;1;36m __cleanup_stack[0m [0;32m'struct __darwin_pthread_handler_rec *'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8786bdb0[0m <[0;33mline:106:2[0m, [0;33mcol:32[0m> [0;33mcol:7[0m[0;1;36m __opaque[0m [0;32m'char [8176]'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786be58[0m <[0;33mline:109:1[0m, [0;33mcol:39[0m> [0;33mcol:39[0m[0;1;36m __darwin_pthread_attr_t[0m [0;32m'struct _opaque_pthread_attr_t':'struct _opaque_pthread_attr_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786be00[0m [0;32m'struct _opaque_pthread_attr_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb878676c0[0m [0;32m'struct _opaque_pthread_attr_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb87867640[0m[0;1;36m '_opaque_pthread_attr_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786bf08[0m <[0;33mline:110:1[0m, [0;33mcol:39[0m> [0;33mcol:39[0m[0;1;36m __darwin_pthread_cond_t[0m [0;32m'struct _opaque_pthread_cond_t':'struct _opaque_pthread_cond_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786beb0[0m [0;32m'struct _opaque_pthread_cond_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb878678c0[0m [0;32m'struct _opaque_pthread_cond_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb87867840[0m[0;1;36m '_opaque_pthread_cond_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c000[0m <[0;33mline:111:1[0m, [0;33mcol:43[0m> [0;33mcol:43[0m[0;1;36m __darwin_pthread_condattr_t[0m [0;32m'struct _opaque_pthread_condattr_t':'struct _opaque_pthread_condattr_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786bf60[0m [0;32m'struct _opaque_pthread_condattr_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786b0d0[0m [0;32m'struct _opaque_pthread_condattr_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b050[0m[0;1;36m '_opaque_pthread_condattr_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c070[0m <[0;33mline:112:1[0m, [0;33mcol:23[0m> [0;33mcol:23[0m[0;1;36m __darwin_pthread_key_t[0m [0;32m'unsigned long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebc0[0m [0;32m'unsigned long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c128[0m <[0;33mline:113:1[0m, [0;33mcol:40[0m> [0;33mcol:40[0m[0;1;36m __darwin_pthread_mutex_t[0m [0;32m'struct _opaque_pthread_mutex_t':'struct _opaque_pthread_mutex_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c0d0[0m [0;32m'struct _opaque_pthread_mutex_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786b2d0[0m [0;32m'struct _opaque_pthread_mutex_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b250[0m[0;1;36m '_opaque_pthread_mutex_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c1d8[0m <[0;33mline:114:1[0m, [0;33mcol:44[0m> [0;33mcol:44[0m[0;1;36m __darwin_pthread_mutexattr_t[0m [0;32m'struct _opaque_pthread_mutexattr_t':'struct _opaque_pthread_mutexattr_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c180[0m [0;32m'struct _opaque_pthread_mutexattr_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786b490[0m [0;32m'struct _opaque_pthread_mutexattr_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b408[0m[0;1;36m '_opaque_pthread_mutexattr_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c288[0m <[0;33mline:115:1[0m, [0;33mcol:39[0m> [0;33mcol:39[0m[0;1;36m __darwin_pthread_once_t[0m [0;32m'struct _opaque_pthread_once_t':'struct _opaque_pthread_once_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c230[0m [0;32m'struct _opaque_pthread_once_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786b650[0m [0;32m'struct _opaque_pthread_once_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b5c8[0m[0;1;36m '_opaque_pthread_once_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c338[0m <[0;33mline:116:1[0m, [0;33mcol:41[0m> [0;33mcol:41[0m[0;1;36m __darwin_pthread_rwlock_t[0m [0;32m'struct _opaque_pthread_rwlock_t':'struct _opaque_pthread_rwlock_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c2e0[0m [0;32m'struct _opaque_pthread_rwlock_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786b810[0m [0;32m'struct _opaque_pthread_rwlock_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b788[0m[0;1;36m '_opaque_pthread_rwlock_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c3e8[0m <[0;33mline:117:1[0m, [0;33mcol:45[0m> [0;33mcol:45[0m[0;1;36m __darwin_pthread_rwlockattr_t[0m [0;32m'struct _opaque_pthread_rwlockattr_t':'struct _opaque_pthread_rwlockattr_t'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c390[0m [0;32m'struct _opaque_pthread_rwlockattr_t'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786ba10[0m [0;32m'struct _opaque_pthread_rwlockattr_t'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786b990[0m[0;1;36m '_opaque_pthread_rwlockattr_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c520[0m <[0;33mline:118:1[0m, [0;33mcol:35[0m> [0;33mcol:35[0m[0;1;36m __darwin_pthread_t[0m [0;32m'struct _opaque_pthread_t *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x7fcb8786c4c0[0m [0;32m'struct _opaque_pthread_t *'[0m
+[0;34m|   `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb8786c440[0m [0;32m'struct _opaque_pthread_t'[0m sugar
+[0;34m|     `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8786bc10[0m [0;32m'struct _opaque_pthread_t'[0m
+[0;34m|       `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8786bb90[0m[0;1;36m '_opaque_pthread_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c590[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types.h:40:1[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m __darwin_nl_item[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c600[0m <[0;33mline:41:1[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m __darwin_wctrans_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c668[0m <[0;33mline:43:1[0m, [0;33mcol:20[0m> [0;33mcol:20[0m[0;1;36m __darwin_wctype_t[0m [0;32m'__uint32_t':'unsigned int'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844400[0m [0;32m'__uint32_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843ac0[0m[0;1;36m '__uint32_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c6d8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h:30:1[0m, [0;33mcol:31[0m> [0;33mcol:31[0m[0;1;36m int8_t[0m [0;32m'signed char'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eac0[0m [0;32m'signed char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c748[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m int16_t[0m [0;32m'short'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eae0[0m [0;32m'short'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c7b8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m int32_t[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb00[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c828[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m int64_t[0m [0;32m'long long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c898[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m u_int8_t[0m [0;32m'unsigned char'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb60[0m [0;32m'unsigned char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c908[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h:30:1[0m, [0;33mcol:41[0m> [0;33mcol:41[0m[0;1;36m u_int16_t[0m [0;32m'unsigned short'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb80[0m [0;32m'unsigned short'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c978[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m u_int32_t[0m [0;32m'unsigned int'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eba0[0m [0;32m'unsigned int'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786c9e8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m u_int64_t[0m [0;32m'unsigned long long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786ca78[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/i386/types.h:87:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m register_t[0m [0;32m'int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786ca40[0m [0;32m'int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c828[0m[0;1;36m 'int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cb08[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h:32:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m intptr_t[0m [0;32m'__darwin_intptr_t':'long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cad0[0m [0;32m'__darwin_intptr_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843c10[0m[0;1;36m '__darwin_intptr_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cb78[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h:30:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m uintptr_t[0m [0;32m'unsigned long'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebc0[0m [0;32m'unsigned long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cc08[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/i386/types.h:97:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_addr_t[0m [0;32m'u_int64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cbd0[0m [0;32m'u_int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c9e8[0m[0;1;36m 'u_int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cc70[0m <[0;33mline:98:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_size_t[0m [0;32m'u_int64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cbd0[0m [0;32m'u_int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c9e8[0m[0;1;36m 'u_int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786ccd8[0m <[0;33mline:99:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_ssize_t[0m [0;32m'int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786ca40[0m [0;32m'int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c828[0m[0;1;36m 'int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cd40[0m <[0;33mline:100:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_long_t[0m [0;32m'int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786ca40[0m [0;32m'int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c828[0m[0;1;36m 'int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cda8[0m <[0;33mline:101:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_ulong_t[0m [0;32m'u_int64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cbd0[0m [0;32m'u_int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c9e8[0m[0;1;36m 'u_int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786ce10[0m <[0;33mline:102:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_time_t[0m [0;32m'int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786ca40[0m [0;32m'int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c828[0m[0;1;36m 'int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786ce78[0m <[0;33mline:103:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m user_off_t[0m [0;32m'int64_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786ca40[0m [0;32m'int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c828[0m[0;1;36m 'int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cee0[0m <[0;33mline:111:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m syscall_arg_t[0m [0;32m'u_int64_t':'unsigned long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cbd0[0m [0;32m'u_int64_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb8786c9e8[0m[0;1;36m 'u_int64_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebe0[0m [0;32m'unsigned long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8786cf78[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:32:1[0m, [0;33mcol:26[0m> [0;33mcol:26[0m referenced[0;1;36m va_list[0m [0;32m'__darwin_va_list':'struct __va_list_tag [1]'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cf40[0m [0;32m'__darwin_va_list'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb858441c8[0m[0;1;36m '__darwin_va_list'[0m
+[0;34m|   `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844190[0m [0;32m'__builtin_va_list'[0m sugar
+[0;34m|     |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843820[0m[0;1;36m '__builtin_va_list'[0m
+[0;34m|     `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fcb8503f9b0[0m [0;32m'struct __va_list_tag [1]'[0m 1 
+[0;34m|       `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8503f7f0[0m [0;32m'struct __va_list_tag'[0m
+[0;34m|         `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8503f768[0m[0;1;36m '__va_list_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb86015c10[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h:31:1[0m, [0;33mcol:32[0m> [0;33mcol:32[0m referenced[0;1;36m size_t[0m [0;32m'__darwin_size_t':'unsigned long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8786cfd0[0m [0;32m'__darwin_size_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85844138[0m[0;1;36m '__darwin_size_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503ebc0[0m [0;32m'unsigned long'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb86015f18[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:39:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3965:128[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:39:9[0m[0;1;36m renameat[0m [0;32m'int (int, const char *, int, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86015c80[0m <[0;33mcol:18[0m> [0;33mcol:21[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86015d00[0m <[0;33mcol:23[0m, [0;33mcol:34[0m> [0;33mcol:35[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86015d80[0m <[0;33mcol:37[0m> [0;33mcol:40[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86015e00[0m <[0;33mcol:42[0m, [0;33mcol:53[0m> [0;33mcol:54[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb86015fd8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3965:90[0m, [0;33mcol:126[0m> macos 10.10 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb86016328[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:46:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h:198:117[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:46:5[0m[0;1;36m renamex_np[0m [0;32m'int (const char *, const char *, unsigned int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb860160f0[0m <[0;33mcol:16[0m, [0;33mcol:27[0m> [0;33mcol:28[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86016170[0m <[0;33mcol:30[0m, [0;33mcol:41[0m> [0;33mcol:42[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb860161f0[0m <[0;33mcol:44[0m, [0;33mcol:53[0m> [0;33mcol:56[0m [0;32m'unsigned int'[0m
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb860163e0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h:198:81[0m, [0;33mcol:115[0m> macos 10.12 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb86016498[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> ios 10.0 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb86016520[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> tvos 10.0 0 0 "" "" 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb860165a8[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> watchos 3.0 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb86016998[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:47:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h:198:117[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:47:5[0m[0;1;36m renameatx_np[0m [0;32m'int (int, const char *, int, const char *, unsigned int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86016648[0m <[0;33mcol:18[0m> [0;33mcol:21[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb860166c8[0m <[0;33mcol:23[0m, [0;33mcol:34[0m> [0;33mcol:35[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86016748[0m <[0;33mcol:37[0m> [0;33mcol:40[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb860167c8[0m <[0;33mcol:42[0m, [0;33mcol:53[0m> [0;33mcol:54[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb86016848[0m <[0;33mcol:56[0m, [0;33mcol:65[0m> [0;33mcol:68[0m [0;32m'unsigned int'[0m
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb86016a60[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h:198:81[0m, [0;33mcol:115[0m> macos 10.12 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb86016b18[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> ios 10.0 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8700f400[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> tvos 10.0 0 0 "" "" 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8700f488[0m <[0;33mcol:81[0m, [0;33mcol:115[0m> watchos 3.0 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb8700f548[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h:81:1[0m, [0;33mcol:25[0m> [0;33mcol:25[0m referenced[0;1;36m fpos_t[0m [0;32m'__darwin_off_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8700f510[0m [0;32m'__darwin_off_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb87866da0[0m[0;1;36m '__darwin_off_t'[0m
+[0;34m|   `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844570[0m [0;32m'__int64_t'[0m sugar
+[0;34m|     |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843b30[0m[0;1;36m '__int64_t'[0m
+[0;34m|     `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8700f5a0[0m <[0;33mline:92:1[0m, [0;33mline:95:1[0m> [0;33mline:92:8[0m struct[0;1;36m __sbuf[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700f6a0[0m <[0;33mline:93:2[0m, [0;33mcol:17[0m> [0;33mcol:17[0m[0;1;36m _base[0m [0;32m'unsigned char *'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700f708[0m <[0;33mline:94:2[0m, [0;33mcol:7[0m> [0;33mcol:7[0m[0;1;36m _size[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8700f758[0m <[0;33mline:98:1[0m, [0;33mcol:8[0m> [0;33mcol:8[0m struct[0;1;36m __sFILEX[0m
+[0;34m|-[0m[0;1;32mRecordDecl[0m[0;33m 0x7fcb8700f808[0m <[0;33mline:126:9[0m, [0;33mline:157:1[0m> [0;33mline:126:16[0m struct[0;1;36m __sFILE[0m definition
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700f8d0[0m <[0;33mline:127:2[0m, [0;33mcol:17[0m> [0;33mcol:17[0m referenced[0;1;36m _p[0m [0;32m'unsigned char *'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700f938[0m <[0;33mline:128:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m[0;1;36m _r[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700f9a0[0m <[0;33mline:129:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m referenced[0;1;36m _w[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fa08[0m <[0;33mline:130:2[0m, [0;33mcol:8[0m> [0;33mcol:8[0m[0;1;36m _flags[0m [0;32m'short'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fa70[0m <[0;33mline:131:2[0m, [0;33mcol:8[0m> [0;33mcol:8[0m[0;1;36m _file[0m [0;32m'short'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fb18[0m <[0;33mline:132:2[0m, [0;33mcol:16[0m> [0;33mcol:16[0m[0;1;36m _bf[0m [0;32m'struct __sbuf':'struct __sbuf'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fb80[0m <[0;33mline:133:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m referenced[0;1;36m _lbfsize[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fbe8[0m <[0;33mline:136:2[0m, [0;33mcol:8[0m> [0;33mcol:8[0m[0;1;36m _cookie[0m [0;32m'void *'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb8700fe50[0m <[0;33mline:137:2[0m, [0;33mcol:19[0m> [0;33mcol:19[0m[0;1;36m _close[0m [0;32m'int (* _Nullable)(void *)':'int (*)(void *)'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb870101d0[0m <[0;33mline:138:2[0m, [0;33mcol:19[0m> [0;33mcol:19[0m[0;1;36m _read[0m [0;32m'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87015ff8[0m <[0;33mline:139:2[0m, [0;33mcol:22[0m> [0;33mcol:22[0m[0;1;36m _seek[0m [0;32m'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016380[0m <[0;33mline:140:2[0m, [0;33mcol:19[0m> [0;33mcol:19[0m[0;1;36m _write[0m [0;32m'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb870163f0[0m <[0;33mline:143:2[0m, [0;33mcol:16[0m> [0;33mcol:16[0m[0;1;36m _ub[0m [0;32m'struct __sbuf':'struct __sbuf'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016520[0m <[0;33mline:144:2[0m, [0;33mcol:19[0m> [0;33mcol:19[0m[0;1;36m _extra[0m [0;32m'struct __sFILEX *'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016588[0m <[0;33mline:145:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m[0;1;36m _ur[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016678[0m <[0;33mline:148:2[0m, [0;33mcol:23[0m> [0;33mcol:16[0m[0;1;36m _ubuf[0m [0;32m'unsigned char [3]'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016768[0m <[0;33mline:149:2[0m, [0;33mcol:23[0m> [0;33mcol:16[0m[0;1;36m _nbuf[0m [0;32m'unsigned char [1]'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb870167d8[0m <[0;33mline:152:2[0m, [0;33mcol:16[0m> [0;33mcol:16[0m[0;1;36m _lb[0m [0;32m'struct __sbuf':'struct __sbuf'[0m
+[0;34m| |-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb87016840[0m <[0;33mline:155:2[0m, [0;33mcol:6[0m> [0;33mcol:6[0m[0;1;36m _blksize[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mFieldDecl[0m[0;33m 0x7fcb870168a0[0m <[0;33mline:156:2[0m, [0;33mcol:9[0m> [0;33mcol:9[0m[0;1;36m _offset[0m [0;32m'fpos_t':'long long'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb87016950[0m <[0;33mline:126:1[0m, [0;33mline:157:3[0m> [0;33mcol:3[0m referenced[0;1;36m FILE[0m [0;32m'struct __sFILE':'struct __sFILE'[0m
+[0;34m| `-[0m[0;32mElaboratedType[0m[0;33m 0x7fcb870168f0[0m [0;32m'struct __sFILE'[0m sugar
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fcb8700f890[0m [0;32m'struct __sFILE'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fcb8700f808[0m[0;1;36m '__sFILE'[0m
+[0;34m|-[0m[0;1;32mVarDecl[0m[0;33m 0x7fcb87016a78[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:67:1[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m __stdinp[0m [0;32m'FILE *'[0m extern
+[0;34m|-[0m[0;1;32mVarDecl[0m[0;33m 0x7fcb87016af0[0m <[0;33mline:68:1[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m __stdoutp[0m [0;32m'FILE *'[0m extern
+[0;34m|-[0m[0;1;32mVarDecl[0m[0;33m 0x7fcb87016b68[0m <[0;33mline:69:1[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m __stderrp[0m [0;32m'FILE *'[0m extern
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87016cf0[0m <[0;33mline:142:1[0m, [0;33mcol:22[0m> [0;33mcol:7[0m[0;1;36m clearerr[0m [0;32m'void (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87016be0[0m <[0;33mcol:16[0m, [0;33mcol:21[0m> [0;33mcol:22[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87019f18[0m <[0;33mline:143:1[0m, [0;33mcol:19[0m> [0;33mcol:6[0m[0;1;36m fclose[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87019e00[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701a068[0m <[0;33mline:144:1[0m, [0;33mcol:17[0m> [0;33mcol:6[0m[0;1;36m feof[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87019fd0[0m <[0;33mcol:11[0m, [0;33mcol:16[0m> [0;33mcol:17[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701a1b8[0m <[0;33mline:145:1[0m, [0;33mcol:19[0m> [0;33mcol:6[0m[0;1;36m ferror[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a120[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701a308[0m <[0;33mline:146:1[0m, [0;33mcol:19[0m> [0;33mcol:6[0m[0;1;36m fflush[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a270[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701a458[0m <[0;33mline:147:1[0m, [0;33mcol:18[0m> [0;33mcol:6[0m[0;1;36m fgetc[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a3c0[0m <[0;33mcol:12[0m, [0;33mcol:17[0m> [0;33mcol:18[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701a728[0m <[0;33mline:148:1[0m, [0;33mcol:41[0m> [0;33mcol:6[0m[0;1;36m fgetpos[0m [0;32m'int (FILE *restrict, fpos_t *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a510[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a608[0m <[0;33mcol:33[0m, [0;33mcol:40[0m> [0;33mcol:41[0m [0;32m'fpos_t *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701aa28[0m <[0;33mline:149:1[0m, [0;33mcol:43[0m> [0;33mcol:7[0m[0;1;36m fgets[0m [0;32m'char *(char *restrict, int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a7f0[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:30[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a870[0m <[0;33mcol:32[0m> [0;33mcol:35[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701a8e8[0m <[0;33mcol:37[0m, [0;33mcol:42[0m> [0;33mcol:43[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ad40[0m <[0;33mline:153:7[0m> [0;33mcol:7[0m implicit[0;1;36m fopen[0m [0;32m'FILE *(const char *, const char *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701ae58[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701aec0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701ae00[0m <[0;33m<invalid sloc>[0m> Implicit 753
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701af38[0m prev 0x7fcb8701ad40 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:153:7[0m[0;1;36m fopen[0m [0;32m'FILE *(const char *, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701aaf8[0m <[0;33mcol:13[0m, [0;33mcol:37[0m> [0;33mcol:37[0m[0;1;36m __filename[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701ab78[0m <[0;33mcol:49[0m, [0;33mcol:73[0m> [0;33mcol:73[0m[0;1;36m __mode[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701b058[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 753
+[0;34m| `-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8701afd8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_fopen" IsLiteralLabel
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701b2e8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:155:6[0m> [0;33mcol:6[0m implicit[0;1;36m fprintf[0m [0;32m'int (FILE *, const char *, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b3e0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b448[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701b388[0m <[0;33m<invalid sloc>[0m> Implicit 740
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8701b4c0[0m <[0;33mcol:6[0m> Implicit printf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701b4f8[0m prev 0x7fcb8701b2e8 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:155:6[0m[0;1;36m fprintf[0m [0;32m'int (FILE *, const char *, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b090[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b110[0m <[0;33mcol:33[0m, [0;33mcol:44[0m> [0;33mcol:56[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701b610[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 740
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8701b5a8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701b7e8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:156:1[0m, [0;33mcol:23[0m> [0;33mcol:6[0m[0;1;36m fputc[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b650[0m <[0;33mcol:12[0m> [0;33mcol:15[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b6c8[0m <[0;33mcol:17[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ba78[0m <[0;33mline:157:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:157:6[0m[0;1;36m fputs[0m [0;32m'int (const char *restrict, FILE *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b8b0[0m <[0;33mcol:12[0m, [0;33mcol:23[0m> [0;33mcol:35[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701b928[0m <[0;33mcol:37[0m, [0;33mcol:42[0m> [0;33mcol:54[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8701bb18[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_fputs" IsLiteralLabel
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701e0e0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:158:9[0m> [0;33mcol:9[0m implicit[0;1;36m fread[0m [0;32m'unsigned long (void *, unsigned long, unsigned long, FILE *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e1d8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'void *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e240[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e2a8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e310[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701e180[0m <[0;33m<invalid sloc>[0m> Implicit 754
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701e398[0m prev 0x7fcb8701e0e0 <[0;33mcol:1[0m, [0;33mcol:98[0m> [0;33mcol:9[0m[0;1;36m fread[0m [0;32m'unsigned long (void *, unsigned long, unsigned long, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701bbe0[0m <[0;33mcol:15[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __ptr[0m [0;32m'void *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701bc58[0m <[0;33mcol:40[0m, [0;33mcol:47[0m> [0;33mcol:47[0m[0;1;36m __size[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701bcd0[0m <[0;33mcol:55[0m, [0;33mcol:62[0m> [0;33mcol:62[0m[0;1;36m __nitems[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701bd48[0m <[0;33mcol:72[0m, [0;33mcol:90[0m> [0;33mcol:90[0m[0;1;36m __stream[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701e488[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 754
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701e770[0m <[0;33mline:159:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:159:7[0m[0;1;36m freopen[0m [0;32m'FILE *(const char *restrict, const char *restrict, FILE *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e4c8[0m <[0;33mcol:15[0m, [0;33mcol:26[0m> [0;33mcol:38[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e548[0m <[0;33mcol:40[0m, [0;33mcol:51[0m> [0;33mcol:63[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e5c0[0m <[0;33mline:160:18[0m, [0;33mcol:23[0m> [0;33mcol:35[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8701e810[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_freopen" IsLiteralLabel
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ea18[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:161:6[0m> [0;33mcol:6[0m implicit[0;1;36m fscanf[0m [0;32m'int (FILE *restrict, const char *restrict, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701eb10[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701eb78[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701eab8[0m <[0;33m<invalid sloc>[0m> Implicit 748
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8701ebf0[0m <[0;33mcol:6[0m> Implicit scanf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ec28[0m prev 0x7fcb8701ea18 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:161:6[0m[0;1;36m fscanf[0m [0;32m'int (FILE *restrict, const char *restrict, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e8a8[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:30[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701e928[0m <[0;33mcol:32[0m, [0;33mcol:43[0m> [0;33mcol:55[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701ed40[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 748
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8701ecd8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701f000[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:162:1[0m, [0;33mcol:29[0m> [0;33mcol:6[0m[0;1;36m fseek[0m [0;32m'int (FILE *, long, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701ed78[0m <[0;33mcol:12[0m, [0;33mcol:17[0m> [0;33mcol:18[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701edf8[0m <[0;33mcol:20[0m> [0;33mcol:24[0m [0;32m'long'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701ee78[0m <[0;33mcol:26[0m> [0;33mcol:29[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701f2d8[0m <[0;33mline:163:1[0m, [0;33mcol:36[0m> [0;33mcol:6[0m[0;1;36m fsetpos[0m [0;32m'int (FILE *, const fpos_t *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f0c8[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:20[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f1b8[0m <[0;33mcol:22[0m, [0;33mcol:35[0m> [0;33mcol:36[0m [0;32m'const fpos_t *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701f4a8[0m <[0;33mline:164:1[0m, [0;33mcol:19[0m> [0;33mcol:7[0m[0;1;36m ftell[0m [0;32m'long (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f398[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701f8d0[0m <[0;33mline:165:9[0m> [0;33mcol:9[0m implicit[0;1;36m fwrite[0m [0;32m'unsigned long (const void *, unsigned long, unsigned long, FILE *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f9c8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const void *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701fa30[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701fa98[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701fb00[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701f970[0m <[0;33m<invalid sloc>[0m> Implicit 755
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701fb88[0m prev 0x7fcb8701f8d0 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:165:9[0m[0;1;36m fwrite[0m [0;32m'unsigned long (const void *, unsigned long, unsigned long, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f5a0[0m <[0;33mcol:16[0m, [0;33mcol:40[0m> [0;33mcol:40[0m[0;1;36m __ptr[0m [0;32m'const void *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f618[0m <[0;33mcol:47[0m, [0;33mcol:54[0m> [0;33mcol:54[0m[0;1;36m __size[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f690[0m <[0;33mcol:62[0m, [0;33mcol:69[0m> [0;33mcol:69[0m[0;1;36m __nitems[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701f708[0m <[0;33mcol:79[0m, [0;33mcol:97[0m> [0;33mcol:97[0m[0;1;36m __stream[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8701fcb8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 755
+[0;34m| `-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8701fc28[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_fwrite" IsLiteralLabel
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701fd88[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:166:1[0m, [0;33mcol:17[0m> [0;33mcol:6[0m[0;1;36m getc[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701fcf0[0m <[0;33mcol:11[0m, [0;33mcol:16[0m> [0;33mcol:17[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ff08[0m <[0;33mline:167:1[0m, [0;33mcol:18[0m> [0;33mcol:6[0m[0;1;36m getchar[0m [0;32m'int (void)'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870200d8[0m <[0;33mline:168:1[0m, [0;33mcol:18[0m> [0;33mcol:7[0m[0;1;36m gets[0m [0;32m'char *(char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020000[0m <[0;33mcol:12[0m, [0;33mcol:17[0m> [0;33mcol:18[0m [0;32m'char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87020260[0m <[0;33mline:169:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:172:49[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:169:7[0m[0;1;36m perror[0m [0;32m'void (const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020198[0m <[0;33mcol:14[0m, [0;33mcol:25[0m> [0;33mcol:26[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;34mColdAttr[0m[0;33m 0x7fcb87020308[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:172:40[0m>
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870204e0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:170:6[0m> [0;33mcol:6[0m implicit used[0;1;36m printf[0m [0;32m'int (const char *, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870205d8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87020580[0m <[0;33m<invalid sloc>[0m> Implicit 739
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87020648[0m <[0;33mcol:6[0m> Implicit printf 1 2
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87020680[0m prev 0x7fcb870204e0 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:170:6[0m used[0;1;36m printf[0m [0;32m'int (const char *, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020378[0m <[0;33mcol:13[0m, [0;33mcol:24[0m> [0;33mcol:36[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87020790[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 739
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87020728[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 1 2
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870208e8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:171:1[0m, [0;33mcol:22[0m> [0;33mcol:6[0m[0;1;36m putc[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870207d0[0m <[0;33mcol:11[0m> [0;33mcol:14[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020848[0m <[0;33mcol:16[0m, [0;33mcol:21[0m> [0;33mcol:22[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87020a88[0m <[0;33mline:172:1[0m, [0;33mcol:17[0m> [0;33mcol:6[0m[0;1;36m putchar[0m [0;32m'int (int)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870209b0[0m <[0;33mcol:14[0m> [0;33mcol:17[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87020c18[0m <[0;33mline:173:1[0m, [0;33mcol:23[0m> [0;33mcol:6[0m[0;1;36m puts[0m [0;32m'int (const char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020b48[0m <[0;33mcol:11[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'const char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87020d70[0m <[0;33mline:174:1[0m, [0;33mcol:25[0m> [0;33mcol:6[0m[0;1;36m remove[0m [0;32m'int (const char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020cd8[0m <[0;33mcol:13[0m, [0;33mcol:24[0m> [0;33mcol:25[0m [0;32m'const char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021000[0m <[0;33mline:175:1[0m, [0;33mcol:50[0m> [0;33mcol:6[0m[0;1;36m rename[0m [0;32m'int (const char *, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020e30[0m <[0;33mcol:14[0m, [0;33mcol:26[0m> [0;33mcol:26[0m[0;1;36m __old[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87020eb0[0m <[0;33mcol:33[0m, [0;33mcol:45[0m> [0;33mcol:45[0m[0;1;36m __new[0m [0;32m'const char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021150[0m <[0;33mline:176:1[0m, [0;33mcol:20[0m> [0;33mcol:7[0m[0;1;36m rewind[0m [0;32m'void (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870210c0[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:20[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870212f8[0m <[0;33mline:177:6[0m> [0;33mcol:6[0m implicit[0;1;36m scanf[0m [0;32m'int (const char *restrict, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870213f0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87021398[0m <[0;33m<invalid sloc>[0m> Implicit 747
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87021460[0m <[0;33mcol:6[0m> Implicit scanf 1 2
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021498[0m prev 0x7fcb870212f8 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:177:6[0m[0;1;36m scanf[0m [0;32m'int (const char *restrict, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021210[0m <[0;33mcol:12[0m, [0;33mcol:23[0m> [0;33mcol:35[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb870215a8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 747
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87021540[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 1 2
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021780[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:178:1[0m, [0;33mcol:50[0m> [0;33mcol:7[0m[0;1;36m setbuf[0m [0;32m'void (FILE *restrict, char *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870215e0[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021660[0m <[0;33mcol:33[0m, [0;33mcol:38[0m> [0;33mcol:50[0m [0;32m'char *restrict'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021b08[0m <[0;33mline:179:1[0m, [0;33mcol:63[0m> [0;33mcol:6[0m[0;1;36m setvbuf[0m [0;32m'int (FILE *restrict, char *restrict, int, size_t)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021840[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870218c0[0m <[0;33mcol:33[0m, [0;33mcol:38[0m> [0;33mcol:50[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021940[0m <[0;33mcol:52[0m> [0;33mcol:55[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870219b8[0m <[0;33mcol:57[0m> [0;33mcol:63[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87021e70[0m <[0;33mline:180:6[0m> [0;33mcol:6[0m implicit[0;1;36m sprintf[0m [0;32m'int (char *, const char *, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021f68[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022000[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87021f10[0m <[0;33m<invalid sloc>[0m> Implicit 742
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87022078[0m <[0;33mcol:6[0m> Implicit printf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870220b0[0m prev 0x7fcb87021e70 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:107[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:180:6[0m[0;1;36m sprintf[0m [0;32m'int (char *, const char *, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021be0[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87021c60[0m <[0;33mcol:33[0m, [0;33mcol:44[0m> [0;33mcol:56[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87022268[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 742
+[0;34m| |-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87022160[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 3
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb870221c8[0m <[0;33mline:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use snprintf instead." "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870224b0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:181:6[0m> [0;33mcol:6[0m implicit[0;1;36m sscanf[0m [0;32m'int (const char *restrict, const char *restrict, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870225a8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022610[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87022550[0m <[0;33m<invalid sloc>[0m> Implicit 749
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87022688[0m <[0;33mcol:6[0m> Implicit scanf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb870226c0[0m prev 0x7fcb870224b0 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:181:6[0m[0;1;36m sscanf[0m [0;32m'int (const char *restrict, const char *restrict, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870222a8[0m <[0;33mcol:13[0m, [0;33mcol:24[0m> [0;33mcol:36[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022328[0m <[0;33mcol:38[0m, [0;33mcol:49[0m> [0;33mcol:61[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb870227d8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 749
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87022770[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87022900[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:182:1[0m, [0;33mcol:19[0m> [0;33mcol:7[0m[0;1;36m tmpfile[0m [0;32m'FILE *(void)'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87022be0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:41[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:20[0m> [0;33mcol:7[0m[0;1;36m tmpnam[0m [0;32m'char *(char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022b48[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:20[0m [0;32m'char *'[0m
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb87022c88[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
+[0;34m| `-[0m[0;1;34mDeprecatedAttr[0m[0;33m 0x7fcb87022d58[0m <[0;33mline:200:48[0m, [0;33mcol:67[0m> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead." ""
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87029600[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:189:1[0m, [0;33mcol:24[0m> [0;33mcol:6[0m[0;1;36m ungetc[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022e68[0m <[0;33mcol:13[0m> [0;33mcol:16[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87022ee0[0m <[0;33mcol:18[0m, [0;33mcol:23[0m> [0;33mcol:24[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87029a48[0m <[0;33mline:190:6[0m> [0;33mcol:6[0m implicit[0;1;36m vfprintf[0m [0;32m'int (FILE *, const char *, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029b40[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029ba8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029c10[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87029ae8[0m <[0;33m<invalid sloc>[0m> Implicit 744
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87029c90[0m <[0;33mcol:6[0m> Implicit printf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb87029cc8[0m prev 0x7fcb87029a48 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:190:6[0m[0;1;36m vfprintf[0m [0;32m'int (FILE *, const char *, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb870296c0[0m <[0;33mcol:15[0m, [0;33mcol:20[0m> [0;33mcol:32[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029740[0m <[0;33mcol:34[0m, [0;33mcol:45[0m> [0;33mcol:57[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029868[0m <[0;33mcol:59[0m> [0;33mcol:66[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb87029de8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 744
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb87029d80[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702a018[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:191:6[0m> [0;33mcol:6[0m implicit[0;1;36m vprintf[0m [0;32m'int (const char *, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a110[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a178[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8702a0b8[0m <[0;33m<invalid sloc>[0m> Implicit 743
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702a1f0[0m <[0;33mcol:6[0m> Implicit printf 1 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702a228[0m prev 0x7fcb8702a018 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:191:6[0m[0;1;36m vprintf[0m [0;32m'int (const char *, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029e28[0m <[0;33mcol:14[0m, [0;33mcol:25[0m> [0;33mcol:37[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb87029ea0[0m <[0;33mcol:39[0m> [0;33mcol:46[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8702a340[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 743
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702a2d8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 1 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702a688[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:192:6[0m> [0;33mcol:6[0m implicit[0;1;36m vsprintf[0m [0;32m'int (char *, const char *, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a780[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a7e8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a850[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8702a728[0m <[0;33m<invalid sloc>[0m> Implicit 746
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702a8d0[0m <[0;33mcol:6[0m> Implicit printf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702a908[0m prev 0x7fcb8702a688 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:107[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:192:6[0m[0;1;36m vsprintf[0m [0;32m'int (char *, const char *, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a380[0m <[0;33mcol:15[0m, [0;33mcol:20[0m> [0;33mcol:32[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a400[0m <[0;33mcol:34[0m, [0;33mcol:45[0m> [0;33mcol:57[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702a478[0m <[0;33mcol:59[0m> [0;33mcol:66[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb8702aac8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 746
+[0;34m| |-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702a9c0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702aa28[0m <[0;33mline:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use vsnprintf instead." "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702aba0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_ctermid.h:31:1[0m, [0;33mcol:24[0m> [0;33mcol:10[0m[0;1;36m ctermid[0m [0;32m'char *(char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ab08[0m <[0;33mcol:18[0m, [0;33mcol:23[0m> [0;33mcol:24[0m [0;32m'char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702ae20[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:210:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:210:7[0m[0;1;36m fdopen[0m [0;32m'FILE *(int, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ac60[0m <[0;33mcol:14[0m> [0;33mcol:17[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ace0[0m <[0;33mcol:19[0m, [0;33mcol:30[0m> [0;33mcol:31[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8702aec0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_fdopen" IsLiteralLabel
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702afe8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:212:1[0m, [0;33mcol:19[0m> [0;33mcol:6[0m[0;1;36m fileno[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702af50[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702b188[0m <[0;33mline:228:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:107[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:228:6[0m[0;1;36m pclose[0m [0;32m'int (FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702b0a0[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702b230[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead." "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702b4b8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:232:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:107[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:232:7[0m[0;1;36m popen[0m [0;32m'FILE *(const char *, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702b328[0m <[0;33mcol:13[0m, [0;33mcol:24[0m> [0;33mcol:25[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702b3a8[0m <[0;33mcol:27[0m, [0;33mcol:38[0m> [0;33mcol:39[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb8702b558[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_popen" IsLiteralLabel
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb85043200[0m <[0;33mline:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead." "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85043358[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:249:1[0m, [0;33mcol:19[0m> [0;33mcol:5[0m[0;1;36m __srget[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850432c0[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85043648[0m <[0;33mline:250:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:250:5[0m[0;1;36m __svfscanf[0m [0;32m'int (FILE *, const char *, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85043410[0m <[0;33mcol:16[0m, [0;33mcol:21[0m> [0;33mcol:22[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85043490[0m <[0;33mcol:24[0m, [0;33mcol:35[0m> [0;33mcol:36[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85043508[0m <[0;33mcol:38[0m> [0;33mcol:45[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85043700[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85043898[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:251:1[0m, [0;33mcol:24[0m> [0;33mcol:5[0m used[0;1;36m __swbuf[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85043780[0m <[0;33mcol:13[0m> [0;33mcol:16[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850437f8[0m <[0;33mcol:18[0m, [0;33mcol:23[0m> [0;33mcol:24[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85043a78[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:339:36[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:265:1[0m> [0;33mline:260:28[0m[0;1;36m __sputc[0m [0;32m'int (int, FILE *)'[0m inline
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85043960[0m <[0;33mcol:36[0m, [0;33mcol:40[0m> [0;33mcol:40[0m used[0;1;36m _c[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850439d8[0m <[0;33mcol:44[0m, [0;33mcol:50[0m> [0;33mcol:50[0m used[0;1;36m _p[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;35mCompoundStmt[0m[0;33m 0x7fcb850441b8[0m <[0;33mcol:54[0m, [0;33mline:265:1[0m>
+[0;34m| | `-[0m[0;1;35mIfStmt[0m[0;33m 0x7fcb85044190[0m <[0;33mline:261:2[0m, [0;33mline:264:26[0m> has_else
+[0;34m| |   |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043e60[0m <[0;33mline:261:6[0m, [0;33mcol:66[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '||'
+[0;34m| |   | |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043c20[0m <[0;33mcol:6[0m, [0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '>='
+[0;34m| |   | | |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x7fcb85043be8[0m <[0;33mcol:6[0m, [0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m prefix '--'
+[0;34m| |   | | | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x7fcb85043bb8[0m <[0;33mcol:8[0m, [0;33mcol:12[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m ->_w[0;33m 0x7fcb8700f9a0[0m
+[0;34m| |   | | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043ba0[0m <[0;33mcol:8[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   | | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043b80[0m <[0;33mcol:8[0m> [0;32m'FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb850439d8[0m[0;1;36m '_p'[0m [0;32m'FILE *'[0m
+[0;34m| |   | | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x7fcb85043c00[0m <[0;33mcol:18[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m| |   | `-[0m[0;1;35mParenExpr[0m[0;33m 0x7fcb85043e40[0m <[0;33mcol:23[0m, [0;33mcol:66[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m| |   |   `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043e20[0m <[0;33mcol:24[0m, [0;33mcol:62[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '&&'
+[0;34m| |   |     |-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043d40[0m <[0;33mcol:24[0m, [0;33mcol:38[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '>='
+[0;34m| |   |     | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043d10[0m <[0;33mcol:24[0m, [0;33mcol:28[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |     | | `-[0m[0;1;35mMemberExpr[0m[0;33m 0x7fcb85043c78[0m <[0;33mcol:24[0m, [0;33mcol:28[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m ->_w[0;33m 0x7fcb8700f9a0[0m
+[0;34m| |   |     | |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043c60[0m <[0;33mcol:24[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |     | |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043c40[0m <[0;33mcol:24[0m> [0;32m'FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb850439d8[0m[0;1;36m '_p'[0m [0;32m'FILE *'[0m
+[0;34m| |   |     | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043d28[0m <[0;33mcol:34[0m, [0;33mcol:38[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |     |   `-[0m[0;1;35mMemberExpr[0m[0;33m 0x7fcb85043ce0[0m <[0;33mcol:34[0m, [0;33mcol:38[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m ->_lbfsize[0;33m 0x7fcb8700fb80[0m
+[0;34m| |   |     |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043cc8[0m <[0;33mcol:34[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |     |       `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043ca8[0m <[0;33mcol:34[0m> [0;32m'FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb850439d8[0m[0;1;36m '_p'[0m [0;32m'FILE *'[0m
+[0;34m| |   |     `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043e00[0m <[0;33mcol:50[0m, [0;33mcol:62[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m '!='
+[0;34m| |   |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043de8[0m <[0;33mcol:50[0m, [0;33mcol:56[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m| |   |       | `-[0m[0;1;35mCStyleCastExpr[0m[0;33m 0x7fcb85043da8[0m <[0;33mcol:50[0m, [0;33mcol:56[0m> [0;32m'char'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m| |   |       |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043d90[0m <[0;33mcol:56[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m> part_of_explicit_cast
+[0;34m| |   |       |     `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043d60[0m <[0;33mcol:56[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb85043960[0m[0;1;36m '_c'[0m [0;32m'int'[0m
+[0;34m| |   |       `-[0m[0;1;35mCharacterLiteral[0m[0;33m 0x7fcb85043dd0[0m <[0;33mcol:62[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 10[0m
+[0;34m| |   |-[0m[0;1;35mReturnStmt[0m[0;33m 0x7fcb85043ff8[0m <[0;33mline:262:3[0m, [0;33mcol:25[0m>
+[0;34m| |   | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043fe0[0m <[0;33mcol:10[0m, [0;33mcol:25[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m| |   |   `-[0m[0;1;35mParenExpr[0m[0;33m 0x7fcb85043fc0[0m <[0;33mcol:10[0m, [0;33mcol:25[0m> [0;32m'unsigned char'[0m[0;36m[0m[0;36m[0m
+[0;34m| |   |     `-[0m[0;1;35mBinaryOperator[0m[0;33m 0x7fcb85043fa0[0m <[0;33mcol:11[0m, [0;33mcol:23[0m> [0;32m'unsigned char'[0m[0;36m[0m[0;36m[0m '='
+[0;34m| |   |       |-[0m[0;1;35mUnaryOperator[0m[0;33m 0x7fcb85043f38[0m <[0;33mcol:11[0m, [0;33mcol:18[0m> [0;32m'unsigned char'[0m[0;36m lvalue[0m[0;36m[0m prefix '*' cannot overflow
+[0;34m| |   |       | `-[0m[0;1;35mUnaryOperator[0m[0;33m 0x7fcb85043f20[0m <[0;33mcol:12[0m, [0;33mcol:18[0m> [0;32m'unsigned char *'[0m[0;36m[0m[0;36m[0m postfix '++'
+[0;34m| |   |       |   `-[0m[0;1;35mMemberExpr[0m[0;33m 0x7fcb85043ef0[0m <[0;33mcol:12[0m, [0;33mcol:16[0m> [0;32m'unsigned char *'[0m[0;36m lvalue[0m[0;36m[0m ->_p[0;33m 0x7fcb8700f8d0[0m
+[0;34m| |   |       |     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043ed8[0m <[0;33mcol:12[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |       |       `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043eb8[0m <[0;33mcol:12[0m> [0;32m'FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb850439d8[0m[0;1;36m '_p'[0m [0;32m'FILE *'[0m
+[0;34m| |   |       `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043f88[0m <[0;33mcol:23[0m> [0;32m'unsigned char'[0m[0;36m[0m[0;36m[0m <[0;31mIntegralCast[0m>
+[0;34m| |   |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85043f70[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |   |           `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85043f50[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb85043960[0m[0;1;36m '_c'[0m [0;32m'int'[0m
+[0;34m| |   `-[0m[0;1;35mReturnStmt[0m[0;33m 0x7fcb85044180[0m <[0;33mline:264:3[0m, [0;33mcol:26[0m>
+[0;34m| |     `-[0m[0;1;35mParenExpr[0m[0;33m 0x7fcb85044160[0m <[0;33mcol:10[0m, [0;33mcol:26[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m| |       `-[0m[0;1;35mCallExpr[0m[0;33m 0x7fcb85044100[0m <[0;33mcol:11[0m, [0;33mcol:25[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m| |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb850440e8[0m <[0;33mcol:11[0m> [0;32m'int (*)(int, FILE *)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m| |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85044008[0m <[0;33mcol:11[0m> [0;32m'int (int, FILE *)'[0m[0;36m[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x7fcb85043898[0m[0;1;36m '__swbuf'[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |         |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85044130[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |         | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85044028[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb85043960[0m[0;1;36m '_c'[0m [0;32m'int'[0m
+[0;34m| |         `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85044148[0m <[0;33mcol:23[0m> [0;32m'FILE *'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m| |           `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85044048[0m <[0;33mcol:23[0m> [0;32m'FILE *'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x7fcb850439d8[0m[0;1;36m '_p'[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;34mAlwaysInlineAttr[0m[0;33m 0x7fcb85043b28[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:352:68[0m> always_inline
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046690[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:286:1[0m, [0;33mcol:23[0m> [0;33mcol:7[0m[0;1;36m flockfile[0m [0;32m'void (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046600[0m <[0;33mcol:17[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb850467e0[0m <[0;33mline:287:1[0m, [0;33mcol:25[0m> [0;33mcol:6[0m[0;1;36m ftrylockfile[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046748[0m <[0;33mcol:19[0m, [0;33mcol:24[0m> [0;33mcol:25[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046928[0m <[0;33mline:288:1[0m, [0;33mcol:25[0m> [0;33mcol:7[0m[0;1;36m funlockfile[0m [0;32m'void (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046898[0m <[0;33mcol:19[0m, [0;33mcol:24[0m> [0;33mcol:25[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046a78[0m <[0;33mline:289:1[0m, [0;33mcol:26[0m> [0;33mcol:6[0m[0;1;36m getc_unlocked[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850469e0[0m <[0;33mcol:20[0m, [0;33mcol:25[0m> [0;33mcol:26[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046bc0[0m <[0;33mline:290:1[0m, [0;33mcol:27[0m> [0;33mcol:6[0m[0;1;36m getchar_unlocked[0m [0;32m'int (void)'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046d90[0m <[0;33mline:291:1[0m, [0;33mcol:31[0m> [0;33mcol:6[0m[0;1;36m putc_unlocked[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046c78[0m <[0;33mcol:20[0m> [0;33mcol:23[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046cf0[0m <[0;33mcol:25[0m, [0;33mcol:30[0m> [0;33mcol:31[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85046ef0[0m <[0;33mline:292:1[0m, [0;33mcol:26[0m> [0;33mcol:6[0m[0;1;36m putchar_unlocked[0m [0;32m'int (int)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046e58[0m <[0;33mcol:23[0m> [0;33mcol:26[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85047040[0m <[0;33mline:296:1[0m, [0;33mcol:17[0m> [0;33mcol:6[0m[0;1;36m getw[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85046fa8[0m <[0;33mcol:11[0m, [0;33mcol:16[0m> [0;33mcol:17[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85047218[0m <[0;33mline:297:1[0m, [0;33mcol:22[0m> [0;33mcol:6[0m[0;1;36m putw[0m [0;32m'int (int, FILE *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047100[0m <[0;33mcol:11[0m> [0;33mcol:14[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047178[0m <[0;33mcol:16[0m, [0;33mcol:21[0m> [0;33mcol:22[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85047600[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:305:41[0m, [0;33mline:631:84[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:304:7[0m[0;1;36m tempnam[0m [0;32m'char *(const char *, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047438[0m <[0;33mcol:15[0m, [0;33mcol:27[0m> [0;33mcol:27[0m[0;1;36m __dir[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850474b8[0m <[0;33mcol:34[0m, [0;33mcol:46[0m> [0;33mcol:46[0m[0;1;36m __prefix[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mAsmLabelAttr[0m[0;33m 0x7fcb850476a0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:631:47[0m> "_tempnam" IsLiteralLabel
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb85047720[0m <[0;33mline:305:56[0m, [0;33mcol:105[0m> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
+[0;34m| `-[0m[0;1;34mDeprecatedAttr[0m[0;33m 0x7fcb850477c0[0m <[0;33mline:200:48[0m, [0;33mcol:67[0m> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tempnam(3), it is highly recommended that you use mkstemp(3) instead." ""
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb850478c8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h:31:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m off_t[0m [0;32m'__darwin_off_t':'long long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb8700f510[0m [0;32m'__darwin_off_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb87866da0[0m[0;1;36m '__darwin_off_t'[0m
+[0;34m|   `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85844570[0m [0;32m'__int64_t'[0m sugar
+[0;34m|     |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb85843b30[0m[0;1;36m '__int64_t'[0m
+[0;34m|     `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb40[0m [0;32m'long long'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85047b98[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:327:1[0m, [0;33mcol:58[0m> [0;33mcol:6[0m[0;1;36m fseeko[0m [0;32m'int (FILE *, off_t, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047930[0m <[0;33mcol:13[0m, [0;33mcol:20[0m> [0;33mcol:20[0m[0;1;36m __stream[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850479d8[0m <[0;33mcol:30[0m, [0;33mcol:36[0m> [0;33mcol:36[0m[0;1;36m __offset[0m [0;32m'off_t':'long long'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047a58[0m <[0;33mcol:46[0m, [0;33mcol:50[0m> [0;33mcol:50[0m[0;1;36m __whence[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85047d70[0m <[0;33mline:328:1[0m, [0;33mcol:30[0m> [0;33mcol:8[0m[0;1;36m ftello[0m [0;32m'off_t (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047c60[0m <[0;33mcol:15[0m, [0;33mcol:22[0m> [0;33mcol:22[0m[0;1;36m __stream[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb850480c0[0m <[0;33mline:334:6[0m> [0;33mcol:6[0m implicit[0;1;36m snprintf[0m [0;32m'int (char *, unsigned long, const char *, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb850481b8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85048220[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85048288[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85048160[0m <[0;33m<invalid sloc>[0m> Implicit 741
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85048308[0m <[0;33mcol:6[0m> Implicit printf 3 4
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85048340[0m prev 0x7fcb850480c0 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:334:6[0m[0;1;36m snprintf[0m [0;32m'int (char *, unsigned long, const char *, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047e30[0m <[0;33mcol:15[0m, [0;33mcol:33[0m> [0;33mcol:33[0m[0;1;36m __str[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047ea8[0m <[0;33mcol:40[0m, [0;33mcol:47[0m> [0;33mcol:47[0m[0;1;36m __size[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85047f28[0m <[0;33mcol:55[0m, [0;33mcol:79[0m> [0;33mcol:79[0m[0;1;36m __format[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85048460[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 741
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb850483f8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 3 4
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb858670d8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:335:6[0m> [0;33mcol:6[0m implicit[0;1;36m vfscanf[0m [0;32m'int (FILE *restrict, const char *restrict, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858671d0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867238[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858672a0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85867178[0m <[0;33m<invalid sloc>[0m> Implicit 751
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85867320[0m <[0;33mcol:6[0m> Implicit scanf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85867358[0m prev 0x7fcb858670d8 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:335:6[0m[0;1;36m vfscanf[0m [0;32m'int (FILE *restrict, const char *restrict, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85048498[0m <[0;33mcol:14[0m, [0;33mcol:32[0m> [0;33mcol:32[0m[0;1;36m __stream[0m [0;32m'FILE *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85048518[0m <[0;33mcol:42[0m, [0;33mcol:66[0m> [0;33mcol:66[0m[0;1;36m __format[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85048590[0m <[0;33mcol:76[0m> [0;33mcol:83[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85867478[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 751
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85867410[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85867660[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:336:6[0m> [0;33mcol:6[0m implicit[0;1;36m vscanf[0m [0;32m'int (const char *restrict, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867758[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858677c0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85867700[0m <[0;33m<invalid sloc>[0m> Implicit 750
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85867838[0m <[0;33mcol:6[0m> Implicit scanf 1 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85867870[0m prev 0x7fcb85867660 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:336:6[0m[0;1;36m vscanf[0m [0;32m'int (const char *restrict, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858674b8[0m <[0;33mcol:13[0m, [0;33mcol:37[0m> [0;33mcol:37[0m[0;1;36m __format[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867530[0m <[0;33mcol:47[0m> [0;33mcol:54[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85867988[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 750
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85867920[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 1 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85867cd8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:337:6[0m> [0;33mcol:6[0m implicit[0;1;36m vsnprintf[0m [0;32m'int (char *, unsigned long, const char *, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867dd0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867e38[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867ea0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867f08[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85867d78[0m <[0;33m<invalid sloc>[0m> Implicit 745
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85867f90[0m <[0;33mcol:6[0m> Implicit printf 3 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85869000[0m prev 0x7fcb85867cd8 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:337:6[0m[0;1;36m vsnprintf[0m [0;32m'int (char *, unsigned long, const char *, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858679c8[0m <[0;33mcol:16[0m, [0;33mcol:34[0m> [0;33mcol:34[0m[0;1;36m __str[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867a40[0m <[0;33mcol:41[0m, [0;33mcol:48[0m> [0;33mcol:48[0m[0;1;36m __size[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867ac0[0m <[0;33mcol:56[0m, [0;33mcol:80[0m> [0;33mcol:80[0m[0;1;36m __format[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85867b38[0m <[0;33mcol:90[0m> [0;33mcol:97[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb85869128[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 745
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb858690c0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 3 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85869448[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:338:6[0m> [0;33mcol:6[0m implicit[0;1;36m vsscanf[0m [0;32m'int (const char *restrict, const char *restrict, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869540[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858695a8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869610[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m [0;32m'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb858694e8[0m <[0;33m<invalid sloc>[0m> Implicit 752
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85869690[0m <[0;33mcol:6[0m> Implicit scanf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb858696c8[0m prev 0x7fcb85869448 <[0;33mcol:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:69[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:338:6[0m[0;1;36m vsscanf[0m [0;32m'int (const char *restrict, const char *restrict, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869168[0m <[0;33mcol:14[0m, [0;33mcol:38[0m> [0;33mcol:38[0m[0;1;36m __str[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858691e8[0m <[0;33mcol:45[0m, [0;33mcol:69[0m> [0;33mcol:69[0m[0;1;36m __format[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869260[0m <[0;33mcol:79[0m> [0;33mcol:86[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mBuiltinAttr[0m[0;33m 0x7fcb858697e8[0m <[0;33m<invalid sloc>[0m> Inherited Implicit 752
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85869780[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:394:25[0m, [0;33mcol:67[0m> scanf 2 0
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fcb85869848[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h:31:1[0m, [0;33mcol:33[0m> [0;33mcol:33[0m referenced[0;1;36m ssize_t[0m [0;32m'__darwin_ssize_t':'long'[0m
+[0;34m| `-[0m[0;32mTypedefType[0m[0;33m 0x7fcb85869810[0m [0;32m'__darwin_ssize_t'[0m sugar
+[0;34m|   |-[0m[0;1;32mTypedef[0m[0;33m 0x7fcb858444a8[0m[0;1;36m '__darwin_ssize_t'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fcb8503eb20[0m [0;32m'long'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85869ad0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:352:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:126[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:352:5[0m[0;1;36m dprintf[0m [0;32m'int (int, const char *restrict, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858698b8[0m <[0;33mcol:13[0m> [0;33mcol:16[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869938[0m <[0;33mcol:18[0m, [0;33mcol:29[0m> [0;33mcol:41[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb85869b80[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 3
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb85869be8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:89[0m, [0;33mcol:124[0m> macos 10.7 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85869f28[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:353:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:126[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:353:5[0m[0;1;36m vdprintf[0m [0;32m'int (int, const char *restrict, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869c88[0m <[0;33mcol:14[0m> [0;33mcol:17[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869d08[0m <[0;33mcol:19[0m, [0;33mcol:30[0m> [0;33mcol:42[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85869d80[0m <[0;33mcol:44[0m> [0;33mcol:51[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| |-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8701be00[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701be68[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:89[0m, [0;33mcol:124[0m> macos 10.7 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701c2c0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:354:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:126[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:354:9[0m[0;1;36m getdelim[0m [0;32m'ssize_t (char **restrict, size_t *restrict, int, FILE *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701bf70[0m <[0;33mcol:18[0m, [0;33mcol:37[0m> [0;33mcol:37[0m[0;1;36m __linep[0m [0;32m'char **restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c068[0m <[0;33mcol:46[0m, [0;33mcol:66[0m> [0;33mcol:66[0m[0;1;36m __linecapp[0m [0;32m'size_t *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c0e8[0m <[0;33mcol:78[0m, [0;33mcol:82[0m> [0;33mcol:82[0m[0;1;36m __delimiter[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c160[0m <[0;33mcol:95[0m, [0;33mcol:113[0m> [0;33mcol:113[0m[0;1;36m __stream[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701c380[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:89[0m, [0;33mcol:124[0m> macos 10.7 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701c690[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:355:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:126[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:355:9[0m[0;1;36m getline[0m [0;32m'ssize_t (char **restrict, size_t *restrict, FILE *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c450[0m <[0;33mcol:17[0m, [0;33mcol:36[0m> [0;33mcol:36[0m[0;1;36m __linep[0m [0;32m'char **restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c4c8[0m <[0;33mcol:45[0m, [0;33mcol:65[0m> [0;33mcol:65[0m[0;1;36m __linecapp[0m [0;32m'size_t *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c540[0m <[0;33mcol:77[0m, [0;33mcol:95[0m> [0;33mcol:95[0m[0;1;36m __stream[0m [0;32m'FILE *restrict'[0m
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701c748[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:3579:89[0m, [0;33mcol:124[0m> macos 10.7 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8701ca90[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:356:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:4460:86[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:356:7[0m[0;1;36m fmemopen[0m [0;32m'FILE *(void *restrict, size_t, const char *restrict)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c818[0m <[0;33mcol:16[0m, [0;33mcol:34[0m> [0;33mcol:34[0m[0;1;36m __buf[0m [0;32m'void *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c890[0m <[0;33mcol:41[0m, [0;33mcol:48[0m> [0;33mcol:48[0m[0;1;36m __size[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8701c910[0m <[0;33mcol:56[0m, [0;33mcol:80[0m> [0;33mcol:80[0m[0;1;36m __mode[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701cb48[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:4460:43[0m, [0;33mcol:84[0m> macos 10.13 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701cc00[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> ios 11.0 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701cc88[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> tvos 11.0 0 0 "" "" 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8701cd10[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> watchos 4.0 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702c5d0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:357:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:4460:86[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:357:7[0m[0;1;36m open_memstream[0m [0;32m'FILE *(char **, size_t *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702c400[0m <[0;33mcol:22[0m, [0;33mcol:29[0m> [0;33mcol:29[0m[0;1;36m __bufp[0m [0;32m'char **'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702c478[0m <[0;33mcol:37[0m, [0;33mcol:45[0m> [0;33mcol:45[0m[0;1;36m __sizep[0m [0;32m'size_t *'[0m
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702c680[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:4460:43[0m, [0;33mcol:84[0m> macos 10.13 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702c738[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> ios 11.0 0 0 "" "" 0
+[0;34m| |-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702c7c0[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> tvos 11.0 0 0 "" "" 0
+[0;34m| `-[0m[0;1;34mAvailabilityAttr[0m[0;33m 0x7fcb8702c848[0m <[0;33mcol:43[0m, [0;33mcol:84[0m> watchos 4.0 0 0 "" "" 0
+[0;34m|-[0m[0;1;32mVarDecl[0m[0;33m 0x7fcb8702c8e8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:367:1[0m, [0;33mcol:20[0m> [0;33mcol:20[0m[0;1;36m sys_nerr[0m [0;32m'const int'[0m extern
+[0;34m|-[0m[0;1;32mVarDecl[0m[0;33m 0x7fcb8702c9d8[0m <[0;33mline:368:1[0m, [0;33mcol:42[0m> [0;33mcol:30[0m[0;1;36m sys_errlist[0m [0;32m'const char *const []'[0m extern
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702cc60[0m <[0;33mline:370:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:370:6[0m[0;1;36m asprintf[0m [0;32m'int (char **restrict, const char *restrict, ...)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ca58[0m <[0;33mcol:15[0m, [0;33mcol:21[0m> [0;33mcol:33[0m [0;32m'char **restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702cad8[0m <[0;33mcol:35[0m, [0;33mcol:46[0m> [0;33mcol:58[0m [0;32m'const char *restrict'[0m
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702cd10[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 3
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702ce28[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:371:1[0m, [0;33mcol:23[0m> [0;33mcol:7[0m[0;1;36m ctermid_r[0m [0;32m'char *(char *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702cd90[0m <[0;33mcol:17[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702d078[0m <[0;33mline:372:1[0m, [0;33mcol:30[0m> [0;33mcol:7[0m[0;1;36m fgetln[0m [0;32m'char *(FILE *, size_t *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702cee0[0m <[0;33mcol:14[0m, [0;33mcol:19[0m> [0;33mcol:20[0m [0;32m'FILE *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702cf58[0m <[0;33mcol:22[0m, [0;33mcol:29[0m> [0;33mcol:30[0m [0;32m'size_t *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702d2a8[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:116:25[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:373:50[0m> [0;33mcol:15[0m[0;1;36m fmtcheck[0m [0;32m'const char *(const char *, const char *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d140[0m <[0;33mcol:24[0m, [0;33mcol:35[0m> [0;33mcol:36[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d1c0[0m <[0;33mcol:38[0m, [0;33mcol:49[0m> [0;33mcol:50[0m [0;32m'const char *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702d400[0m <[0;33mline:374:1[0m, [0;33mcol:19[0m> [0;33mcol:6[0m[0;1;36m fpurge[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d368[0m <[0;33mcol:13[0m, [0;33mcol:18[0m> [0;33mcol:19[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702d6f0[0m <[0;33mline:375:1[0m, [0;33mcol:36[0m> [0;33mcol:7[0m[0;1;36m setbuffer[0m [0;32m'void (FILE *, char *, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d4b8[0m <[0;33mcol:17[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'FILE *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d538[0m <[0;33mcol:25[0m, [0;33mcol:30[0m> [0;33mcol:31[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d5b8[0m <[0;33mcol:33[0m> [0;33mcol:36[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702d850[0m <[0;33mline:376:1[0m, [0;33mcol:23[0m> [0;33mcol:6[0m[0;1;36m setlinebuf[0m [0;32m'int (FILE *)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d7b8[0m <[0;33mcol:17[0m, [0;33mcol:22[0m> [0;33mcol:23[0m [0;32m'FILE *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702db98[0m <[0;33mline:377:1[0m, [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:70[0m> [0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:377:6[0m[0;1;36m vasprintf[0m [0;32m'int (char **restrict, const char *restrict, struct __va_list_tag *)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d910[0m <[0;33mcol:16[0m, [0;33mcol:22[0m> [0;33mcol:34[0m [0;32m'char **restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702d990[0m <[0;33mcol:36[0m, [0;33mcol:47[0m> [0;33mcol:59[0m [0;32m'const char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702da08[0m <[0;33mcol:61[0m> [0;33mcol:68[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m| `-[0m[0;1;34mFormatAttr[0m[0;33m 0x7fcb8702dc50[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:390:25[0m, [0;33mcol:68[0m> printf 2 0
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702df10[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:378:1[0m, [0;33mcol:44[0m> [0;33mcol:7[0m[0;1;36m zopen[0m [0;32m'FILE *(const char *, const char *, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702dcd0[0m <[0;33mcol:13[0m, [0;33mcol:24[0m> [0;33mcol:25[0m [0;32m'const char *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702dd50[0m <[0;33mcol:27[0m, [0;33mcol:38[0m> [0;33mcol:39[0m [0;32m'const char *'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ddd0[0m <[0;33mcol:41[0m> [0;33mcol:44[0m [0;32m'int'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702ea00[0m <[0;33mline:384:1[0m, [0;33mline:388:43[0m> [0;33mline:384:7[0m[0;1;36m funopen[0m [0;32m'FILE *(const void *, int (* _Nullable)(void *, char *, int), int (* _Nullable)(void *, const char *, int), fpos_t (* _Nullable)(void *, fpos_t, int), int (* _Nullable)(void *))'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702dfe0[0m <[0;33mcol:15[0m, [0;33mcol:26[0m> [0;33mcol:27[0m [0;32m'const void *'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702e248[0m <[0;33mline:385:18[0m, [0;33mcol:25[0m> [0;33mcol:34[0m [0;32m'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702e4e8[0m <[0;33mline:386:18[0m, [0;33mcol:25[0m> [0;33mcol:34[0m [0;32m'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702e740[0m <[0;33mline:387:18[0m, [0;33mcol:28[0m> [0;33mcol:37[0m [0;32m'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702e898[0m <[0;33mline:388:18[0m, [0;33mcol:25[0m> [0;33mcol:34[0m [0;32m'int (* _Nullable)(void *)':'int (*)(void *)'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702edc0[0m <[0;33m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:42:1[0m, [0;33mline:43:34[0m> [0;33mline:42:12[0m[0;1;36m __sprintf_chk[0m [0;32m'int (char *restrict, int, size_t, const char *restrict, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702eae0[0m <[0;33mcol:27[0m, [0;33mcol:32[0m> [0;33mcol:44[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702eb60[0m <[0;33mcol:46[0m> [0;33mcol:49[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ebd8[0m <[0;33mcol:51[0m> [0;33mcol:57[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ec58[0m <[0;33mline:43:6[0m, [0;33mcol:17[0m> [0;33mcol:29[0m [0;32m'const char *restrict'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb8702f200[0m <[0;33mline:52:1[0m, [0;33mline:53:35[0m> [0;33mline:52:12[0m[0;1;36m __snprintf_chk[0m [0;32m'int (char *restrict, size_t, int, size_t, const char *restrict, ...)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ee98[0m <[0;33mcol:28[0m, [0;33mcol:33[0m> [0;33mcol:45[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ef10[0m <[0;33mcol:47[0m> [0;33mcol:53[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702ef90[0m <[0;33mcol:55[0m> [0;33mcol:58[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702f008[0m <[0;33mcol:60[0m> [0;33mcol:66[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702f088[0m <[0;33mline:53:7[0m, [0;33mcol:18[0m> [0;33mcol:30[0m [0;32m'const char *restrict'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85871268[0m <[0;33mline:61:1[0m, [0;33mline:62:39[0m> [0;33mline:61:12[0m[0;1;36m __vsprintf_chk[0m [0;32m'int (char *restrict, int, size_t, const char *restrict, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702f2e0[0m <[0;33mcol:28[0m, [0;33mcol:33[0m> [0;33mcol:45[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb8702f360[0m <[0;33mcol:47[0m> [0;33mcol:50[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85871000[0m <[0;33mcol:52[0m> [0;33mcol:58[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85871080[0m <[0;33mline:62:7[0m, [0;33mcol:18[0m> [0;33mcol:30[0m [0;32m'const char *restrict'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858710f8[0m <[0;33mcol:32[0m> [0;33mcol:39[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85871738[0m <[0;33mline:70:1[0m, [0;33mline:71:40[0m> [0;33mline:70:12[0m[0;1;36m __vsnprintf_chk[0m [0;32m'int (char *restrict, size_t, int, size_t, const char *restrict, struct __va_list_tag *)'[0m extern
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85871348[0m <[0;33mcol:29[0m, [0;33mcol:34[0m> [0;33mcol:46[0m [0;32m'char *restrict'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858713c0[0m <[0;33mcol:48[0m> [0;33mcol:54[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85871440[0m <[0;33mcol:56[0m> [0;33mcol:59[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858714b8[0m <[0;33mcol:61[0m> [0;33mcol:67[0m [0;32m'size_t':'unsigned long'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb85871538[0m <[0;33mline:71:8[0m, [0;33mcol:19[0m> [0;33mcol:31[0m [0;32m'const char *restrict'[0m
+[0;34m| `-[0m[0;1;32mParmVarDecl[0m[0;33m 0x7fcb858715b0[0m <[0;33mcol:33[0m> [0;33mcol:40[0m [0;32m'struct __va_list_tag *':'struct __va_list_tag *'[0m
+[0;34m`-[0m[0;1;32mFunctionDecl[0m[0;33m 0x7fcb85871868[0m <[0;33mmain.c:4:1[0m, [0;33mline:11:1[0m> [0;33mline:4:5[0m[0;1;36m main[0m [0;32m'int ()'[0m
+[0;34m  `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x7fcb85871a88[0m <[0;33mcol:12[0m, [0;33mline:11:1[0m>
+[0;34m    |-[0m[0;1;35mCallExpr[0m[0;33m 0x7fcb85871a00[0m <[0;33mline:8:2[0m, [0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m    | |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb858719e8[0m <[0;33mcol:2[0m> [0;32m'int (*)(const char *, ...)'[0m[0;36m[0m[0;36m[0m <[0;31mFunctionToPointerDecay[0m>
+[0;34m    | | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x7fcb85871908[0m <[0;33mcol:2[0m> [0;32m'int (const char *, ...)'[0m[0;36m[0m[0;36m[0m [0;1;32mFunction[0m[0;33m 0x7fcb87020680[0m[0;1;36m 'printf'[0m [0;32m'int (const char *, ...)'[0m
+[0;34m    | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85871a40[0m <[0;33mcol:9[0m> [0;32m'const char *'[0m[0;36m[0m[0;36m[0m <[0;31mNoOp[0m>
+[0;34m    |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x7fcb85871a28[0m <[0;33mcol:9[0m> [0;32m'char *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |     `-[0m[0;1;35mStringLiteral[0m[0;33m 0x7fcb85871970[0m <[0;33mcol:9[0m> [0;32m'char [13]'[0m[0;36m lvalue[0m[0;36m[0m[0;1;36m "hello world\n"[0m
+[0;34m    `-[0m[0;1;35mReturnStmt[0m[0;33m 0x7fcb85871a78[0m <[0;33mline:10:2[0m, [0;33mcol:9[0m>
+[0;34m      `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x7fcb85871a58[0m <[0;33mcol:9[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
