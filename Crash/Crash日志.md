@@ -1,3 +1,4 @@
+#crash #log
 # [[收集Crash日志]]
 
 # 日志内容Demo

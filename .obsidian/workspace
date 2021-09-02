@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "iOS 要点.md",
-            "mode": "preview"
+            "file": "应用优化/应用瘦身.md",
+            "mode": "source"
           }
         }
       }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iOS 要点.md",
+                "file": "应用优化/应用瘦身.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "iOS 要点.md"
+                "file": "应用优化/应用瘦身.md"
               }
             }
           }
@@ -117,15 +117,15 @@
   },
   "active": "6bc6189f11e7c809",
   "lastOpenFiles": [
-    "iOS 要点.md",
+    "应用优化/应用瘦身.md",
+    "Crash/浅谈Crash.md",
     "模块化/iOS 组件化方案总结.md",
-    "模块化/模块化方案.md",
-    "2021-09-02.md",
-    "Runtime/alloc流程分析.md",
-    "基本概念/编译器基本介绍.md",
-    "编译优化/浅谈iOS编译.md",
-    "应用优化/一文读懂iOS图像显示原理与优化.md",
-    "xcode启动时间测量.md",
-    "应用优化/启动相关/启动监控手段.md"
+    "应用优化/YYText 源码剖析：CoreText 与异步绘制.md",
+    "应用优化/启动相关/启动的种类.md",
+    "WebView/深入浅出 JavaScriptCore.md",
+    "应用优化/优化工具/Time Profiler.md",
+    "DevOps/Git钩子工具-huksy.md",
+    "应用优化/启动相关/dyld3 阶段.md",
+    "Crash/OC Exception/NSRangeException.md"
   ]
 }

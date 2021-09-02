@@ -1,3 +1,4 @@
+#optimize #launch 
 +load 和 static initializer 执行完毕之后，dyld 会把启动流程交给 App，开始执行 main 函数。main 函数里要做的最重要的事情就是初始化 UIKit。UIKit 主要会做两个大的初始化：
 
 * 初始化 UIApplication
