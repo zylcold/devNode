@@ -4,26 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "ea53a650228dcb2c",
+        "id": "40eac791abbafeb3",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Runtime/KVO.md",
+            "mode": "preview"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c1c68bcabd8455a9",
+    "id": "79674f784e9c700f",
     "type": "split",
     "children": [
       {
-        "id": "be294dc099ab12d4",
+        "id": "111238cc7e4cfd4b",
         "type": "tabs",
         "children": [
           {
-            "id": "64e37028a17fdd4c",
+            "id": "11b56501ab786994",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +34,7 @@
             }
           },
           {
-            "id": "8552886ec33bcabb",
+            "id": "aebeeb78463456e9",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -46,7 +49,7 @@
             }
           },
           {
-            "id": "554dca4da09fc05b",
+            "id": "f3e6e96280b54faa",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -60,19 +63,20 @@
     "width": 300
   },
   "right": {
-    "id": "bf553cfce5796e84",
+    "id": "27e0fff07f2960a0",
     "type": "split",
     "children": [
       {
-        "id": "2eeb51b9f19a1e80",
+        "id": "ce05cfb9be41bfe6",
         "type": "tabs",
         "children": [
           {
-            "id": "317100aa6f4ec625",
+            "id": "05f7a10e80e26058",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Runtime/KVO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +88,7 @@
             }
           },
           {
-            "id": "c28b1b0e5f8384ed",
+            "id": "2aa9d54db4d3af1f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -95,11 +99,13 @@
             }
           },
           {
-            "id": "06482fcae58bfef9",
+            "id": "2ef7cbd3244bee9d",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Runtime/KVO.md"
+              }
             }
           }
         ]
@@ -109,17 +115,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ea53a650228dcb2c",
+  "active": "40eac791abbafeb3",
   "lastOpenFiles": [
-    "isa指针.md",
-    "type encoding.md",
-    "Runtime相关面试题.md",
-    "class_rw_t.md",
-    "代理对象.md",
-    "runtime和OC本质和栈知识结合的面试题.md",
-    "metaClass.md",
-    "OC 对象的本质.md",
-    "OC 面向对象相关问题.md",
-    "内存对齐.md"
+    "Runtime/KVO.md",
+    "KVO 相关问题.md",
+    "KVO的本质.md",
+    "Runtime/动态方法解析.md",
+    "Runtime/代理对象.md",
+    "runtime加载category的过程.md",
+    "load方法调用过程.md",
+    "README.md",
+    "load方法.md",
+    "iOS 要点.md"
   ]
 }

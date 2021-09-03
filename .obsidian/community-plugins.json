@@ -7,7 +7,10 @@
   "obsidian-reading-time",
   "obsidian-minimal-settings",
   "obsidian-activity-history",
-  "obsidian-git",
+  "oz-clear-unused-images",
+  "dataview",
+  "obsidian-excalidraw-plugin",
   "oz-image-plugin",
-  "oz-clear-unused-images"
+  "obsidian-git",
+  "obsidian-kanban"
 ]
