@@ -4,8 +4,13 @@
   "tabSize": 3,
   "vimMode": false,
   "promptDelete": false,
-  "mobileToolbarCommands": [],
+  "mobileToolbarCommands": [
+    "editor:undo",
+    "editor:redo",
+    "editor:insert-wikilink"
+  ],
   "defaultViewMode": "preview",
   "attachmentFolderPath": "Attachments",
-  "communityPluginSortOrder": "download"
+  "communityPluginSortOrder": "download",
+  "mobilePullAction": "editor:configure-toolbar"
 }

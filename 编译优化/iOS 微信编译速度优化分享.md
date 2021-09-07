@@ -16,7 +16,6 @@ Debug 时是不需要生成全架构，可以检查一下子工程（尤其开�
 
 ### 3、优化头文件搜索路径
 避免工程  `Header Search Paths`  设置了路径递归引用：
-[image:21B6CF79-6747-41D1-B2F3-A0809104189C-21361-00056A2C9B88C4E8/640.jpeg]
 ![[640 1.jpeg]]
 
 Xcode 编译源文件时，会根据  `Header Search Paths`  自动添加  `-I`  参数，如果递归引用的路径下子目录越多， `-I`  参数也越多，编译器预处理头文件效率就越低，所以不能简单的设置路径递归引用。同样  `Framework Search Paths`  也类似处理。
@@ -134,7 +133,6 @@ public:
 
 PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其文件里的内容能被项目中的其他所有源文件访问。通常放一些通用的宏和头文件，方便编写代码，提高效率。另外 PCH 文件预编译完成后，后面用到 PCH 文件的源文件编译速度也会加快。缺点是 PCH 文件和 PCH 引用到的头文件内容一旦发生变化，引用到 PCH 的所有源文件都要重新编译。所以使用时要谨慎。在 Xcode 里设置  `Prefix Header`  和  `Precompile Prefix Header`  即可使用 PCH 文件并对它进行预编译：
 
-[image:D45CA244-5D04-46E6-A9E0-8DBB11294B61-21361-00056A2C9B6E915F/_640.jpeg]
 ![[d4ef596e-27b0-4cd9-a059-0927abfae1c4.jpeg]]
 
 微信使用 PCH 预编译后，编译速度提升非常可观，快了接近 280s。
@@ -146,7 +144,6 @@ PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其
 
 编译器，是把一种语言（通常是高级语言）转换为另一种语言（通常是低级语言）的程序。大多数编译器由三部分组成：
 
-[image:071EAA86-F8E4-4913-8281-58B728F81D82-21361-00056A2C9B525347/__640.jpeg]
 ![[4f589366-248a-4cb2-a178-5f42209e5b5d.jpeg]]
 
 * 前端（Frontend）：负责解析源码，检查错误，生成抽象语法树（AST），并把 AST 转化成类汇编中间代码
@@ -157,7 +154,6 @@ PCH（Precompile Prefix Header File）文件，也就是预编译头文件，其
 
 LLVM 实现了更通用的编译框架，它提供了一系列模块化的编译器组件和工具链。首先它定义了一种 LLVM IR（Intermediate Representation，中间表达码）。Frontend 把原始语言转换成 LLVM IR；LLVM Optimizer 优化 LLVM IR；Backend 把 LLVM IR 转换为目标平台的机器语言。这样一来，不管是新的语言，还是新的平台，只要实现对应的 Frontend 和 Backend，新的编译器就出来了。
 
-[image:3FD6B693-1898-433B-AE89-689F91CB50E3-21361-00056A2C9B2344D5/___640.jpeg]
 ![[aef54f7f-ef9a-4562-9fe2-95f1e519a743.jpeg]]
 
 在 Xcode，C/C++/ObjC 的编译器是 Clang（前端）+LLVM（后端），简称 Clang。Clang 的编译过程有这几个阶段：

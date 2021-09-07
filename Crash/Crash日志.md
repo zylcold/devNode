@@ -4,9 +4,8 @@
 # 日志内容Demo
 
 日志主要分为六个部分： **进程信息**、**基本信息**、**异常信息**、**线程回溯**、**线程状态** 和 **二进制映像** 。下面是从某APP具体的Crash日志抽出的主要信息，展示如下：
-
+### 1、进程信息
 ```
-//1、进程信息
 Hardware Model: iPhone9,2
 Process: AppName [3580]
 Path: /var/containers/Bundle/Application/C7B90C8A-E269-4413-A011-552971D1ED39/AppName.app
@@ -16,21 +15,21 @@ Code Type: ARM-64 (Native)
 Parent Process:  [1]
 ```
 
+## 2、基本信息
 ```
-//2、基本信息
 Date/Time: 2017-05-22 03:05:06.743 +0800
 OS Version: iPhone OS 10.2.1 (14D27)
 ```
 
+### 3、异常信息
 ```
-//3、异常信息
 Exception Type: NSInvalidArgumentException(SIGABRT)
 Exception Codes: -[NSNull integerValue]: unrecognized selector sent to instance 0x1a9d88ef8 at 0x00000001835c7014
 Crashed Thread: 0
 ```
 
+### 4、线程回溯 （展示发生Crash线程的回溯信息，其他略）
 ```
-//4、线程回溯 （展示发生Crash线程的回溯信息，其他略）
 Thread 0 Crashed: 
 0  libsystem_kernel.dylib         0x00000001835c7014 __pthread_kill + 4
 1  libsystem_c.dylib              0x000000018353b400 abort + 140
@@ -48,8 +47,8 @@ Thread 0 Crashed:
 18 CoreFoundation                 0x00000001844d22b8 CFRunLoopRunSpecific + 436
 ```
 
+### 5、进程状态（展示部分）
 ```
-//5、进程状态（展示部分）
 Thread 0 crashed with ARM 64 Thread State:
      x0:  000000000000000000    x1: 000000000000000000    x2: 000000000000000000     x3: 0xffffffffffffffff
      x4:  0x0000000000000010    x5: 0x0000000000000020    x6: 000000000000000000     x7: 000000000000000000
@@ -58,8 +57,8 @@ Thread 0 crashed with ARM 64 Thread State:
     x16: 0x0000000000000148    x17: 000000000000000000   x18: 000000000000000000    x19: 0x0000000000000006
 ```
 
+### 6、二进制映像 （展示部分）
 ```
-//6、二进制映像 （展示部分）
 Binary Images:
 0x100028000 - 0x1011dbfff +AppName arm64 <ff7a4009322b386ea3e8e9a3fde05be4> /var/containers/Bundle/Application/C7B90C8A-E269-4413-A011-552971D1ED39/AppName.app/AppName
 0x18368a000 - 0x183693fff  libsystem_pthread.dylib arm64 <258dc0c51499393bba7ba3e83dc5bfbb> /usr/lib/system/libsystem_pthread.dylib
