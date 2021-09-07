@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DevOps/浅谈Git.md",
+            "file": "jenkins.md",
             "mode": "source"
           }
         }
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 262.0107650756836
   },
   "right": {
     "id": "a175fe6335bf4866",
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/浅谈Git.md",
+                "file": "jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/浅谈Git.md"
+                "file": "jenkins.md"
               }
             }
           }
@@ -112,20 +112,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 198.09341430664062
   },
   "active": "a979efdb84e80118",
   "lastOpenFiles": [
-    "DevOps/浅谈Git.md",
+    "jenkins.md",
+    "DevOps/持续集成.md",
+    "DevOps/规范Git提交说明-Cz工具集使用介绍.md",
+    "DevOps/版本发布的标准自动化.md",
+    "UIKit框架/TextKit总结.md",
+    "UIKit框架/系统理解 iOS 自动布局.md",
     "DevOps/Untitled.md",
+    "DevOps/浅谈Git.md",
     "编译优化/编译原理及优化.md",
-    "Crash/Crash日志收集的冲突.md",
-    "DevOps/Cz工具集-commitlint.md",
-    "基本概念/mmap基本介绍.md",
-    "基本概念/避免圆角离屏渲染.md",
-    "应用优化/应用瘦身.md",
-    "应用优化/iOS离屏渲染.md",
-    "Runtime/initialize方法.md"
+    "Crash/Crash日志收集的冲突.md"
   ]
 }
