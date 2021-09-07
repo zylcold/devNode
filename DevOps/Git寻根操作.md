@@ -55,7 +55,6 @@ $ git log --oneline
 
 对应的图如下所示：
 
-[image:1B86C063-246A-448A-B7E5-133D14E6F640-1690-00000695C07E0AB8/T1YImFXzVeXXX9mMvu-254-87.jpg]
 ![[T1YImFXzVeXXX9mMvu-254-87 1.jpg]]
 
 ### 基于master新建br1分支，并提交两次
@@ -82,7 +81,7 @@ $ git log --oneline
 
 对应的图如下所示：
 
-[image:5A48A9B8-7D79-4D42-82BF-DE71103520B2-1690-00000695C0641688/T1051FXwRcXXcAiK.U-229-168.png]
+
 ![[T1051FXwRcXXcAiK.U-229-168 1.png]]
 
 在分支”br1”上，提交”c3”,commit ID为4927，此时HEAD指向br1，br1引用指向”c3”对应提交4927.
@@ -100,7 +99,6 @@ $ git log --oneline
 
 对应的图如下所示：
 
-[image:51EBA8AF-3F66-40B6-91FE-D09730DB682E-1690-00000695C050EE13/T1w7GEXDVeXXXFn2ZU-232-273.png]
 ![[T1w7GEXDVeXXXFn2ZU-232-273 1.png]]
 
 
@@ -134,7 +132,6 @@ $ git log --oneline
 
 对应的图如下所示：
 
-[image:D893A7DB-4E3D-4EE0-8612-7488F57C3506-1690-00000695C03AF1D5/T1vlKFXztbXXaxZYEX-519-266.png]
 ![[T1vlKFXztbXXaxZYEX-519-266 1.png]]
 
 
@@ -168,7 +165,6 @@ $ git log --oneline
 
 对应的图如下所示：
 
-[image:6912EF44-BE83-4B9B-8C5F-35CB5887C05C-1690-00000695C01EA495/T1NkuFXCtbXXanz57W-763-261.png]
 ![[T1NkuFXCtbXXanz57W-763-261.png]]
 
 ### 切换到master分支，合并br1，br2和br3分支
@@ -195,7 +191,6 @@ $ git log --oneline
 
 这时候，运用git log –oneline –graph查看生成的树状图，如下所示.
 
-[image:149F5B70-A697-4A11-80A3-F76A2FF7AB4E-1690-00000695C00A9AD6/T1nRuEXAhfXXc7WjM_-560-195.jpg]
 ![[T1nRuEXAhfXXc7WjM_-560-195.jpg]]
 
 对应的图如下所示：
@@ -217,7 +212,6 @@ $ git log --oneline
 
 我们再来看看3b03对应节点的父提交，如下图所示：
 
-[image:8303FC85-9859-4652-A55E-F225C715861F-1690-00000695BFE17398/T19h1DXqJhXXcUN6s_-560-166.jpg]
 ![[T19h1DXqJhXXcUN6s_-560-166.jpg]]
 
 从图得知，3b03一共有三个父提交，分别是4927,063f,4f9c.
@@ -248,8 +242,7 @@ HEAD is now at 063f6e6... c5
 
 我们发现”c5”对应的commit值063f正是3b03第二个父提交的commit 对应的图如下所示：
 
-[image:2A40EC67-2DB9-4FE8-8492-F9BD0F2C4E75-1690-00000695BF91CE32/T1RruGXztaXXaHLMA2-765-337.jpg]
-	![[T1RruGXztaXXaHLMA2-765-337.jpg]]
+![[T1RruGXztaXXaHLMA2-765-337.jpg]]
 
 现在再切回master分支，git checkout master
 
@@ -265,7 +258,7 @@ HEAD is now at 4f9ca79... c7
 
 对应的图如下所示：
 
-[image:963167D3-C679-4085-A529-9FB895B6985C-1690-00000695BF7D89FD/T1Dk9FXqpbXXcW.JU7-770-369.jpg]
+
 	
 	![[T1Dk9FXqpbXXcW.JU7-770-369.jpg]]
 
@@ -279,14 +272,14 @@ $ git checkout HEAD~2
 HEAD is now at 1c7383c... c2
 ```
 
-[image:2352E44D-9ACF-4FE3-8E6A-C3D736BAB625-1690-00000695BF6583B8/T1j1WEXytfXXXO.VUN-756-358.png]
-	![[T1j1WEXytfXXXO.VUN-756-358.png]]
+
+![[T1j1WEXytfXXXO.VUN-756-358.png]]
 	
 
 这时候HEAD悄然来到了”c2”的commit 1c73，因此，HEAD~2 相当于HEAD的第一个父提交的第一个父提交。即`HEAD~2 = HEAD^^ = HEAD^1^1`, 符合预期！好开心的哟！
 
 
-[[区别：git reset与git checkout]]
+[[git reset和git checkout]]
 
 五.总结
 

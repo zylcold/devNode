@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "jenkins.md",
-            "mode": "source"
+            "file": "DevOps/DevOps.md",
+            "mode": "preview"
           }
         }
       }
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.0107650756836
+    "width": 238.0107650756836
   },
   "right": {
     "id": "a175fe6335bf4866",
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jenkins.md",
+                "file": "DevOps/DevOps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "jenkins.md"
+                "file": "DevOps/DevOps.md"
               }
             }
           }
@@ -116,15 +116,15 @@
   },
   "active": "a979efdb84e80118",
   "lastOpenFiles": [
-    "jenkins.md",
-    "DevOps/持续集成.md",
-    "DevOps/规范Git提交说明-Cz工具集使用介绍.md",
-    "DevOps/版本发布的标准自动化.md",
-    "UIKit框架/TextKit总结.md",
-    "UIKit框架/系统理解 iOS 自动布局.md",
-    "DevOps/Untitled.md",
-    "DevOps/浅谈Git.md",
-    "编译优化/编译原理及优化.md",
-    "Crash/Crash日志收集的冲突.md"
+    "DevOps/DevOps.md",
+    "DevOps/Git寻根操作.md",
+    "DevOps/Git提交说明规范结构.md",
+    "DevOps/Git提交说明 commit.md",
+    "DevOps/Git如何查看当前分支提交ID的树状图？.md",
+    "DevOps/Git如何查看HEAD和引用的值？.md",
+    "DevOps/Git钩子工具-huksy.md",
+    "DevOps/Git-Commit-Log规范.md",
+    "DevOps/git reset和git checkout.md",
+    "DevOps/git pull和git pull --rebase.md"
   ]
 }

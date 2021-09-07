@@ -197,7 +197,7 @@ module.exports = {
 安装符合Angular风格的校验规则，[[Cz工具集-config-conventional]]
 
 ### Git钩子工具
-[[Git钩子工具-huksy]]
+[[钩子工具-huksy]]
 
 需要注意，使用该校验规则不能对 `.cz-config.js` 进行不符合Angular规范的定制处理，例如之前的汉化，此时需要将 `.cz-config.js` 的文件按照官方示例文件 [cz-config-EXAMPLE.js](https://github.com/leonardoanalista/cz-customizable/blob/master/cz-config-EXAMPLE.js) 进行符合Angular风格的改动。 
 

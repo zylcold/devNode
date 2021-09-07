@@ -1,11 +1,4 @@
-#devops #git 
-整理自[《Commit message 和 Change log 编写指南》-阮一峰](https://link.jianshu.com/?t=http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
-
-# Commit message目的
-
-commit message 应该清晰明了，说明本次提交的目的。
-
-# Angular 规范
+## 标准格式
 
 标准格式如下：
 
@@ -124,25 +117,10 @@ revert: feat(pencil): add 'graphiteWidth' option
 This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
 ```
 
-Body部分的格式是固定的，必须写成This reverts commit <hash>.，其中的hash是被撤销 commit 的 SHA 标识符。
+Body部分的格式是固定的，必须写成`This reverts commit <hash>`.，其中的hash是被撤销 commit 的 SHA 标识符。
 
 如果当前 commit 与被撤销的 commit，在同一个发布（release）里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 commit，会出现在 Change log 的Reverts小标题下面。
 
-# 提交频率
 
-关于什么时候提交一次：
-
-每次你写完一个功能的时候，就应该做一次提交（这个提交是提交到本地的git库中）
-
-> 当然，这里的写完表示的是你的这个功能是没有问题的；
-
-# 参考文档
-
-[Git 提交记录和分支模型](https://link.jianshu.com/?t=https://cattail.me/tech/2016/06/06/git-commit-message-and-branching-model.html)
-
-  
-  
-作者：huanqiang  
-链接：https://www.jianshu.com/p/c7e40dab5b05  
-来源：简书  
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+## 目的
+![[Angular 规范的目的]]

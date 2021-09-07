@@ -11,7 +11,7 @@
   "lineWidth": 40,
   "maxWidth": 88,
   "textNormal": 12,
-  "textSmall": 12,
+  "textSmall": 10,
   "fancyCursor": true,
   "trimNames": true,
   "fullWidthMedia": true,
