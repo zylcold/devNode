@@ -7,10 +7,9 @@
         "id": "a979efdb84e80118",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "DevOps/DevOps.md",
-            "mode": "preview"
+            "file": "Kanban.md"
           }
         }
       }
@@ -76,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/DevOps.md",
+                "file": "Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/DevOps.md"
+                "file": "Kanban.md"
               }
             }
           }
@@ -116,15 +115,15 @@
   },
   "active": "a979efdb84e80118",
   "lastOpenFiles": [
+    "Kanban.md",
+    "README.md",
+    "iOS 要点.md",
     "DevOps/DevOps.md",
     "DevOps/Git寻根操作.md",
     "DevOps/Git提交说明规范结构.md",
     "DevOps/Git提交说明 commit.md",
     "DevOps/Git如何查看当前分支提交ID的树状图？.md",
     "DevOps/Git如何查看HEAD和引用的值？.md",
-    "DevOps/Git钩子工具-huksy.md",
-    "DevOps/Git-Commit-Log规范.md",
-    "DevOps/git reset和git checkout.md",
-    "DevOps/git pull和git pull --rebase.md"
+    "DevOps/Git钩子工具-huksy.md"
   ]
 }
