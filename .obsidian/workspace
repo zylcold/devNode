@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
-            "mode": "source"
+            "file": "README.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md"
+                "file": "README.md"
               }
             }
           }
@@ -112,20 +112,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "c0035820985775ff",
   "lastOpenFiles": [
-    "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
+    "README.md",
+    "Runtime相关问题.md",
+    "WKWebview的 哪些坑.md",
     "iOS 要点.md",
-    "WebView/理解WKWebview.md",
-    "Kanban.md",
-    "DevOps/jenkins.md",
-    "jenkins.md",
-    "DevOps/Untitled.md",
-    "编译优化/编译原理及优化.md",
-    "Crash/Crash日志收集的冲突.md",
-    "DevOps/Cz工具集-commitlint.md"
+    "浅谈iOS的CI/CD.md",
+    "编译优化/理解iOS签名.md",
+    "理解Git.md",
+    "常见的Crash及解决方案.md",
+    "理解野指针.md",
+    "理解OOM.md"
   ]
 }

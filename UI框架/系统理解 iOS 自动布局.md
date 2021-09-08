@@ -2,6 +2,7 @@
 
 [原文链接](http://chuquan.me/2019/09/25/systematic-understand-ios-autolayout/)
 
+
 最近准备阅读 Masonry 的源代码，学习一下其中的设计思想。然而，阅读了一部分之后，发现自己对 iOS 自动布局了解的不够系统，也不够深入。于是，准备好好学习学习 iOS 自动布局的基础知识。
 
 下面是我对 iOS 布局系统的一些整理和总结，当然，自动布局是其中的重点。
@@ -10,17 +11,21 @@
 
 苹果在 iPhone 4 时推出了绝对布局，随着 iOS 设备不断增多，苹果在 iOS 6 时又推出了自动布局（Auto Layout）。在自动布局逐步完善的过程中，苹果也推出了诸如：Size Class、Stack View、UILayoutGuide 等技术，但是它们的本质都是基于自动布局。
 
+
+历史：
+iOS 5 >  绝对布局
+iOS 6 > Auto Layout、VFL
+iOS 9 > UILayoutGuide、NSLayoutAnchor、UIStackView
+iOS 11 > Safe Area 
+iOS 
 # 来源
 
-1997 年，Alan Boring，Kim Marriott，Peter Stuckey 等人在它们发表的论文《Solving Linear Arithmetic Constraints for User Interface Applications》中提出了解决布局问题的 **Cassowary constraints-solving** 算法实现。
+Cassorwary算法
+
+![[Cassorwary算法]]
+
 
 2011 年，苹果将 Cassowary 算法应用到了自家的布局引擎 Auto Layout 中。
-
-**Cassorwary**
-
-> Cassowary 能够有效解析 **线性等式系统** 和 **线性不等式系统** ，用来表示用户界面的相等关系和不等关系。基于此，Cassowary 开发了一种规则系统，可以通过 **约束** 来描述视图之间的关系。约束就是规则，能够表示出一个视图相对于另一个视图的位置。
-
-由于 Cassowary 算法的先进性，很多编程语言都实现了对应的库，如：JavaScript、.NET、Java、SmallTalk、C++。
 
 # 约束
 
@@ -28,13 +33,12 @@ Cassowary 的核心是基于 **约束（Constraint）** 来描述视图之间的
 
 ```
 item1.attribute1 = multiplier × item2.attribute2 + constant
-复制代码
 ```
 
 下面我们通过一个简单的约束来介绍约束方程式。
 
-[image:6CE885BD-79B7-4563-99D9-46ED0F06DDCF-2914-000002966DB1A1A8/16ea0935049caa0b.jpeg]
 ![[16ea0935049caa0b.jpeg]]
+
 
 该约束表示红色视图的左边界在蓝色视图的右边界再往右 8 个像素点。 **注意，这里的 `=`并不是赋值的意思，而是相等的意思** 。
 
@@ -89,7 +93,6 @@ typedef NS_ENUM(NSInteger, NSLayoutAttribute) {
 
 关于 `layoutMargins` 我们会在下文提到。
 
-[image:E8023C61-09AE-4EA3-A803-735E4679A95D-2914-000002966DB05290/16ea0935052b75d9.jpeg]
 ![[16ea0935052b75d9.jpeg]]
 
 ### 关系
@@ -111,7 +114,6 @@ typedef NS_ENUM(NSInteger, NSLayoutRelation) {
 1. 一个视图是另一个视图的视图
 2. 两个视图在一个窗口下有一个非 `nil` 的公共祖先视图。
 
-[image:FC01F39A-7F05-46D3-BE1B-B903DA98277D-2914-000002966DAF4774/16ea09350704231a.jpeg]
 ![[16ea09350704231a.jpeg]]
 
 ## 约束优先级
@@ -171,7 +173,6 @@ static const UILayoutPriority UILayoutPriorityFittingSizeLevel = 50;
 
 `UIView` 有一个 `UIEdgeInsets` 类型的属性 `layoutMargins` ，它表示一个视图的内容和它四个边界之间的空隙，如下图所示。
 
-[image:9DEB5834-A8B0-426F-AC5E-1FCC75CEB871-2914-000002966DAE16DF/16ea093506c7ab2d.jpeg]
 ![[16ea093506c7ab2d.jpeg]]
 
 `UIView` 的 `layoutMarginsGuide` 属性其实是 `layoutMargins` 的另一种表现形式，可用于创建布局约束。 `layoutMarginsGuide` 是一个 **只读** 属性。
@@ -182,7 +183,6 @@ static const UILayoutPriority UILayoutPriorityFittingSizeLevel = 50;
 
 `safeAreaLayoutGuide` 属性和 `layoutMarginsGuide` 一样，也是 **只读** 属性，因为它们默认都已经设定了一个虚拟区域，我们可以直接基于此区域设置约束。
 
-[image:4E63BD8B-5248-48C9-85EB-BAD945D14A2E-2914-000002966DAD149C/16ea093507441c85.jpeg]
 ![[16ea093507441c85.jpeg]]
 
 ### NSLayoutAnchor
@@ -237,7 +237,7 @@ let margins = view.layoutMarginsGuide
 
 subview.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
 subview.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-复制代码
+	
 ```
 
 如下所示为 `NSLayoutAnchor` 提供的一些间接创建约束的方法。
@@ -259,36 +259,21 @@ func anchorWithOffset(to otherAnchor: NSLayoutYAxisAnchor) -> NSLayoutDimension
 func constraint(equalTo anchor: NSLayoutDimension, multiplier m: CGFloat) -> NSLayoutConstraint
 func constraint(equalTo anchor: NSLayoutDimension, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint
 func constraint(equalToConstant c: CGFloat) -> NSLayoutConstraint
-复制代码
 ```
 
 ## VFL
 
-VFL（Visual Format Language）是苹果推出的为了简化 Auto Layout 编码的 DSL（Domain-Specific Language）。
+![[VFL#简介]]
 
-### 语法
+[[VFL#语法]]
 
-说明 示例     标准间隔 `[button]-[textField]`   宽度约束 `[button(>=50)]`   与父视图的关系 `|-50-[purpleBox]-50-|`   垂直布局 `V:[topField]-10-[bottomField]`   Flush Views `[maroonView][blueView]`   优先级 `[button(100@20)]`   宽度相等 `[button(==button2)]`   Multiple Predicates `[flexibleButton(>=70,<=100)]`    
+[[VFL#创建约束]]
 
-注意，创建 VFL 语句描述时需要注意以下几点：
-
-* `H:` 和 `V:` 每次只能使用一个
-* 视图变量名出现在方括号中，如： `[blueView]`
-* 语句的顺序：从上到下，从左到右
-* 视图间隔以数字常量出现，如： `-10-`
-* `|` 表示父视图
-
-`NSLayoutConstraint` 类提供了相关的 API 允许通过 VFL 语句创建约束。
-
-```objc
-+ (NSArray<NSLayoutConstraint *> *)constraintsWithVisualFormat:(NSString *)format options:(NSLayoutFormatOptions)opts metrics:(NSDictionary<NSString *,id> *)metrics (NSDictionary<NSString *,id> *)views;
-```
-
-其中， `format` 表示 VFL 语句； `options` 表示约束类型； `metrics` 表示 VFL 语句中用到的具体数值； `views` 表示 VFL 语句中用到的控件。
 
 下面，我们来看一个使用 VFL 创建约束的例子。
 
 ```objc
+
 NSNumber *left = @50;
 NSNumber *top = @50;
 NSNumber *width = @100;
@@ -296,6 +281,7 @@ NSNumber *height = @100;
 NSDictionary *views = NSDictionaryOfVariableBindings(view1, view2);
 NSDictionary *metrics = NSDictionaryOfVariableBindings(left, top, width, height);
 [view1 addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-left-[view(>=width)]" options:0 metrics:metrics views:views]];
+
 ```
 
 # 布局因素
@@ -311,7 +297,6 @@ NSDictionary *metrics = NSDictionaryOfVariableBindings(left, top, width, height)
 * 基线对齐（Baseline Alignment）
 * 对齐矩形（Alignment Rect）
 
-[image:EDF372E9-A256-4221-8F48-C200999C3FD6-2914-000002966DABECEB/16ea093508925870.jpeg]
 ![[16ea093508925870.jpeg]]
 
 ## 尺寸约束
@@ -348,7 +333,6 @@ View Intrinsic Content Size  Sliders Defines only the width (iOS).Defines the wi
 
 `Content Compressing Priority` ：表示一个视图抗压缩的优先级，数值越高优先级越高，越不容易被压缩。
 
-[image:76EBC237-2E9C-42A9-B974-5D95618E9A5C-2914-000002966DAA871B/16ea0935359fa332.jpeg]
 ![[16ea0935359fa332.jpeg]]
 
 默认情况下，视图的 `Content Hugging Priority` 值是 `250` ， `Content Compression Resistance Priority` 值是 `750` 。因此，拉伸视图比压缩视图更容易。
@@ -369,7 +353,6 @@ Intrinsic Content Size 是布局引擎的输入，基于此可以生成约束，
 
 基线对齐则是文本专有的一种专有的对齐方式。基线对齐包括 `firstBaseline` 和 `lastBaseline` 两种对齐方式。如下所示：
 
-[image:9AC71B56-F94F-4645-8642-0F915D879F05-2914-000002966DA948F3/16ea093536bccfd0.jpeg]
 ![[16ea093536bccfd0.jpeg]]
 
 ## 对齐矩形
@@ -380,7 +363,6 @@ Intrinsic Content Size 是布局引擎的输入，基于此可以生成约束，
 
 有时候，我们在创建复杂视图时，可能会添加各种装饰元素，如：阴影，角标等。为了降低开发成本，我们会直接使用设计师给的切图。如下所示：
 
-[image:23184E5D-DE8F-4CEC-ABBA-C1BCFD19F0C2-2914-000002966DA80B46/16ea093535d15b70.jpeg]
 ![[16ea093535d15b70.jpeg]]
 
 其中，(a) 是设计师给的切图，(c) 是这个图的 `frame` 。显然，我们在布局时，不想将阴影和角标考虑进入（视图的 `center` 和底边、右边都发生了偏移），而只考虑中间的核心部分，如图 (b) 中框出的矩形所示。
@@ -421,7 +403,6 @@ iOS 的布局渲染可以分为三个阶段，如下所示：
 2. **布局更新** （Layout Update）
 3. **显示重绘** （Display Redraw）
 
-[image:113137DB-7463-44CE-A34A-D5A269D00EEF-2914-000002966DA3DC43/16ea09353b06216e.jpeg]
 ![[16ea09353b06216e.jpeg]]
 
 其中，每一步都是依赖前一步操作。显示重绘依赖布局更新，布局更新依赖约束更新。
