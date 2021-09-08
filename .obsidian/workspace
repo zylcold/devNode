@@ -117,14 +117,14 @@
   "active": "d2b4393da9bcbbda",
   "lastOpenFiles": [
     "DevOps/理解Git.md",
+    "版本控制系统.md",
     "DevOps/Git相关/Git的工作区域.md",
+    "DevOps/Git相关/Git的文件状态.md",
+    "DevOps/Git相关/Git的状态.md",
     "DevOps/Git相关/Git的常见指令.md",
     "DevOps/Cz工具集-commitlint.md",
     "DevOps/Git相关/概念-直接记录快照,而非差异比较.md",
     "暂存区域.md",
-    "分布式版本控制系统.md",
-    "概念-直接记录快照,而非差异比较.md",
-    "概念-Git 保证完整性.md",
-    "概念 - Git 保证完整性.md"
+    "分布式版本控制系统.md"
   ]
 }
