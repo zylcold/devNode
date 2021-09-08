@@ -8,9 +8,9 @@
   "textFont": "-apple-system,BlinkMacSystemFont,\"Segoe UI Emoji\",\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif",
   "editorFont": "-apple-system,BlinkMacSystemFont,\"Segoe UI Emoji\",\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif",
   "monoFont": "Menlo,SFMono-Regular,Consolas,Roboto Mono,monospace",
-  "lineWidth": 40,
+  "lineWidth": null,
   "maxWidth": 88,
-  "textNormal": 12,
+  "textNormal": 10,
   "textSmall": 10,
   "fancyCursor": true,
   "trimNames": true,
@@ -20,7 +20,7 @@
   "underlineInternal": true,
   "underlineExternal": true,
   "useSystemTheme": true,
-  "folding": false,
-  "relationLinesPreview": false,
-  "relationLinesEdit": false
+  "folding": true,
+  "relationLinesPreview": true,
+  "relationLinesEdit": true
 }

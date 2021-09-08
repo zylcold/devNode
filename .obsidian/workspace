@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "a979efdb84e80118",
+        "id": "c0035820985775ff",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "Kanban.md"
+            "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
+            "mode": "source"
           }
         }
       }
@@ -17,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ac3bc207150082c4",
+    "id": "fc0d25ffdf71a7ff",
     "type": "split",
     "children": [
       {
-        "id": "dbe3242cdb51b2f9",
+        "id": "13d3584b3f2091c8",
         "type": "tabs",
         "children": [
           {
-            "id": "e1cca46c138b0b22",
+            "id": "438b2030eafc5421",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -33,7 +34,7 @@
             }
           },
           {
-            "id": "c8da6a11bda92afe",
+            "id": "33adce1b664e3840",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -48,7 +49,7 @@
             }
           },
           {
-            "id": "1687a1ad3375107c",
+            "id": "42cacea17daf9ce5",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -59,23 +60,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.0107650756836
+    "width": 300
   },
   "right": {
-    "id": "a175fe6335bf4866",
+    "id": "c612957278e05e0c",
     "type": "split",
     "children": [
       {
-        "id": "578b5a20efd65f1a",
+        "id": "64a48c26ec9e64dc",
         "type": "tabs",
         "children": [
           {
-            "id": "48c71dc6a00114f9",
+            "id": "900444ba16db8da6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kanban.md",
+                "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +88,7 @@
             }
           },
           {
-            "id": "08d53c8520453bbd",
+            "id": "91198804cdfbbb3c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -98,12 +99,12 @@
             }
           },
           {
-            "id": "0ec14c488bf7f8e3",
+            "id": "c61288771293bddb",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kanban.md"
+                "file": "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md"
               }
             }
           }
@@ -111,19 +112,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 198.09341430664062
+    "width": 300,
+    "collapsed": true
   },
-  "active": "a979efdb84e80118",
+  "active": "c0035820985775ff",
   "lastOpenFiles": [
-    "Kanban.md",
-    "README.md",
+    "WebView/WKWebView于UIWebView浏览器之间内核引擎的区别.md",
     "iOS 要点.md",
-    "DevOps/DevOps.md",
-    "DevOps/Git寻根操作.md",
-    "DevOps/Git提交说明规范结构.md",
-    "DevOps/Git提交说明 commit.md",
-    "DevOps/Git如何查看当前分支提交ID的树状图？.md",
-    "DevOps/Git如何查看HEAD和引用的值？.md",
-    "DevOps/Git钩子工具-huksy.md"
+    "WebView/理解WKWebview.md",
+    "Kanban.md",
+    "DevOps/jenkins.md",
+    "jenkins.md",
+    "DevOps/Untitled.md",
+    "编译优化/编译原理及优化.md",
+    "Crash/Crash日志收集的冲突.md",
+    "DevOps/Cz工具集-commitlint.md"
   ]
 }

@@ -1,4 +1,5 @@
 # 工作原理
+
 直接记录快照,而非差异比较
 近乎所有操作都是本地执行
 Git 保证完整性
@@ -32,3 +33,4 @@ git remote
 git fetch
 git tag
 git help
+
