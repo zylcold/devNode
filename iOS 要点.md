@@ -48,7 +48,7 @@
 [[性能分析工具]]：常用的性能分析工具
 
 # ⚙️ 运行时
-### runtime
+### Runtime
 [[理解Runtime]]：什么是runtime，runtime的使用技巧
 [[Runtime相关问题]]：runtime常见的问题
 
@@ -58,7 +58,7 @@
 ### GCD
 [[理解GCD]]：什么是GCD，CGD的实现原理
 
-# 💥 CRASH
+# 💥 Crash
 [[浅谈Crash日志]]：Crash日志的捕获与解析
 
 [[理解OOM]]：什么是OOM
