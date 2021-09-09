@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DevOps/Git相关/git remote.md",
-            "mode": "source"
+            "file": "DevOps/理解Git.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Git相关/git remote.md",
+                "file": "DevOps/理解Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Git相关/git remote.md"
+                "file": "DevOps/理解Git.md"
               }
             }
           }
@@ -117,15 +117,15 @@
   },
   "active": "4e42301862e0a6d1",
   "lastOpenFiles": [
+    "DevOps/理解Git.md",
+    "DevOps/Git相关/git fetch.md",
     "DevOps/Git相关/git remote.md",
     "DevOps/Git相关/Git的常见指令.md",
     "git push.md",
     "git pull.md",
-    "DevOps/Git相关/git fetch.md",
     "远程仓库.md",
     "DevOps/Git相关/git commit.md",
     "Git的撤销操作.md",
-    "DevOps/Git相关/git checkout.md",
-    "DevOps/理解Git.md"
+    "DevOps/Git相关/git checkout.md"
   ]
 }
