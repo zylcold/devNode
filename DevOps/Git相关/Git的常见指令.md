@@ -14,5 +14,7 @@
 [[git checkout]]|从Git仓库检出文件
 [[git remote]]|远端配置
 [[git fetch]]|拉取远端
+[[git pull]]|拉取远端仓库并合并
+[[git push]]|推送到远程仓库
 [[git tag]]|tag操作
 [[git rm]]|移除文件

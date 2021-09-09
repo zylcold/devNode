@@ -36,3 +36,8 @@ $ git commit -a -m 'added new benchmarks'
 1 file changed, 5 insertions(+), 0 deletions(-)
 
 ```
+
+
+相关阅读
+[[Git的撤销操作]]
+
