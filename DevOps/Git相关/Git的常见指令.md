@@ -18,3 +18,4 @@
 [[git push]]|推送到远程仓库
 [[git tag]]|tag操作
 [[git rm]]|移除文件
+[[git show]]|查看提交信息
