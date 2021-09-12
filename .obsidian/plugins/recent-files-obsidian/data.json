@@ -1,0 +1,70 @@
+{
+  "recentFiles": [
+    {
+      "basename": "iOS 要点",
+      "path": "iOS 要点.md"
+    },
+    {
+      "basename": "fast-forward合并",
+      "path": "DevOps/Git相关/fast-forward合并.md"
+    },
+    {
+      "basename": "典型分支合并",
+      "path": "DevOps/Git相关/典型分支合并.md"
+    },
+    {
+      "basename": "Git 是如何保存数据",
+      "path": "DevOps/Git相关/Git 是如何保存数据.md"
+    },
+    {
+      "basename": "git show",
+      "path": "DevOps/Git相关/git show.md"
+    },
+    {
+      "basename": "git merge",
+      "path": "DevOps/Git相关/git merge.md"
+    },
+    {
+      "basename": "git branch",
+      "path": "DevOps/Git相关/git branch.md"
+    },
+    {
+      "basename": "Runtime",
+      "path": "Runtime/Runtime.md"
+    },
+    {
+      "basename": "特性分支",
+      "path": "DevOps/Git相关/特性分支.md"
+    },
+    {
+      "basename": "轻量标签",
+      "path": "DevOps/Git相关/轻量标签.md"
+    },
+    {
+      "basename": "处理分支合并冲突",
+      "path": "DevOps/Git相关/处理分支合并冲突.md"
+    },
+    {
+      "basename": "jenkins",
+      "path": "DevOps/jenkins.md"
+    },
+    {
+      "basename": "编译优化",
+      "path": "编译优化/编译优化.md"
+    },
+    {
+      "basename": "DevOps",
+      "path": "DevOps/DevOps.md"
+    },
+    {
+      "basename": "持续集成",
+      "path": "DevOps/持续集成.md"
+    },
+    {
+      "basename": "版本发布的标准自动化",
+      "path": "DevOps/版本发布的标准自动化.md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null
+}

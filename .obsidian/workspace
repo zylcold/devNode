@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "a750030019f78f70",
+        "id": "3313610347a87da8",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -52,13 +52,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "5cbfbe783de0740a",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "7490035ceb934a6a",
@@ -107,20 +114,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "a750030019f78f70",
+  "active": "3313610347a87da8",
   "lastOpenFiles": [
+    "2021-09-10.md",
+    "iOS 要点.md",
+    "DevOps/Git相关/fast-forward合并.md",
+    "DevOps/Git相关/典型分支合并.md",
+    "DevOps/Git相关/Git 是如何保存数据.md",
+    "DevOps/Git相关/git show.md",
     "Git 是如何保存数据.md",
-    "DevOps/Git相关/理解Git.md",
-    "DevOps/Git相关/Git的常见指令.md",
-    "DevOps/Git相关/git config.md",
-    "DevOps/Git相关/git tag.md",
-    "DevOps/Git相关/git checkout.md",
-    "DevOps/Git相关/git push.md",
-    "git show.md",
-    "附注标签.md",
-    "轻量标签.md"
+    "典型分支合并.md",
+    "git merge.md",
+    "git show.md"
   ]
 }

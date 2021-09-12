@@ -19,3 +19,5 @@
 [[git tag]]|tag操作
 [[git rm]]|移除文件
 [[git show]]|查看提交信息
+[[git branch]] | 分支操作
+[[git merge]] | 合并操作
