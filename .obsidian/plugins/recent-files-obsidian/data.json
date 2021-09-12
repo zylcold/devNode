@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "理解Git",
+      "path": "DevOps/理解Git.md"
+    },
+    {
+      "basename": "钩子工具-huksy",
+      "path": "DevOps/Git相关/钩子工具-huksy.md"
+    },
+    {
+      "basename": "版本发布的标准自动化",
+      "path": "DevOps/版本发布的标准自动化.md"
+    },
+    {
+      "basename": "规范Git的提交说明-Cz工具集",
+      "path": "DevOps/Git相关/规范Git的提交说明-Cz工具集.md"
+    },
+    {
+      "basename": "Git 保存数据原理",
+      "path": "DevOps/Git相关/Git 保存数据原理.md"
+    },
+    {
+      "basename": "Git背景",
+      "path": "DevOps/Git相关/Git背景.md"
+    },
+    {
       "basename": "iOS 要点",
       "path": "iOS 要点.md"
+    },
+    {
+      "basename": "写作看板(2021_10)",
+      "path": "KanBan/写作看板(2021_10).md"
+    },
+    {
+      "basename": "编译优化",
+      "path": "编译优化/编译优化.md"
     },
     {
       "basename": "fast-forward合并",
@@ -11,10 +43,6 @@
     {
       "basename": "典型分支合并",
       "path": "DevOps/Git相关/典型分支合并.md"
-    },
-    {
-      "basename": "Git 是如何保存数据",
-      "path": "DevOps/Git相关/Git 是如何保存数据.md"
     },
     {
       "basename": "git show",
@@ -49,20 +77,12 @@
       "path": "DevOps/jenkins.md"
     },
     {
-      "basename": "编译优化",
-      "path": "编译优化/编译优化.md"
-    },
-    {
       "basename": "DevOps",
       "path": "DevOps/DevOps.md"
     },
     {
       "basename": "持续集成",
       "path": "DevOps/持续集成.md"
-    },
-    {
-      "basename": "版本发布的标准自动化",
-      "path": "DevOps/版本发布的标准自动化.md"
     }
   ],
   "omittedPaths": [],

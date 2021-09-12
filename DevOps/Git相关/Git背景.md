@@ -1,7 +1,10 @@
 # 时间线
 > 2002年 出于Linux内核项目的维护需求，项目组中启用了BitKeeper管理和维护代码
+> 
 > 2005年 开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束
+> 
 > 2005年 Linux 开源社区(特别是 Linux 的缔造者 Linus Torvalds)基于使用 BitKcheper 时的经验教训,开发出自己的版本系统Git
+> 
 
 # Git的目标
 

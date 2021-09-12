@@ -1,5 +1,5 @@
 [[版本发布的标准自动化]]
-[[规范Git提交说明-Cz工具集使用介绍]]
+[[规范Git的提交说明-Cz工具集]]
 
 ## Git 操作
 [[git pull和git pull --rebase]]
