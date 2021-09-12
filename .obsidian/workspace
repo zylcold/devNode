@@ -6,69 +6,24 @@
       {
         "id": "3313610347a87da8",
         "type": "leaf",
-        "dimension": 66.15384615384615,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DevOps/理解Git.md",
+            "file": "修改提交记录.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "02200e3b8f9e4e8d",
-        "type": "split",
-        "dimension": 33.84615384615384,
-        "children": [
-          {
-            "id": "88afcc6f51dfb564",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "DevOps/理解Git.md"
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "45cece90d216ee27",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "DevOps/理解Git.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
-              }
-            }
+        "id": "b3b46dcbbc24f4f3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "DevOps/Git相关/分支开发工作流.md",
+            "mode": "preview"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -151,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/理解Git.md"
+                "file": "修改提交记录.md"
               }
             }
           },
@@ -161,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/理解Git.md",
+                "file": "修改提交记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DevOps/理解Git.md",
+                "file": "修改提交记录.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -215,17 +170,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "45cece90d216ee27",
+  "active": "3313610347a87da8",
   "lastOpenFiles": [
+    "修改提交记录.md",
     "DevOps/理解Git.md",
-    "DevOps/钩子工具-huksy.md",
-    "DevOps/版本发布的标准自动化.md",
-    "DevOps/Cz工具集.md",
-    "DevOps/规范Git提交说明-Cz工具集使用介绍.md",
-    "DevOps/Git相关/理解Git.md",
-    "DevOps/Git相关/Git 保存数据原理.md",
-    "DevOps/Git相关/Git 是如何保存数据.md",
-    "DevOps/Git相关/Git背景.md",
-    "iOS 要点.md"
+    "DevOps/Git相关/不常用的Git指令.md",
+    "git regex.md",
+    "git stash.md",
+    "DevOps/Git相关/Git-Commit-Log规范.md",
+    "DevOps/Git相关/Git如何查看当前分支提交ID的树状图？.md",
+    "DevOps/Git相关/Git如何查看HEAD和引用的值？.md",
+    "DevOps/Git相关/分支开发工作流.md",
+    "DevOps/Git相关/git describe.md"
   ]
 }

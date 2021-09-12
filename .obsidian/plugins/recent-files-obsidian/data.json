@@ -1,8 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "修改提交记录",
+      "path": "修改提交记录.md"
+    },
+    {
       "basename": "理解Git",
       "path": "DevOps/理解Git.md"
+    },
+    {
+      "basename": "不常用的Git指令",
+      "path": "DevOps/Git相关/不常用的Git指令.md"
+    },
+    {
+      "basename": "git regex",
+      "path": "git regex.md"
+    },
+    {
+      "basename": "git stash",
+      "path": "git stash.md"
+    },
+    {
+      "basename": "Git-Commit-Log规范",
+      "path": "DevOps/Git相关/Git-Commit-Log规范.md"
+    },
+    {
+      "basename": "Git如何查看当前分支提交ID的树状图？",
+      "path": "DevOps/Git相关/Git如何查看当前分支提交ID的树状图？.md"
+    },
+    {
+      "basename": "Git如何查看HEAD和引用的值？",
+      "path": "DevOps/Git相关/Git如何查看HEAD和引用的值？.md"
+    },
+    {
+      "basename": "分支开发工作流",
+      "path": "DevOps/Git相关/分支开发工作流.md"
+    },
+    {
+      "basename": "git describe",
+      "path": "DevOps/Git相关/git describe.md"
+    },
+    {
+      "basename": "git archive",
+      "path": "DevOps/Git相关/git archive.md"
+    },
+    {
+      "basename": "git shortlog",
+      "path": "DevOps/Git相关/git shortlog.md"
+    },
+    {
+      "basename": "变基",
+      "path": "变基.md"
     },
     {
       "basename": "钩子工具-huksy",
