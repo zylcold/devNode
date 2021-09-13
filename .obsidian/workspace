@@ -4,23 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "3313610347a87da8",
+        "id": "a750030019f78f70",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "修改提交记录.md",
-            "mode": "source"
+            "file": "DevOps/Git相关/git regex.md",
+            "mode": "preview"
           }
         }
       },
       {
-        "id": "b3b46dcbbc24f4f3",
+        "id": "1055b119004eac31",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DevOps/Git相关/分支开发工作流.md",
+            "file": "DevOps/Git相关/git stash.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "dea8e0dd28962cc9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "DevOps/Git相关/git regex.md",
             "mode": "preview"
           }
         }
@@ -29,15 +40,23 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f9917ff00fd34073",
+    "id": "ea41e015c7c91cc9",
     "type": "split",
     "children": [
       {
-        "id": "8e1871eca0496343",
+        "id": "52e0f21eeae62a9a",
         "type": "tabs",
         "children": [
           {
-            "id": "8c293534a57a42f9",
+            "id": "76699e71bfe6bb05",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "387c71d85b1dc29e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -45,7 +64,7 @@
             }
           },
           {
-            "id": "9a4e834a3d206a89",
+            "id": "1ce46abcf2f80e2a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,63 +79,35 @@
             }
           },
           {
-            "id": "ab1fd4a8ab8d8e2e",
+            "id": "0f626ae03c0324f4",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "5cbfbe783de0740a",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "7490035ceb934a6a",
+    "id": "7253561ce4cc1a85",
     "type": "split",
     "children": [
       {
-        "id": "7effd179670d74af",
+        "id": "184657fdfd735786",
         "type": "tabs",
         "children": [
           {
-            "id": "05b471c639ec24ac",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "247d91f8de7b9ff9",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "修改提交记录.md"
-              }
-            }
-          },
-          {
-            "id": "e06cb3537e54dddd",
+            "id": "b1131c3f3c72a8b4",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "修改提交记录.md",
+                "file": "DevOps/Git相关/git regex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,59 +119,44 @@
             }
           },
           {
-            "id": "24d0e775e69928d4",
+            "id": "278ae6f278ff603c",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "tag",
               "state": {
-                "file": "修改提交记录.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.8982158045483695,
-                  "close": true
-                }
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2b48c9015b291e49",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DevOps/Git相关/git regex.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "3313610347a87da8",
+  "active": "dea8e0dd28962cc9",
   "lastOpenFiles": [
-    "修改提交记录.md",
-    "DevOps/理解Git.md",
-    "DevOps/Git相关/不常用的Git指令.md",
     "git regex.md",
     "git stash.md",
-    "DevOps/Git相关/Git-Commit-Log规范.md",
-    "DevOps/Git相关/Git如何查看当前分支提交ID的树状图？.md",
-    "DevOps/Git相关/Git如何查看HEAD和引用的值？.md",
-    "DevOps/Git相关/分支开发工作流.md",
-    "DevOps/Git相关/git describe.md"
+    "修改提交记录.md",
+    "DevOps/Git相关/git shortlog.md",
+    "DevOps/Git相关/不常用的Git指令.md",
+    "DevOps/Git相关/理解Git.md",
+    "DevOps/Git相关/Git的工作原理.md",
+    "DevOps/Git相关/Git的常见指令.md",
+    "分支开发工作流.md",
+    "远程分支.md"
   ]
 }

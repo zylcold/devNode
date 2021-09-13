@@ -1,24 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "修改提交记录",
-      "path": "修改提交记录.md"
+      "basename": "git regex",
+      "path": "DevOps/Git相关/git regex.md"
     },
     {
-      "basename": "理解Git",
-      "path": "DevOps/理解Git.md"
+      "basename": "git stash",
+      "path": "DevOps/Git相关/git stash.md"
+    },
+    {
+      "basename": "修改提交记录",
+      "path": "DevOps/Git相关/修改提交记录.md"
+    },
+    {
+      "basename": "git shortlog",
+      "path": "DevOps/Git相关/git shortlog.md"
     },
     {
       "basename": "不常用的Git指令",
       "path": "DevOps/Git相关/不常用的Git指令.md"
     },
     {
-      "basename": "git regex",
-      "path": "git regex.md"
-    },
-    {
-      "basename": "git stash",
-      "path": "git stash.md"
+      "basename": "理解Git",
+      "path": "DevOps/理解Git.md"
     },
     {
       "basename": "Git-Commit-Log规范",
@@ -45,12 +49,8 @@
       "path": "DevOps/Git相关/git archive.md"
     },
     {
-      "basename": "git shortlog",
-      "path": "DevOps/Git相关/git shortlog.md"
-    },
-    {
       "basename": "变基",
-      "path": "变基.md"
+      "path": "DevOps/Git相关/变基.md"
     },
     {
       "basename": "钩子工具-huksy",
