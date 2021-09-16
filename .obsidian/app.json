@@ -2,7 +2,7 @@
   "alwaysUpdateLinks": true,
   "showLineNumber": false,
   "tabSize": 3,
-  "vimMode": true,
+  "vimMode": false,
   "promptDelete": false,
   "mobileToolbarCommands": [
     "editor:undo",

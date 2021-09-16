@@ -8,11 +8,9 @@
   "obsidian-minimal-settings",
   "obsidian-activity-history",
   "oz-image-plugin",
-  "obsidian-git",
   "obsidian-kanban",
-  "recent-files-obsidian",
   "folder-note-plugin",
   "maximise-active-pane-obsidian",
-  "cmenu-plugin",
-  "obsidian-plantuml"
+  "obsidian-plantuml",
+  "obsidian-git"
 ]
