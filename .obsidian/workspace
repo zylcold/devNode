@@ -7,8 +7,11 @@
         "id": "a750030019f78f70",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "iOS 要点.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -73,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "iOS 要点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "iOS 要点.md"
+              }
             }
           }
         ]
@@ -111,9 +117,9 @@
   },
   "active": "a750030019f78f70",
   "lastOpenFiles": [
+    "iOS 要点.md",
     "DevOps/Git相关/Git的树对象.md",
     "Git的树对象.md",
-    "iOS 要点.md",
     "浅谈iOS的CI/浅谈iOS的CI与CD.md",
     "DevOps/Git相关/Git的工作区域.md",
     "DevOps/Git相关/Git 仓库.md",
