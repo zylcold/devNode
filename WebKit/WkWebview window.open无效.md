@@ -1,9 +1,15 @@
 #webview  #workaround 
 
-2016.11.17 15:12:27
+# 表现
+JS调用 `window.open` 方法，不会起到作用。
 
-由于iOS的WkWebview对window.open方法进行了安全限制，即调用该方法，不会起到作用。
-解放方法：当触发window.open方法时，会触发代理WKUIDelegate中的
+# 原因
+iOS的WkWebview对window.open方法进行了安全限制
+
+# 解决方法
+
+当触发window.open方法时，会触发代理WKUIDelegate中的
+
 ```objc
 - (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures;
 ```

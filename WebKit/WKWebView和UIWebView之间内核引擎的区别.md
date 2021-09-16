@@ -3,7 +3,7 @@
 翻译文，原文地址
 [WKWebView: Differences from UIWebView browsing engine - Knowledge Base](http://docs.kioskproapp.com/article/840-wkwebview-supported-features-known-issues)
 
-### 优点
+## 优点
 
 * 多进程，在app的主进程之外执行
 * 使用更快的Nitro JavaScript引擎
@@ -12,7 +12,7 @@
 * 支持服务端的身份校验
 * 支持对错误的自签名安全证书和证书进行身份验证
 
-### 问题
+## 问题
 
 * 需要iOS9或更高版本(WKWebView在iOS8引入，但是很多功能，支持比较全面在iOS9以后的版本)
 * 不支持通过AJAX请求本地存储的文件
@@ -135,8 +135,6 @@ WKWebView不允许XHR请求file：// URI，因为这些URI违反了浏览器引�
 ~~不能进行截屏操作~~
 
 ~~尽管我们在测试中没有看到使用Kiosk Pro的JavaScript API进行屏幕捕获的任何问题，但其他iOS开发人员报告说屏幕捕获在WKWebView上随机失败。如果截屏的API是app中的关键操作，建议使用现有的UIWebView浏览引擎。~~
-
-
 
 
 [iOS WKWebView相比于UIWebView浏览器之间内核引擎的区别 – 技术狗](http://www.jishudog.com/20455/html)
