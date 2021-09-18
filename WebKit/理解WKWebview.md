@@ -11,9 +11,8 @@ WKWebView 是苹果在 WWDC 2014 上推出的新一代 webView 组件，用以�
 详细[[WKWebView 请求拦截探索与实践]]
 
 # 与JS的交互
-[[执行网页的JS代码(Native->JS)]]
-[[网页注入JS代码(Native->JS)]]
-[[使用MessageHandler交互(JS->Native)]]
-[[通过cookies向网页传值(Native->JS)]]
-
-[[WKWebview -Javascript同步调用原生代码解决方案]]
+- [[执行网页的JS代码(Native->JS)]]
+- [[网页注入JS代码(Native->JS)]]
+- [[使用MessageHandler交互(JS->Native)]]
+- [[通过cookies向网页传值(Native->JS)]]
+- [[JS同步调用原生代码(JS->Native)]]
