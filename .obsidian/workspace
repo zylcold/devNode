@@ -13,14 +13,6 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "d8f216de14c83632",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
       }
     ],
     "direction": "vertical"
@@ -84,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "WebKit/理解WKWebview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +103,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "WebKit/理解WKWebview.md"
+              }
             }
           }
         ]
@@ -119,10 +114,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d8f216de14c83632",
+  "active": "a750030019f78f70",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "WebKit/理解WKWebview.md",
+    "conflict-files-obsidian-git.md",
     "WebKit/WKWebview -Javascript同步调用原生代码解决方案.md",
     "WebKit/WKWebview：与JS交互数据传值、Cookies的注入与清除.md",
     "WebKit/执行网页的JS代码(Native->JS).md",
