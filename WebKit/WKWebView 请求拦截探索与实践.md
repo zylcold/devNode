@@ -1,22 +1,18 @@
-#webview  #workaround 
-
-![[Attachments/640.jpeg]]
-> 图片来源：https://unsplash.com
-> 本文作者：谢富贵
+#webkit   #workaround 
 
 ## 背景
 
 WebView 在移动端的应用场景随处可见，在云音乐里也作为许多核心业务的入口。为了满足云音乐日益复杂的业务场景，我们一直在持续不断的优化 WebView 的性能。其中可以短时间内提升 WebView 加载速度的技术之一就是离线包技术。该技术能够节省网络加载耗时，对于体积较大的网页提升效果尤为明显。离线包技术中最关键的环节就是拦截 WebView 发出的请求将资源映射到本地离线包，而对于 `WKWebView` 的请求拦截 iOS 系统原生并没有提供直接的能力，因此本文将围绕 `WKWebView` 请求拦截进行探讨。
 
-## 调研
+## 方案调研
 
 我们研究了业内已有的 `WKWebView` 请求拦截方案，主要分为如下两种:
 
-**NSURLProtocol**
+### NSURLProtocol
 
-`NSURLProtocol` 默认会拦截所有经过 URL Loading System 的请求，因此只要 `WKWebView` 发出的请求经过 URL Loading System 就可以被拦截。经过我们的尝试，发现 `WKWebView` 独立于应用进程运行，发出去的请求默认是不会经过 URL Loading System，需要我们额外进行 hook 才能支持，具体的方式可以参考 NSURLProtocol对WKWebView的处理[2]。
+`NSURLProtocol` 默认会拦截所有经过 URL Loading System 的请求，因此只要 `WKWebView` 发出的请求经过 URL Loading System 就可以被拦截。经过我们的尝试，发现 `WKWebView` 独立于应用进程运行，发出去的请求默认是不会经过 URL Loading System，需要我们额外进行 hook 才能支持，[[WKWebView NSURLProtocol问题]]。
 
-**WKURLSchemeHandler**
+### WKURLSchemeHandler
 
 `WKURLSchemeHandler` 是 iOS 11 引入的新特性，负责自定义请求的数据管理，如果需要支持 scheme 为 http 或 https请求的数据管理则需要 hook `WKWebView` 的 `handlesURLScheme`: 方法，然后返回NO即可。
 
@@ -52,8 +48,8 @@ WebView 在移动端的应用场景随处可见，在云音乐里也作为许多
 * iOS 11.3 之后 Body 中 `Blob` 类型数据丢失问题
 
 1. 针对第一点需要判断在 iOS 11.3 之前的设备发出的请求是否包含请求体，如果满足则在调用原生 `Fetch` 接口之前需要将请求体数据收集起来传递给原生应用。
-
 2. 针对第二点同样需要判断在 iOS 11.3 之后的设备发出的请求是否包含请求体且请求体中是否带有 `Blob` 类型数据，如果满足则同上处理。
+
 
 其余情况只需直接调用原生 `Fetch` 接口即可，保持原生逻辑。
 
@@ -242,7 +238,7 @@ API_AVAILABLE(macos(10.2), ios(2.0), watchos(2.0), tvos(9.0))
 
 #### Cookie 同步
 
-由于 `WKWebView` 与我们的应用不是同一个进程所以 `WKWebView` 和 `NSHTTPCookieStorage` 并不同步。这里不展开讲 WKWebView Cookie 同步的整个过程，只重点讨论下拦截过程中的 Cookie 同步。由于请求最终是由原生应用发出的，所以 Cookie 读取和存储都是走 `NSHTTPCookieStorage` 。值得注意的是， `WKURLSchemeHandler` 返回给 `WKWebView` 的响应中包含 `Set-Cookie` 信息，但是 WKWebView 并未设置到 `document.cookie` 上。在这里也可以佐证上文所述： `WKURLSchemeHandler` 只是负责数据管理，请求中涉及的逻辑需要开发者自行处理。
+由于 `WKWebView` 与我们的应用不是同一个进程所以 `WKWebView` 和 `NSHTTPCookieStorage` 并不同步，[[WKWebView Cookie丢失问题]]。这里不展开讲 WKWebView Cookie 同步的整个过程，只重点讨论下拦截过程中的 Cookie 同步。由于请求最终是由原生应用发出的，所以 Cookie 读取和存储都是走 `NSHTTPCookieStorage` 。值得注意的是， `WKURLSchemeHandler` 返回给 `WKWebView` 的响应中包含 `Set-Cookie` 信息，但是 WKWebView 并未设置到 `document.cookie` 上。在这里也可以佐证上文所述： `WKURLSchemeHandler` 只是负责数据管理，请求中涉及的逻辑需要开发者自行处理。
 
 `WKWebView` 的 Cookie 同步可以通过 `WKHTTPCookieStore` 对象来实现
 

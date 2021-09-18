@@ -1,5 +1,13 @@
-WKWebView 在独立于 app 进程之外的进程中执行网络请求，请求数据不经过主进程，因此，在 WKWebView 上直接使用 NSURLProtocol 无法拦截请求。苹果开源的 webKit2 源码暴露了 [私有API](https://www.jianshu.com/p/bb20ff351fa2) ：
+#webkit/issus  #workaround
 
+# 表现
+在 WKWebView 上直接使用 NSURLProtocol 无法拦截请求
+
+# 原因
+WKWebView 在独立于 app 进程之外的进程中执行网络请求，请求数据不经过主进程。详见[[WKWebView和UIWebView内核引擎的区别#多进程]]
+
+# 解决方案
+苹果开源的 webKit2 源码暴露了私有API：
 ```objc
 + [WKBrowsingContextController registerSchemeForCustomProtocol:]
 ```
@@ -28,13 +36,7 @@ a、post 请求 body 数据被清空
 
 由于 WKWebView 在独立进程里执行网络请求。一旦注册 http(s) scheme 后，网络请求将从 Network Process 发送到 App Process，这样 NSURLProtocol 才能拦截网络请求。在 webkit2 的设计里使用 MessageQueue 进行进程之间的通信，Network Process 会将请求 encode 成一个 Message,然后通过 IPC 发送给 App Process。出于性能的原因，encode 的时候 HTTPBody 和 HTTPBodyStream 这两个字段被丢弃掉了
 
-参考苹果源码：
-
-[https://github.com/WebKit/webkit/blob/fe39539b83d28751e86077b173abd5b7872ce3f9/Source/WebKit2/Shared/mac/WebCoreArgumentCodersMac.mm#L61-L88](https://www.jianshu.com/p/bb20ff351fa2) 
-
-及bug report:
-
-[https://bugs.webkit.org/show_bug.cgi?id=138169](https://www.jianshu.com/p/bb20ff351fa2) 
+参考[苹果源码](https://github.com/WebKit/webkit/blob/fe39539b83d28751e86077b173abd5b7872ce3f9/Source/WebKit2/Shared/mac/WebCoreArgumentCodersMac.mm#L61-L88)及[bug report](https://bugs.webkit.org/show_bug.cgi?id=138169)
 
 因此， **如果通过 registerSchemeForCustomProtocol 注册了 http(s) scheme, 那么由 WKWebView 发起的所有 http(s)请求都会通过 IPC 传给主进程 NSURLProtocol 处理，导致 post 请求 body 被清空** ；
 

@@ -4,7 +4,7 @@
 
 为了快递迭代、更新，公司app有一大模块功能使用H5实现，但是体验比原生差，这就衍生了如何提高H5加载速度，优化体验的问题。此文，记录一下自己的心路历程。
 
-腾讯bugly发表的一篇文章 [《移动端本地 H5 秒开方案探索与实现》](https://link.juejin.im/?target=https://mp.weixin.qq.com/s/0OR4HJQSDq7nEFUAaX1x5A) 中分析，H5体验糟糕，是因为它做了很多事：
+腾讯bugly发表的一篇文章 [《移动端本地 H5 秒开方案探索与实现》](https://mp.weixin.qq.com/s/0OR4HJQSDq7nEFUAaX1x5A) 中分析，H5体验糟糕，是因为它做了很多事：
 
 > 初始化 webview -> 请求页面 -> 下载数据 -> 解析HTML -> 请求 js/css 资源 -> dom 渲染 -> 解析 JS 执行 -> JS 请求数据 -> 解析渲染 -> 下载渲染图片
 

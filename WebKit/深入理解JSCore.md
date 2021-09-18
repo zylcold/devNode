@@ -1,4 +1,4 @@
-#webview
+#webkit 
 
 动态化作为移动客户端技术的一个重要分支，一直是业界积极探索的方向。目前业界流行的动态化方案，如Facebook的React Native，阿里巴巴的Weex都采用了前端系的DSL方案，而它们在iOS系统上能够顺利的运行，都离不开一个背后的功臣：JavaScriptCore（以下简称JSCore），它建立起了Objective-C（以下简称OC）和JavaScript（以下简称JS）两门语言之间沟通的桥梁。无论是这些流行的动态化方案，还是WebView Hybrid方案，亦或是之前广泛流行的JSPatch，JSCore都在其中发挥了举足轻重的作用。作为一名iOS开发工程师，了解JSCore已经逐渐成为了必备技能之一。
 

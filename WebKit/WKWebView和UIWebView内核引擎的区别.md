@@ -3,7 +3,7 @@
 翻译文，原文地址
 [WKWebView: Differences from UIWebView browsing engine - Knowledge Base](http://docs.kioskproapp.com/article/840-wkwebview-supported-features-known-issues)
 
-## 优点
+# 优点
 
 * 多进程，在app的主进程之外执行
 * 使用更快的Nitro JavaScript引擎
@@ -12,7 +12,7 @@
 * 支持服务端的身份校验
 * 支持对错误的自签名安全证书和证书进行身份验证
 
-## 问题
+# 问题
 
 * 需要iOS9或更高版本(WKWebView在iOS8引入，但是很多功能，支持比较全面在iOS9以后的版本)
 * 不支持通过AJAX请求本地存储的文件
@@ -22,21 +22,22 @@
 * 不支持记录WebKit的请求
 * 不能进行截屏操作
 
-## 优点(Advantages)
+# 优点(Advantages)
 
-### 多进程，在app的主进程之外执行
+## 多进程
 
-WKWebView为::多进程组件::，也意味着会从App内存中分离内存到单独的进程(::Network Process:: and ::Rendring Process::)中。当内存超过了系统分配给WKWebView的内存时候，会 ~导致WKWebView浏览器崩溃白屏，但是App不会Crash~ 。(app会收到系统通知，并且尝试去重新加载页面)
+WKWebView为**多进程组件**，也意味着会从App内存中分离内存到单独的进程(**Network Process** and **Rendring Process**)中。当内存超过了系统分配给WKWebView的内存时候，会 导致WKWebView浏览器崩溃白屏，但是App不会Crash 。(app会收到系统通知，并且尝试去重新加载页面)
 
-相反的，UIWebView是和app同一个进程，UIWebView加载页面占用的内存被计算为app内存占用的一部分， ~当app超过了系统分配的内存，则会被操作系统crash~ 。在整个过程中，会经常收到iOS系统的通知用来防止app被系统kill，但是在某些时候，这些通知不够及时，或者根本没有返回通知。
+相反的，UIWebView是和app同一个进程，UIWebView加载页面占用的内存被计算为app内存占用的一部分， 当app超过了系统分配的内存，则会被操作系统crash。在整个过程中，会经常收到iOS系统的通知用来防止app被系统kill，但是在某些时候，这些**通知不够及时**，或者**根本没有返回通知**。处理办法：[[WKWebView 白屏问题#解决方案]]
 
-### 使用更快的Nitro JavaScript引擎
+## 使用更快的Nitro JavaScript引擎
 
 WKWebView使用和手机Safari浏览器一样的::Nitro JavaScript引擎::，相比于UIWebView的JavaScript引擎有了非常重要的 ~性能提升~
 
-### 异步执行处理JavaScript (Handles JavaScript asynchronously)
+## 异步执行处理JavaScript 
+Handles JavaScript asynchronously
 
-WKWebView是::异步处理app原生代码与JavaScript之间的通信::，因此普遍上执行速度会更快。
+WKWebView是**异步处理app原生代码与JavaScript之间的通信**，因此普遍上执行速度会更快。
 
 在实践操作过程中，JavaScript API调用原生(native)中方法不会阻塞线程，等待回调函数的执行。(在JavaScript代码会继续向下执行，而回调函数会由native端异步去回调)。举一个例子，之前一个”Save Data”的操作如下:
 
@@ -81,8 +82,7 @@ function saveData(fileName, data) {
 }
 ```
 
-### 消除触摸延迟 (Eliminates certain touch delays)
-
+## 消除触摸延迟 (Eliminates certain touch delays)
 UIWebView和WKWebView浏览器组件会将触摸事件解释后发送给app，因此，我们无法提高触摸事件的灵敏度或速度。
 
 在UIWebView上的任何触摸事件会被延迟300ms，用以判断用户是单击还是双击。这个机制也是那些基于HTML的web app一直不被用户接受的重要原因。
@@ -91,31 +91,30 @@ UIWebView和WKWebView浏览器组件会将触摸事件解释后发送给app，�
 
 为了消除所有触摸事件（包括快速点击）的触摸延迟，您可以添加FastClick或另一个消除此延迟的库到您的内容中。
 
-### 支持服务端的身份校验
+## 支持服务端的身份校验
 
 与不支持服务器认证校验的UIWebView不同，WKWebView支持服务端校验。实际上，这意味着在使用WKWebView时，可以输入密码保护网站。
 
-### 支持对错误的自签名安全证书和证书进行身份验证
+## 支持对错误的自签名安全证书和证书进行身份验证
 
 通过“继续”/“取消”弹出窗口，WKWebView允许您绕过安全证书中的错误（例如，使用自签名证书或过期证书时）。
 
-### 支持WebRTC与getUserMedia
+## 支持WebRTC与getUserMedia
 在iOS/iPadOS 14.3，Apple添加了WebRTC与getUserMedia的支持
 
-## 问题
+# 问题
 
-### 需要iOS9或更高版本
+## 需要iOS9或更高版本
 
 我们的WKWebView集成仅适用于运行iOS 9或更高版本的设备。虽然WKWebView是在iOS 8中引入的，但在这些版本中存在重大限制，包括无法访问本地存储的文件，我们无法解决此问题，因此此功能不兼容。
 
-### 不支持AJAX请求到本地存储的文件
+## 不支持AJAX请求到本地存储的文件
 
 WKWebView不允许XHR请求file：// URI，因为这些URI违反了浏览器引擎的跨源资源共享规则。使用这种类型的请求的项目应该远程托管在服务器上，或使用现有的UIWebView浏览引擎。
 
-### App退出会清除HTML5的本地存储的数据
+## App退出会清除HTML5的本地存储的数据
 
 当应用退出并重新启动时，HTML5本地存储将被清除。
-
 
 // 最新版本已移除
 

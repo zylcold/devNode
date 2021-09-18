@@ -1,4 +1,4 @@
-[Haley_Wong](https://www.jianshu.com/u/a8cf6d63e889) [关注]()  2016.08.06 13:50* 字数 855 阅读 31180评论 59喜欢 103
+#webkit 
 
 使用WKWebView的时候，如果想要实现JS调用OC方法，除了拦截URL之外，还有一种简单的方式。那就是利用WKWebView的新特性MessageHandler来实现JS调用原生方法。
 
@@ -8,6 +8,8 @@ WKWebView 初始化时，有一个参数叫configuration，它是 `WKWebViewConf
 
 `- addScriptMessageHandler:name:` 有两个参数，第一个参数是userContentController的代理对象，第二个参数是JS里发送postMessage的对象。
 所以要使用MessageHandler功能，就必须要实现 `WKScriptMessageHandler` 协议。
+
+
 我们在该API的描述里可以看到在JS中的使用方法：
 
 ```javascript
@@ -18,12 +20,12 @@ window.webkit.messageHandlers.<name>.postMessage(<messageBody>)
 //<messageBody>是一个键值对，键是body，值可以有多种类型的参数。
 // 在`WKScriptMessageHandler`协议中，我们可以看到mssage是`WKScriptMessage`类型，有一个属性叫body。
 // 而注释里写明了body 的类型：
-Allowed types are NSNumber, NSString, NSDate, NSArray, NSDictionary, and NSNull.
+//Allowed types are NSNumber, NSString, NSDate, NSArray, NSDictionary, and NSNull.
 ```
 
 ## 怎么使用MessageHandler？
 
-#### 1.创建 `WKWebViewConfiguration` 对象，配置各个API对应的MessageHandler。
+#### 1.创建 `WKWebViewConfiguration` 对象，配置各个API对应的MessageHandler
 
 > `WKUserContentController` 对象可以添加多个scriptMessageHandler。
 
@@ -31,11 +33,12 @@ Allowed types are NSNumber, NSString, NSDate, NSArray, NSDictionary, and NSNull.
 
 ```objc
 // 这是创建configuration 的过程
-    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
-    WKPreferences *preferences = [WKPreferences new];
-    preferences.javaScriptCanOpenWindowsAutomatically = YES;
-    preferences.minimumFontSize = 40.0;
-    configuration.preferences = preferences;
+
+WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+WKPreferences *preferences = [WKPreferences new];
+preferences.javaScriptCanOpenWindowsAutomatically = YES;
+preferences.minimumFontSize = 40.0;
+configuration.preferences = preferences;
     
 
 - (void)viewWillAppear:(BOOL)animated
@@ -120,11 +123,13 @@ self.webView.UIDelegate = self;
 }
 ```
 
-`WKScriptMessage` 有两个关键属性 `name` 和 `body` 。
-因为我们给每一个OC 方法取了一个name，那么我们就可以根据name 来区分执行不同的方法。body 中存着JS 要给OC 传的参数。
-关于参数body 的解析，我就举一个body中放字典的例子，其他的稍后可以看demo。
-解析JS 调用OC 实现分享的参数：
+`WKScriptMessage` 有两个关键属性 `name` 和 `body` 
 
+因为我们给每一个OC 方法取了一个name，那么我们就可以根据name 来区分执行不同的方法。body 中存着JS 要给OC 传的参数。
+
+关于参数body 的解析，我就举一个body中放字典的例子，其他的稍后可以看demo。
+
+解析JS 调用OC 实现分享的参数：
 ```objc
 - (void)shareWithParams:(NSDictionary *)tempDic
 {
@@ -149,7 +154,7 @@ message.boby 就是JS 里传过来的参数。我们不同的方法先做一下�
 
 #### 4.处理HTML中JS调用。
 
-HMTL的源码跟之前的HTML内容差不多，只有JS的调用部分改变了。
+HMTL的源码跟之前的HTML内容差不多，只有JS的调用部分改变了。调用 `window.webkit.messageHandlers.<对象名>.postMessage(<数据>)`方法。
 
 ```javascript
 // 传null
@@ -184,7 +189,6 @@ NSString *jsStr = [NSString stringWithFormat:@"shareResult('%@','%@','%@')",titl
 ```
 
 ## 使用MessageHandler 的好处
-
 * 1.在JS中写起来简单，不用再用创建URL的方式那么麻烦了。
 * 2.JS传递参数更方便。使用拦截URL的方式传递参数，只能把参数拼接在后面，如果遇到要传递的参数中有特殊字符，如&、=、？等，必须得转换，否则参数解析肯定会出错。
 * 例如传递的url是这样的:
@@ -203,5 +207,3 @@ loadURL("firstClick://shareClick?title=分享的标题&content=分享的内容&u
 ![[7c46c154-67a8-40af-b5a4-f22a9cb459f2.gif]]
 
 更详细的使用步骤还是去工程中查看吧。地址： [JS_OC_MessageHandler](https://link.jianshu.com/?t=https://github.com/Haley-Wong/JS_OC/tree/master/JS_OC_MessageHandler)
-
-https://upload-images.jianshu.io/upload_images/727768-31deb833180b0f74.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/370
