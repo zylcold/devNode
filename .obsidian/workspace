@@ -7,8 +7,11 @@
         "id": "a750030019f78f70",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "应用优化/启动优化.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -73,6 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "应用优化/启动优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "应用优化/启动优化.md"
+              }
             }
           }
         ]
@@ -110,15 +116,15 @@
   },
   "active": "a750030019f78f70",
   "lastOpenFiles": [
-    "RabbitHole.md",
+    "应用优化/启动优化.md",
     "Entry.md",
+    "RabbitHole.md",
     "README.md",
     "WebKit/理解WKWebview.md",
     "conflict-files-obsidian-git.md",
     "WebKit/WKWebview -Javascript同步调用原生代码解决方案.md",
     "WebKit/WKWebview：与JS交互数据传值、Cookies的注入与清除.md",
     "WebKit/执行网页的JS代码(Native->JS).md",
-    "WebKit/网页注入JS代码(Native->JS).md",
-    "WebKit/通过cookies向网页传值(Native->JS).md"
+    "WebKit/网页注入JS代码(Native->JS).md"
   ]
 }
