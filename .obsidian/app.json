@@ -12,5 +12,5 @@
   "defaultViewMode": "preview",
   "attachmentFolderPath": "Attachments",
   "communityPluginSortOrder": "download",
-  "mobilePullAction": "editor:configure-toolbar"
+  "mobilePullAction": "app:go-back"
 }
